@@ -2,5 +2,6 @@
 
 int main(void)
 {
-        printf("hello, CS50\n");
+        string answer = get_string("What's your name? ");
+        
 }
