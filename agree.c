@@ -9,11 +9,11 @@ int main (void)
 
     //check whether user agreed
 
-    if (c == 'y')
+    if (c == 'y' || c == 'Y')
     {
         printf("Agreed.\n");
     }
-    else if (c == 'n')
+    else if (c == 'n' || c == 'N')
     {
         printf("Disagree.\n");
     }
