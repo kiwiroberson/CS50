@@ -4,14 +4,14 @@
 int main (void )
 
 {
-    int z=2;
+    const  int MINE=2;
     int points = get_int("How many points did you lose?\n");
 
-    if (points < z)
+    if (points < mine)
     {
         printf("You lost fewer points than me\n");
     }
-    else if (points >z)
+    else if (points >mine)
     {
         printf("you lost more points than me\n");
     }
