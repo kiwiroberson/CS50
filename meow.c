@@ -1,3 +1,9 @@
 #include <studio.io>
 
- int
+ int=0;
+ while (i<3)
+ {
+    printf("meow\n")
+    i++
+ }
+ 
