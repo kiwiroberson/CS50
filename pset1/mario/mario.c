@@ -15,9 +15,11 @@ int main(void)
     {
          //for each collumn
         for (int j = 0; j < n; j++)
-            //Print a Brick
+            {//Print a Brick
             printf("#");
+            }
+         //Move to next row
+            printf("\n");
+
     }
-        //Move to next row
-        printf("\n");
 }
