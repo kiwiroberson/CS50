@@ -3,5 +3,9 @@
 int main(void)
 
 {
-    printf("????\n");
+    for (int i = 1; i < 4; i++)
+    {
+        printf("?");
+    }
+    printf("\n");
 }
