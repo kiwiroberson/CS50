@@ -1,2 +1,3 @@
 #include <studio.io>
 
+ int
