@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-float discount (float price)
+float discount (float price);
 
 int main (void)
 
