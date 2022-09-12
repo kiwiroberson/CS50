@@ -1,11 +1,22 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void)
 
 {
-    for (int i = 1; i < 4; i++)
+    int n;
+    do
+    {
+        n = get_int("Width: ");
+    }
+    while (n < 1);
+
+
+    for (int i = 1; i < n; i++)
     {
         printf("?");
+
     }
-    printf("\n");
+        printf("\n");
 }
+
