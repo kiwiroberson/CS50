@@ -4,6 +4,6 @@
 
 int main(void)
 {
-    string answer = get_string("What's your name? ");
-    printf("hello, %s\n");
+    string answer = get_string("What's your name?\n");
+    printf("hello, %s\n", answer);
 }
