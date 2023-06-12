@@ -3,10 +3,10 @@
 
 int main (void)
 {
-    int s = 6;
-    for (int i = 0; i < s; i++)
+    const int n = 3;
+    for (int i = 0; i < n; i++)
     {
-       for (int j = 0; j <s; j++)
+       for (int j = 0; j < n; j++)
         {
             printf("#");
         }
