@@ -3,9 +3,10 @@
 
 int main (void)
 {
-    for (int i = 0; i < 3; i++)
+    int s = 6;
+    for (int i = 0; i < s; i++)
     {
-       for (int j = 0; j <3; j++)
+       for (int j = 0; j <s; j++)
         {
             printf("#");
         }
