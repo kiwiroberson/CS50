@@ -17,7 +17,8 @@ int main (void)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
         n = i;
-        n = (n + n/3 - n/4);
+        n = n + n/3;
+        n = n - n/4;
         c++;
     }
     printf("Years: \n");
