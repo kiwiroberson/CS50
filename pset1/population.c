@@ -7,12 +7,11 @@ int main (void)
 
 // ask for starting population end ending population
 
-    int i = get_int("Starting Population? ");
-    int j = get_int ("End Population? ");
+    float i = get_int("Starting Population? ");
+    float j = get_int ("End Population? ");
     int c = 0;
     int n = 0;
-    int o = 0;
-    int p = 0;
+ 
 //run loop while n < end population
 
     while ( i < j)
@@ -21,8 +20,8 @@ int main (void)
         n = i/3;
         c++;
     }
-    printf("Population: %i\n", n);
-    printf("Years: %i\n", c);
+    printf("Population: %f\n", n);
+    printf("Years: %f\n", c);
 
 //print  counter as output
 
