@@ -19,9 +19,9 @@ int main (void)
         n = i;
         n = n + n/3;
         n = n - n/4;
-
+        c++;
     }
-    printf("Years: \n");
+    printf("Years: %i\n", c);
 
 //print  counter as output
 
