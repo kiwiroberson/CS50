@@ -7,7 +7,7 @@ int main (void)
 
 // ask for starting population end ending population
 
-    int get_int 
+    int start = get_int("Starting Population? ");
 
 //run loop while n < end population
 
