@@ -10,15 +10,18 @@ int main (void)
     int i = get_int("Starting Population? ");
     int j = get_int ("End Population? ");
     int c = 0;
-    int n=0;
+    int n = 0;
+    int o = 0;
+    int p = 0;
 //run loop while n < end population
 
     while ( n < j)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
         n = i;
-        n = n + n/3;
-        n = n - n/4;
+        o = n/3;
+        p = n/4;
+        n = n + o - p;
         c++;
     }
     printf("Years: %i\n", c);
