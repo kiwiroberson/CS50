@@ -13,7 +13,7 @@ int main (void)
     int n=0;
 //run loop while n < end population
 
-    while ( n < j)
+    while ( n < 100)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
         n = i;
