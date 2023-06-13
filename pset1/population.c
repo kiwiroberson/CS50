@@ -15,13 +15,10 @@ int main (void)
     int p = 0;
 //run loop while n < end population
 
-    while ( n < j)
+    while ( i < j)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
-        n = i;
-        o = n/3;
-        p = n/4;
-        n = n + o - p;
+        n = i/3;
         c++;
     }
     printf("Population: %i\n", n);
