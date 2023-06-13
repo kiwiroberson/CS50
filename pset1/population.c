@@ -9,8 +9,8 @@ int main (void)
 
     int i = get_int("Starting Population? ");
     int j = get_int ("End Population> ");
-    int c = 0
-
+    int c = 0;
+    int n=0;
 //run loop while n < end population
 
     while (n<j)
@@ -20,7 +20,7 @@ int main (void)
         n = (n + n/3 - n/4);
         c++;
     }
-    printf("Years: )
+    printf("Years: \n");
 
 //print  counter as output
 
