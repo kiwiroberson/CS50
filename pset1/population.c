@@ -24,7 +24,8 @@ int main (void)
         n = n + o - p;
         c++;
     }
-    printf("Years: %i\n", n);
+    printf("Population: %i\n", n);
+    printf("Years: %i\n", c);
 
 //print  counter as output
 
