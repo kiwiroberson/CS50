@@ -19,12 +19,11 @@ int main (void)
 
     while (i < 9)
     {
-        i = get_int("Starting Population? ");
+        i = get_int("Start size: ");
     }
-
     while ( j < i)
     {
-         j = get_int ("End Population? ");
+         j = get_int ("End size: ");
     }
 
 
