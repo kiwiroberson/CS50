@@ -9,12 +9,12 @@ int main(void)
 
     while(i<1)
     {
-        i = get_int("How many floors?");
+        i = get_int("How many floors? ");
     }
-
+    printf("\n");
     //print on repeat removing one from number each time
 
-    while (i>1)
+    while (i>0)
     {
         printf("#\n");
         i = i-1;
