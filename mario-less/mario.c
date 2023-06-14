@@ -5,27 +5,27 @@ int main(void)
 {
     // ask user for hopw many stairs
 
-    int n=0;
+    int n = 0;
 
-    while(n<1)
+    while (n < 1)
     {
         n = get_int("How many floors? ");
     }
 
-    while(n>8)
+    while (n > 8)
     {
         n = get_int("How many floors? ");
     }
 
     //print on repeat removing one from number each time
 
-    for (int i=0; i<n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for(int k=n; k>i+1; k--)
+        for(int k = n; k > i + 1; k--)
         {
         printf(" ");
         }
-        for(int j=0; j<i+1; j++)
+        for(int j = 0; j < i + 1; j++)
         {
         printf("#");
         }
