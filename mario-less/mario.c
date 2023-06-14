@@ -5,25 +5,23 @@ int main(void)
 {
     // ask user for hopw many stairs
 
-    int i=0;
-    int c=0;
+    int n=0;
 
-
-    while(i<1)
+    while(n<1)
     {
-        i = get_int("How many floors? ");
+        n = get_int("How many floors? ");
     }
 
-    while(i>8)
+    while(n>8)
     {
-        i = get_int("How many floors? ");
+        n = get_int("How many floors? ");
     }
 
     //print on repeat removing one from number each time
 
-    for (c=0; c<i; c++)
+    for (int i=0; i<n; i++)
     {
-        for(int d=0; d<i; d++)
+        for(int j=0; j<i; j++)
         {
         printf("#");
         }
