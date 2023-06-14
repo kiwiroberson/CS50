@@ -27,13 +27,11 @@ int main (void)
     }
 
 
-    n = i;
-
     //run loop while n < end population
-    while ( n < j)
+    while ( i < j)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
-        n += n / 12;
+        i += i / 12;
         c++;
     }
 
