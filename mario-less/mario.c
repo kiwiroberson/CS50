@@ -8,17 +8,16 @@ int main(void)
     int i=0;
 
 
-    while(i<1)
+    while(i<1) | while(i>8))
     {
         i = get_int("How many floors? ");
+
     }
+
+
+
 
     //print on repeat removing one from number each time
-
-    for (int j=0; j<i; j++)
-    {
-        printf("#");
-    }
 
 
 
