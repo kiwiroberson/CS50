@@ -7,16 +7,18 @@ int main(void)
 
     int i=0;
     int c=0;
+    int d=1
 
     while(i<1)
     {
         i = get_int("How many floors? ");
     }
-  
+
     //print on repeat removing one from number each time
 
     while (c<i)
     {
+
         printf("#\n");
         c++;
     }
