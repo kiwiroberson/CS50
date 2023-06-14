@@ -23,8 +23,12 @@ int main(void)
 
     for (c=0; c<i; c++)
     {
+        for(int d=0; d<i; d++)
+        {
         printf("#");
+        }
+        printf("\n");
+
     }
-printf("\n");
 
 }
