@@ -5,7 +5,7 @@ int main (void)
 
 {
 
-// ask for starting population end ending population
+    // ask for starting population end ending population
 
     int i = 0;
     int j = 0;
@@ -37,9 +37,10 @@ int main (void)
         n = (n + n/3 - n/4);
         c++;
     }
-    printf("Population: %i\n", n);
+
+    //print  counter as output
+
     printf("Years: %i\n", c);
 
-//print  counter as output
 
 }
