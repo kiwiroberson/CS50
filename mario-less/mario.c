@@ -7,15 +7,12 @@ int main(void)
 
     int n = 0;
 
-    while (n < 1)
+    while (n < 1 || n > 8)
     {
         n = get_int("How many floors? ");
     }
 
-    while (n > 8)
-    {
-        n = get_int("How many floors? ");
-    }
+    
 
     //print on repeat removing one from number each time
 
