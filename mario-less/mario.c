@@ -6,8 +6,7 @@ int main(void)
     // ask user for hopw many stairs
 
     int i=0;
-    int c=0;
-    int d=1
+    
 
     while(i<1)
     {
@@ -16,12 +15,7 @@ int main(void)
 
     //print on repeat removing one from number each time
 
-    while (c<i)
-    {
 
-        printf("#\n");
-        c++;
-    }
 
 
 
