@@ -33,7 +33,7 @@ int main (void)
     while ( n < j)
     {
        //loop for: n gets n + n/3 - n/4, then add one to counter
-        n = (n + n/3 - n/4);
+        n += n / 12;
         c++;
     }
 
