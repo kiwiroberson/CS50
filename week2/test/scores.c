@@ -25,5 +25,5 @@ float average (int array[])
         {
             sum = sum + array[i];
         }
-        return 
+        return sum / N;
 }
