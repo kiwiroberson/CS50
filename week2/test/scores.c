@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 float average(int array[]);
-const int N = 3;
+const int N = 5;
 
 
 int main(void)
@@ -23,7 +23,7 @@ float average (int array[])
     int sum = 0;
     for (int i = 0; i < N; i++)
         {
-            sum = sum + array[i];
+            sum = += array[i];
         }
-        return sum / N;
+        return sum / (float) N;
 }
