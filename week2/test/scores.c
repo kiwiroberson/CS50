@@ -2,10 +2,12 @@
 
 int main(void)
 {
-    int score1 = 73;
-    int score2 = 72;
-    int score3 =33;
+    int scores[3];
 
-    printf("Average: %f\n", (score1 +score2 +score3) / (float) 3.0);
+    scores[0] = 72;
+    scores[1] = 73;
+    scores[2] = 33;
+
+    printf("Average: %f\n", (scores[1] + scores[2] + scores[3]) / (float) 3.0);
 
 }
