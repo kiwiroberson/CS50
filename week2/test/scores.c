@@ -14,7 +14,7 @@ int main(void)
         scores[i] = get_int("Score: ");
     }
 
-    printf("Average: %f\n", average(scores);
+    printf("Average: %f\n", average(scores));
 
 }
 
