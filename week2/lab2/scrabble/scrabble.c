@@ -28,9 +28,7 @@ int compute_score(string word1)
 {
     // TODO: Compute and return score for string
 
-    for(int i = 0, n = strlen(word1); i < n; i++)
-
         {
-            
+           return printf("hello, world\n");
         }
 }
