@@ -37,9 +37,9 @@ int compute_score(string word)
 
             for (int i = 0; i < n; i++)
                 {
-                    char m = word[i];
-                    m = m - 64;
-                    array1[i] = SCORES[m];
+                    int m = word[i];
+                    m = m - 65;
+                    array1[i] = POINTS[m];
 
                 }
 
