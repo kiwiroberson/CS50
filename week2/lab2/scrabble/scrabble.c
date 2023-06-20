@@ -27,9 +27,9 @@ int compute_score(string word)
 
     for(i = 0; i < 2; i++)
         {
-            toupper(word[1)
-
+            int toupper(char word1[i])
         }
+        
 
 
 
