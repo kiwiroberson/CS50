@@ -30,10 +30,13 @@ int compute_score(string word)
     // TODO: Compute and return score for string
 
         {
-           for (int i = 0, n = strlen(word); i < n; i++)
+            int array1[3];
+
+            for (int i = 0, n = strlen(word); i < n; i++)
                 {
-                   int  POINTS[1];
+                   array1[i] = POINTS[i];
                 }
-return printf("%c\n", word[0]);
+
+return printf("%i %i %i\n", array1[0], array1[1], array1[2]);
         }
 }
