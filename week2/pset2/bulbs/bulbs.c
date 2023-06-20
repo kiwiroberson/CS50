@@ -30,7 +30,7 @@ int main(void)
         j = j - g*2;
         int h = j;
 
-        printf("%i%i%i%i%i%i%i%i\n", a,b,c,d,e,f,g,h);
+        string c = %i%i%i%i%i%i%i%i\n", a,b,c,d,e,f,g,h);
     }
 }
 
