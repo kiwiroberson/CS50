@@ -30,7 +30,7 @@ int compute_score(string word)
     // TODO: Compute and return score for string
 
         {
-            int l1 = strlen(string word1)
+            int l = int strlen(string word1)
 
 
 
