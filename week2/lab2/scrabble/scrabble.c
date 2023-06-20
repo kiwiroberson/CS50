@@ -25,7 +25,11 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
 
+    for(i = 0; i < 2; i++)
+        {
+            toupper(word[1)
 
+        }
 
 
 
