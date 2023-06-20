@@ -8,27 +8,28 @@ void print_bulb(int bit);
 
 int main(void)
 {
-    string s = get_string("What is your message? );
+    string s = get_string("What is your message? ");
     int n = strlen(s);
 
-    for(i = 0; i < s; i++)
+    for(int i = 0; i < n; i++)
     {
         int j = s[i];
         int a = j / 64;
-        j - a;
+        j = j - a;
         int b = j / 32;
-        j - b;
+        j = j - b;
         int c = j / 16;
-        j - c;
+        j = j - c;
         int d = j / 8;
-        j - d;
+        j = j - d;
         int e = j / 4;
-        j - e;
+        j = j - e;
         int f = j / 2;
-        j - f;
+        j = j - f;
         int g = j;
     }
-    
+
+    printf()
 }
 
 void print_bulb(int bit)
