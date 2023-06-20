@@ -71,7 +71,7 @@ int compute_score(string word)
                     char m = word[i];
                     m = toupper(m);
                     int l = m;
-                    m = m - 65;
+                    l = l - 65;
                     array1[i] = POINTS[l];
                     p += array1[i];
                 }
