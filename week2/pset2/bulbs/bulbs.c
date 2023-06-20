@@ -19,7 +19,7 @@ int main(void)
         for(int k = 7, l = 0; k > 0; k--, l++)
         {
             z[l] = j / pow(2,k);
-            j = j % 2^k;
+            j = j % (pow(2,k));
         }
 
         for(int t = 0; t < 8; t++)
