@@ -34,7 +34,7 @@ int main(void)
                 printf("Player 2 Wins!\n");
             }
         else
-        {printf("Draw\n");
+        {printf("Tie!\n");
         }
     }
 
