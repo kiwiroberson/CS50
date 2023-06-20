@@ -15,10 +15,9 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
         int j = s[i];
-
+        int z[8];
         for(int k = 7, l = 0; k > 0; k--, l++)
         {
-            int z[8];
             int m = pow(2,k);
             z[l] = j / m;
             j = j % m;
