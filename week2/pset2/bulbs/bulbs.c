@@ -41,7 +41,7 @@ int main(void)
 
         }
         printf("\n");
-
+printf("%i\n", z[1]);
 
 
     }
