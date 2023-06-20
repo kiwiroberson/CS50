@@ -32,8 +32,8 @@ int compute_score(string word)
         {
            for (int i = 0, n = strlen(word); i < n; i++)
                 {
-                     word[0] - 2;
+                   
                 }
-return printf("%s\n", word);
+return printf("%c\n", word[0]);
         }
 }
