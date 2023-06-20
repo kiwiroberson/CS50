@@ -31,7 +31,8 @@ int main(void)
         int h = j;
 
         int z[8] = {a,b,c,d,e,f,g,h};
-       
+       printf("%i%i%i%i%i%i%i%i\n", z[0], z[1], z[2], z[3], z[4], z[5], z[6], z[7]);
+
     }
 }
 
