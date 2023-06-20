@@ -19,17 +19,20 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
+
+    int compute_score(string word1);
+
 }
 
-int compute_score(string word)
+int compute_score(string word1)
 {
     // TODO: Compute and return score for string
 
-    for(i = 0; i < 2; i++)
+    for(int i = 0, n = strlen(word1); i < n; i++)
         {
-            int toupper(char word1[i])
+            int toupper(char word1[i]);
         }
-        
+
 
 
 
