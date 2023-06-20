@@ -44,8 +44,8 @@ int main(void)
 
 }
 
-void print_bulb(int bit);
-       {
+void print_bulb(int bit)
+{
             if (z[t] == 0)
             {
                 // Dark emoji
@@ -57,4 +57,4 @@ void print_bulb(int bit);
                 printf("\U0001F7E1");
             }
 
-        }
+}
