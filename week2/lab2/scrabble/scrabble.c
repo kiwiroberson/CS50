@@ -20,16 +20,22 @@ int main(void)
 
     // TODO: Print the winner
 
-    int compute_score(string word1);
+    int compute_score(string word);
 
     printf("\n");
 }
 
-int compute_score(string word1)
+int compute_score(string word)
 {
     // TODO: Compute and return score for string
 
         {
-           return printf("hello, world\n");
+            int l1 = strlen(word1)
+
+
+
+
+
+           return printf("%i\n", l1);
         }
 }
