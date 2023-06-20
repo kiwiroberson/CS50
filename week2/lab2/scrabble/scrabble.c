@@ -22,6 +22,7 @@ int main(void)
 
     int compute_score(string word1);
 
+    printf("\n");
 }
 
 int compute_score(string word1)
