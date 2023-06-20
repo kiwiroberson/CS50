@@ -20,7 +20,7 @@ int main(void)
         {
 
             z[l] = j / pow(2,k);
-            j = j - (j / pow(2,k));
+            j = j - z[l];
 
         }
 
