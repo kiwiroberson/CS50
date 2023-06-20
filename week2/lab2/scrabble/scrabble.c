@@ -22,7 +22,7 @@ int main(void)
 
     int compute_score(string word);
 
-    printf("Player 1 scored:%i \nPlayer 2 scored:%i\n", score1, score2);
+    printf("\nPlayer 1 scored:%i \nPlayer 2 scored:%i\n\n", score1, score2);
     if(score1 > score2)
     {
         printf("Player 1 Wins!\n");
