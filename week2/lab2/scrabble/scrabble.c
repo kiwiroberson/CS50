@@ -58,8 +58,8 @@ int main(void)
 int compute_score(string word)
 
     // TODO: Compute and return score for string
+{
 
-        {
             int n = strlen(word);
             int p = 0;
             int array1[n];
@@ -76,4 +76,5 @@ int compute_score(string word)
 
 
              return p;
-        }
+
+}
