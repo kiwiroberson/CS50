@@ -30,12 +30,10 @@ int compute_score(string word)
     // TODO: Compute and return score for string
 
         {
-            int l = int strlen(string word1)
+           for (int i = 0, n = strlen(word); i < n; i++)
+                {
+                    toupper(word1[i]);
+                }
 
-
-
-
-
-           return printf("%i\n", l1);
         }
 }
