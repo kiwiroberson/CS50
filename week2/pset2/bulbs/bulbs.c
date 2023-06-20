@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 const int BITS_IN_BYTE = 8;
 
@@ -17,7 +18,7 @@ int main(void)
         int z[8];
         for(int k = 7, l = 0; k > 0; k--, l++)
         {
-            z[l] = j / 2^k;
+            z[l] = j / pow(2,k);
             j = j % 2^k;
         }
 
