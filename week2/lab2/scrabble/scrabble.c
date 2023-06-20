@@ -32,7 +32,7 @@ int compute_score(string word)
         {
            for (int i = 0, n = strlen(word); i < n; i++)
                 {
-                    toupper(word[i]);
+                    toupper(char word[i]);
                 }
 
         }
