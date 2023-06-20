@@ -13,7 +13,20 @@ int main(void)
 
     for(i = 0; i < s; i++)
     {
-        
+        int j = s[i];
+        int a = j / 64;
+        j - a;
+        int b = j / 32;
+        j - b;
+        int c = j / 16;
+        j - c;
+        int d = j / 8;
+        j - d;
+        int e = j / 4;
+        j - e;
+        int f = j / 2;
+        j - f;
+        int g = j;
     }
 }
 
