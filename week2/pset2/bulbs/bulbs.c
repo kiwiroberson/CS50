@@ -13,11 +13,12 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        for(int k = 7; k > 0; k--)
+        int j = s[i];
+        int z[8]
+        for(int k = 7; k > 0; k--, l++)
         {
-            int j = s[i];
             int a = j / 2^k;
-            j = j - a * 128;
+            j = j % 2^k;
             int b = j / 64;
             j = j - b * 64;
             int c = j / 32;
