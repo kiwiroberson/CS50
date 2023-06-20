@@ -30,7 +30,7 @@ int main(void)
         j = j - g*2;
         int h = j;
 
-        int z[] = {a,b,c,d,e,f,g,h};
+        int z[8] = {a,b,c,d,e,f,g,h};
         printf("%d\n",z)
     }
 }
