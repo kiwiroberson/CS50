@@ -22,16 +22,16 @@ int main(void)
 
     int compute_score(string word);
 
-    printf("\nPlayer 1 scored:%i \nPlayer 2 scored:%i\n\n", score1, score2);
+
     if(score1 > score2)
     {
-        printf("Player 1 Wins!\n");
+        printf("Player 1 wins!\n");
     }
     else
     {
         if (score1 < score2)
             {
-                printf("Player 2 Wins!\n");
+                printf("Player 2 wins!\n");
             }
         else
         {printf("Tie!\n");
