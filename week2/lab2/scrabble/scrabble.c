@@ -22,15 +22,16 @@ int main(void)
 
     int compute_score(string word);
 
-    printf("\n");
+    printf("%i %i\n", score1, score2);
 }
 
 int compute_score(string word)
-{
+
     // TODO: Compute and return score for string
 
         {
             int n = strlen(word);
+            int p = 0;
             int array1[n];
 
 
@@ -40,11 +41,9 @@ int compute_score(string word)
                     int m = word[i];
                     m = m - 65;
                     array1[i] = POINTS[m];
-
+                    p = p + array1[i];
                 }
 
 
-             return
-             printf("%i %i %i\n", array1[0], array1[1], array1[2]);
+             return p;
         }
-}
