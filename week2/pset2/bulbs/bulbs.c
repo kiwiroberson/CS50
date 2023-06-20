@@ -16,6 +16,11 @@ int main(void)
     {
         int j = s[i];
         int z[8];
+        for(int l = 0; l <8; l++)
+        {
+            z[l] = 0;
+        }
+
         for(int k = 7, l = 0; k > 0; k--, l++)
         {
             int m = pow(2,k);
