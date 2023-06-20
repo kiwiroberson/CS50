@@ -31,7 +31,7 @@ int main(void)
         int h = j;
 
         int z[] = {a,b,c,d,e,f,g,h};
-        printf("%i*\n", z)
+        printf("%d\n",z)
     }
 }
 
