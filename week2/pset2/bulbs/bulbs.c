@@ -32,25 +32,26 @@ int main(void)
 
         int z[8] = {a,b,c,d,e,f,g,h};
 
-       printf("%i%i%i%i%i%i%i%i\n", z[0], z[1], z[2], z[3], z[4], z[5], z[6], z[7]);
-       void print_bulb(int z);
+        for(int t = 0; t < 8; t++)
+        {
+            if (z[t] == 0)
+            {
+                // Dark emoji
+                printf("\U000026AB");
+            }
+            else if (z[t] == 1)
+            {
+                // Light emoji
+                printf("\U0001F7E1");
+            }
+
+        }
+        printf("\n");
+
+
+
     }
 
 }
 
-void print_bulb(int z)
-{
-    for(int i = 0; i < 8; i++)
-    {
-    if (z[i] == 0)
-    {
-        // Dark emoji
-        printf("\U000026AB");
-    }
-    else if (z[i] == 1)
-    {
-        // Light emoji
-        printf("\U0001F7E1");
-    }
-    }
-}
+
