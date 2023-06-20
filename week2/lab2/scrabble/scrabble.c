@@ -22,8 +22,21 @@ int main(void)
 
     int compute_score(string word);
 
-    printf("%i %i\n", score1, score2);
-}
+    printf("Player 1 scored:%i \nPlayer 2 scored:%i\n", score1, score2);
+    if(score1 > score2)
+    {
+        printf("Player 1 Wins!\n");
+    }
+    else
+    {
+        if (score1 < score2)
+            {
+                printf("Player 2 Wins!\n");
+            }
+        else
+        {printf("Draw\n");
+        }
+    }
 
 int compute_score(string word)
 
@@ -41,7 +54,7 @@ int compute_score(string word)
                     int m = word[i];
                     m = m - 65;
                     array1[i] = POINTS[m];
-                    p = p + array1[i];
+                    p += array1[i];
                 }
 
 
