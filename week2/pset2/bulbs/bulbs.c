@@ -14,20 +14,23 @@ int main(void)
     for(int i = 0; i < n; i++)
     {
         int j = s[i];
-        int a = j / 64;
+        int a = j / 128;
         j = j - a;
-        int b = j / 32;
+        int b = j / 64;
         j = j - b;
-        int c = j / 16;
+        int c = j / 32;
         j = j - c;
-        int d = j / 8;
+        int d = j / 16;
         j = j - d;
-        int e = j / 4;
+        int e = j / 8;
         j = j - e;
-        int f = j / 2;
+        int f = j / 4;
         j = j - f;
-        int g = j;
-        printf("%i%i%i%i%i%i%i%i\n", a,b,c,d,e,f,g);
+        int g = j / 2;
+        j = j - g;
+        int h = j;
+
+        printf("%i%i%i%i%i%i%i%i\n", a,b,c,d,e,f,g,h);
     }
 }
 
