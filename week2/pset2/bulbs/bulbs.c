@@ -40,14 +40,17 @@ int main(void)
 
 void print_bulb(int z)
 {
-    if (z == 0)
+    for(int i = 0; i < 8; i++)
+    {
+    if (z[i] == 0)
     {
         // Dark emoji
         printf("\U000026AB");
     }
-    else if (z == 1)
+    else if (z[i] == 1)
     {
         // Light emoji
         printf("\U0001F7E1");
+    }
     }
 }
