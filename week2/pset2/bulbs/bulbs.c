@@ -48,8 +48,10 @@ int main(void)
         printf("\n");
 
 
-    }
 
+
+    }
+   printf("s[] = %i %i %i\n", s[0], s[1], s[2]);
 }
 
 
