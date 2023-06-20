@@ -33,6 +33,19 @@ int main(void)
 
         for(int t = 0; t < 8; t++)
         {
+            void print_bulb(int bit);
+        }
+        printf("\n");
+
+
+
+
+    }
+
+}
+
+void print_bulb(int bit);
+       {
             if (z[t] == 0)
             {
                 // Dark emoji
@@ -45,17 +58,3 @@ int main(void)
             }
 
         }
-        printf("\n");
-
-
-
-
-    }
-
-}
-
-string print_bulb(int bit);
-{
-    
-}
-
