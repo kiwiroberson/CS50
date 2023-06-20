@@ -54,4 +54,6 @@ int main(void)
 
 }
 
+string print_bulb(int bit);
+
 
