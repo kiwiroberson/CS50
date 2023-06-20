@@ -27,9 +27,8 @@ int main(void)
         int f = j / 2;
         j = j - f;
         int g = j;
+        printf("%i%i%i%i%i%i%i%i\n", a,b,c,d,e,f,g);
     }
-
-    printf()
 }
 
 void print_bulb(int bit)
