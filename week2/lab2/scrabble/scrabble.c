@@ -31,13 +31,16 @@ int compute_score(string word)
 
         {
             int array1[3];
-
+            
             for (int i = 0, n = strlen(word); i < n; i++)
                 {
-                    int m =  word[i] - 64;
+                    int m =  word[i];
                     array1[i] = POINTS[m];
                 }
 
-return printf("%i %i %i\n", array1[0], array1[1], array1[2]);
+
+             return
+             printf("%s\n", word);
+             printf("%i %i %i\n", array1[0], array1[1], array1[2]);
         }
 }
