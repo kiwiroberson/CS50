@@ -21,7 +21,7 @@ int main(void)
             z[l] = 0;
         }
 
-        for(int k = 7, l = 0; k > 0; k--, l++)
+        for(int k = 7, l = 0; k >= 0; k--, l++)
         {
             int m = pow(2,k);
             z[l] = j / m;
