@@ -28,6 +28,7 @@ int main(void)
         j - f;
         int g = j;
     }
+    
 }
 
 void print_bulb(int bit)
