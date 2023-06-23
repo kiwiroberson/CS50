@@ -8,6 +8,12 @@ int main(void)
 
     //Loop to count passage length in characters
 
+    for(i=0; i<3, i++)
+    {
+        
+    }
+
+
     //Loop to count number of spaces in passage.
     //Then calculate average word length.
     //average number of letters per 100 words in the text
