@@ -8,10 +8,16 @@ int main(void)
 
     //Loop to count passage length in characters
 
-    for(i=0; i<3, i++)
+   int  i=0;
+
+    do
     {
-        
+        i++;
     }
+    while(p[i] \= 0000);
+
+    printf("%i\n", i)
+
 
 
     //Loop to count number of spaces in passage.
