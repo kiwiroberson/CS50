@@ -10,6 +10,7 @@ int main(void)
     int  i = 0;
     int numspace = 0;
     int numperiod = 0;
+    float index = 0;
     do
     {
         if (p[i] == 32)
@@ -24,19 +25,21 @@ int main(void)
 
         i++;
 
-        int L = i / numspace * 100
-        int S = i / numperiod * 100
+        float L = i / numspace * 100;
+        float S = i / numperiod * 100;
 
-        int index = 0.0588 * L - 0.296 * S - 15.8
+        index = 0.0588 * L - 0.296 * S - 15.8;
 
-        
+
 
 
     }
     while(p[i] != 0000);
+
     printf("Passage Length: %i Characters\n", i);
     printf("Space number: %i Characters\n", numspace);
     printf("period number: %i Characters\n", numperiod);
+    printf("Index: %f \n", index);
 
     //Loop to count number of spaces in passage.
     //Then calculate average word length.
