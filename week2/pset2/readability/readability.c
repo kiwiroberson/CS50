@@ -1,7 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
+    string s = get_string("What text would you like to grade? ");
+
+
+
 
 }
