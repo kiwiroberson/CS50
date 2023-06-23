@@ -17,7 +17,7 @@ int main(void)
             numspace++;
         }
 
-        if (p[i] == 46||33||63)
+        if (p[i] == 46 | 33 | 63)
         {
             numperiod++;
         }
