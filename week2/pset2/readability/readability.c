@@ -24,7 +24,13 @@ int main(void)
 
         i++;
 
-        L = 
+        int L = i / numspace * 100
+        int S = i / numperiod * 100
+
+        int index = 0.0588 * L - 0.296 * S - 15.8
+
+        
+
 
     }
     while(p[i] != 0000);
