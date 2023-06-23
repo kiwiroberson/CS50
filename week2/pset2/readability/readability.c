@@ -10,6 +10,7 @@ int main(void)
     int  i=0;
     do
     {
+        if (p[i] = )
         i++;
     }
     while(p[i] != 0000);
