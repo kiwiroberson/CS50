@@ -5,7 +5,7 @@ int main(void)
 {
     string s = get_string("What text would you like to grade? ");
 
-
+    
 
 
 }
