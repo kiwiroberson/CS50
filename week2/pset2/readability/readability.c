@@ -18,7 +18,7 @@ int main(void)
 
     //Calculation - index = 0.0588 * L - 0.296 * S - 15.8
 
-    printf("%i\n", p[1]);
+    printf("%c\n", p[2]);
 
 
 
