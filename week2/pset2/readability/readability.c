@@ -14,9 +14,9 @@ int main(void)
     {
         i++;
     }
-    while(p[i] \= 0000);
+    while(p[i] != 0000);
 
-    printf("%i\n", i)
+    printf("%i\n", i);
 
 
 
