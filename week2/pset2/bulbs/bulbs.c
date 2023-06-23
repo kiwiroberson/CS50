@@ -29,8 +29,6 @@ int main(void)
 
         }
 
-
-
         for(int t = 0; t < 8; t++)
         {
             if (z[t] == 0)
