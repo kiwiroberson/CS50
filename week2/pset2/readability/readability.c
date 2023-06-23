@@ -23,6 +23,9 @@ int main(void)
         }
 
         i++;
+
+        L = 
+
     }
     while(p[i] != 0000);
     printf("Passage Length: %i Characters\n", i);
