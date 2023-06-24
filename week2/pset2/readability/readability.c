@@ -29,6 +29,8 @@ int main(void)
             numperiod++;
         }
 
+        if (         (p[i] > 1)  &&  (p[i] < 32)   ||  (p[i] > 1)  &&  (p[i] < 32)      )
+
         i++;
     }
     while(p[i] != 0000);
