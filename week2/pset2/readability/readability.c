@@ -33,15 +33,15 @@ int main(void)
     while(p[i] != 0000);
 
 
-    // NUMBER OF LETTERS PER WORD
-    int numlettersword = (i - numspace) / numspace;
+    // NUMBER OF LETTERS PER 100 WORD
+    int numlettersword = ((i - numspace) / numspace)*100;
 
 
-    //number of sentences per word
-    int numsentencesperword = numperiod / 
+    //number of sentences per 100 words
+    int numsentencesperword = (numperiod / numspace)*100;
 
-     printf("numlettersword: %i period:%i\n", numlettersword, numperiod);
-    printf("i: %i L:%i, S:%i\n", i, L, S);
+     printf("numlettersword: %i numsentencesperword:%i\n", numlettersword, numsentencesperword);
+
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
 
