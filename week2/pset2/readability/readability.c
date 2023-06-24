@@ -30,7 +30,7 @@ int main(void)
     int L = i / numspace * 100;
     int S = i / numperiod * 100;
 
-
+    printf("L:%i, S:%i\n", L, S);
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
 
