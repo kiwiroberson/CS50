@@ -10,7 +10,7 @@ int main(void)
     int  i = 0;
 
     //NUMBER OF WORDS
-    int numspace = 0;
+    int numspace = 1;
 
     //NUMBER OF SENTENCES
     int numperiod = 0;
