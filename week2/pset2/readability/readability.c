@@ -49,8 +49,8 @@ int main(void)
     indexf = round(indexf);
     int index = indexf;
 
-     printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
-     printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
+     //printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
+     //printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
 
     if(index > 16)
     {
@@ -58,7 +58,14 @@ int main(void)
     }
     else
     {
-        printf("Grade %i \n", index);
+        if ( index < 1)
+        {
+            printf("Before Grade 1\n");
+        }
+        else
+        {
+            printf("Grade %i \n", index);
+        }
     }
 
 
