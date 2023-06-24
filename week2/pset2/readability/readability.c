@@ -35,11 +35,11 @@ int main(void)
 
 
     // NUMBER OF LETTERS PER 100 WORD
-    float numletters100word = ((i - numspace - numperiod)*100 / numspace);
+    float numletters100word = ((i - numspace - numperiod) / numspace) * 100;
 
 
     //number of sentences per 100 words
-    float numsentencesper100word = ((numperiod*100) / numspace);
+    float numsentencesper100word = ((numperiod) / numspace) * 100;
 
     float L = numletters100word;
     float S = numsentencesper100word;
