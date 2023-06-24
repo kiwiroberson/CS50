@@ -8,8 +8,13 @@ int main(void)
 
     //Loop to count passage length in characters
     int  i = 0;
+
+    //NUMBER OF WORDS
     int numspace = 0;
+
+    //NUMBER OF SENTENCES
     int numperiod = 0;
+
     double index = 0;
     do
     {
@@ -27,10 +32,15 @@ int main(void)
     }
     while(p[i] != 0000);
 
-    int L = i / numspace * 100;
-    int S = i / numperiod * 100;
 
-     printf("space: %i period:%i\n", numspace, numperiod);
+    // NUMBER OF LETTERS PER WORD
+    int numlettersword = (i - numspace) / numspace;
+
+
+    //number of sentences per word
+    int numsentencesperword = numperiod / 
+
+     printf("numlettersword: %i period:%i\n", numlettersword, numperiod);
     printf("i: %i L:%i, S:%i\n", i, L, S);
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
