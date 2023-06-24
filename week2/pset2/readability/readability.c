@@ -41,7 +41,7 @@ int main(void)
     int numsentencesperword = (numperiod / numspace)*100;
 
      printf("numlettersword: %i numsentencesperword:%i\n", numlettersword, numsentencesperword);
-     printf("characters: %i, fullstops:%i, words:%i", i, numperiod, numspace);
+     printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
 
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
