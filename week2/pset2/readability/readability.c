@@ -44,13 +44,22 @@ int main(void)
     int L = numletters100word;
     int S = numsentencesper100word;
 
-    float index = 0.0588 * L - 0.296 * S - 15.8;
+    float indexf = 0.0588 * L - 0.296 * S - 15.8;
 
-    index = round(index);
+    indexf = round(indexf);
+    int index = indexf;
 
      printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
      printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
-     printf("Grade %f \n", index);
+
+    if(index > 16)
+    {
+        printf("Grade 16+");
+    }
+    else
+    {
+        printf("Grade %i \n", index);
+    }
 
 
 
