@@ -27,7 +27,7 @@ int main(void)
     }
     while(p[i] != 0000);
 
-    int L = i / numspace;
+    int L = i / numspace * 100;
     int S = i / numperiod * 100;
 
      printf("space: %i period:%i\n", numspace, numperiod);
