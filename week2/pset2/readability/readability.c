@@ -34,13 +34,13 @@ int main(void)
 
 
     // NUMBER OF LETTERS PER 100 WORD
-    int numlettersword = ((i - numspace) / numspace)*100;
+    int numletters100word = ((i - numspace) / numspace)*100;
 
 
     //number of sentences per 100 words
-    int numsentencesperword = ((numperiod*100) / numspace);
+    int numsentencesper100word = ((numperiod*100) / numspace);
 
-     printf("numlettersword: %i numsentencesperword:%i\n", numlettersword, numsentencesperword);
+     printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
      printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
 
 
