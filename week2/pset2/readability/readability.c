@@ -44,7 +44,7 @@ int main(void)
 
 
     // NUMBER OF LETTERS PER 100 WORD
-    float numletters100word = ((l - numspace - numperiod) * 100 / numspace);
+    float numletters100word = (l * 100 / numspace);
 
 
     //number of sentences per 100 words
