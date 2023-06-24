@@ -27,10 +27,10 @@ int main(void)
     }
     while(p[i] != 0000);
 
-    int L = i / numspace * 100;
-    int S = i / numperiod * 100;
+    int L = numspace / i * 100;
+    int S = numperiod / i * 100;
 
-    printf("L:%i, S:%i\n", L, S);
+    printf("i: %i L:%i, S:%i\n", i, L, S);
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
 
