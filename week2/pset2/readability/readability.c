@@ -11,10 +11,10 @@ int main(void)
     int  i = 0;
 
     //NUMBER OF WORDS
-    int numspace = 1;
+    float numspace = 1;
 
     //NUMBER OF SENTENCES
-    int numperiod = 0;
+    float numperiod = 0;
 
 
     do
