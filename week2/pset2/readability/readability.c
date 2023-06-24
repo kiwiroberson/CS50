@@ -38,7 +38,7 @@ int main(void)
 
 
     //number of sentences per 100 words
-    int numsentencesperword = (numperiod / numspace)*100;
+    int numsentencesperword = ((numperiod*100) / numspace);
 
      printf("numlettersword: %i numsentencesperword:%i\n", numlettersword, numsentencesperword);
      printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
