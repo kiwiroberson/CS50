@@ -15,7 +15,7 @@ int main(void)
     //NUMBER OF SENTENCES
     int numperiod = 0;
 
-    double index = 0;
+   
     do
     {
         if (p[i] == 32)
@@ -40,8 +40,16 @@ int main(void)
     //number of sentences per 100 words
     int numsentencesper100word = ((numperiod*100) / numspace);
 
+    int L = numletters100word;
+    int S = numsentencesper100word;
+
+    int index = 0.0588 * L - 0.296 * S - 15.8;
+
+
      printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
      printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
+     printf("Index: %i \n", index);
+
 
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
