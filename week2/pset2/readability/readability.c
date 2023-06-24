@@ -4,7 +4,7 @@
 int main(void)
 {
     // Get sample Sentence, save as variable.
-    string p = get_string("What text would you like to grade? ");
+    string p = get_string("Text: ");
 
     //Loop to count passage length in characters
     int  i = 0;
@@ -15,7 +15,7 @@ int main(void)
     //NUMBER OF SENTENCES
     int numperiod = 0;
 
-   
+
     do
     {
         if (p[i] == 32)
@@ -46,9 +46,9 @@ int main(void)
     int index = 0.0588 * L - 0.296 * S - 15.8;
 
 
-     printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
-     printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
-     printf("Index: %i \n", index);
+     //printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
+     //printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
+     printf("Grade %i \n", index);
 
 
 
