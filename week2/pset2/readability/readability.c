@@ -10,6 +10,10 @@ int main(void)
     //Loop to count passage length in characters
     int  i = 0;
 
+    //number of characters
+
+    float l = 0;
+
     //NUMBER OF WORDS
     float numspace = 1;
 
@@ -29,7 +33,10 @@ int main(void)
             numperiod++;
         }
 
-        if (         (p[i] > 1)  &&  (p[i] < 32)   ||  (p[i] > 1)  &&  (p[i] < 32)      )
+        if (((p[i] >= 65) && (p[i] <= 90)) || ((p[i] >= 97) && (p[i] <= 122)))
+        {
+            l++;
+        }
 
         i++;
     }
@@ -37,7 +44,7 @@ int main(void)
 
 
     // NUMBER OF LETTERS PER 100 WORD
-    float numletters100word = ((i - numspace - numperiod) * 100 / numspace);
+    float numletters100word = ((l - numspace - numperiod) * 100 / numspace);
 
 
     //number of sentences per 100 words
