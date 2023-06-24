@@ -46,7 +46,7 @@ int main(void)
 
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
-    int round(float index);
+    double round(double index);
 
      printf("numletters100word: %i numsentencesper100word:%i\n", numletters100word, numsentencesper100word);
      printf("characters: %i, fullstops:%i, words:%i\n", i, numperiod, numspace);
