@@ -3,6 +3,9 @@
 #include <math.h>
 
 int count_letters(string passage);
+int count_words(string passage);
+int count_sentences(string passage);
+
 
 int main(void)
 {
@@ -23,6 +26,9 @@ int main(void)
     float numperiod = 0;
 
    int lettercount = count_letters(p);
+   int sentencecount = count_sentences(p);
+   int wordcount = count_words(p);
+
 
 
 
@@ -83,6 +89,8 @@ int main(void)
     }
 
      printf("Letters %i\n", lettercount);
+     printf("Words %i\n", wordcount);
+      printf("Sentence %i\n", sentencecount);
 }
 
 
@@ -103,11 +111,26 @@ int count_letters(string p)
 
 int count_words(string p)
 {
-    int g = 0;
+    int g = 1;
     int j = 0;
     while (p[j] != 0000)
     {
     if (p[j]==32)
+    {
+        g++;
+    }
+    j++;
+    }
+    return g;
+}
+
+int count_sentences(string p)
+{
+    int g = 0;
+    int j = 0;
+    while (p[j] != 0000)
+    {
+    if ((p[j] == 46)||(p[j] == 33)||(p[j] == 63))
     {
         g++;
     }
