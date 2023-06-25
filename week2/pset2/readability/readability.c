@@ -82,7 +82,7 @@ int main(void)
         }
     }
 
-     printf("Letters %i\n", g);
+     printf("Letters %i\n", lettercount);
 }
 
 
