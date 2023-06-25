@@ -13,9 +13,9 @@ int main(void)
     string p = get_string("Text: ");
 
     //Functions
-   int lettercount = count_letters(p);
-   int sentencecount = count_sentences(p);
-   int wordcount = count_words(p);
+   float lettercount = count_letters(p);
+   float sentencecount = count_sentences(p);
+   float wordcount = count_words(p);
 
     // NUMBER OF LETTERS PER 100 WORD
     float L = (lettercount * 100 / wordcount);
