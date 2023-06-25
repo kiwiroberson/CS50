@@ -46,9 +46,9 @@ int main(void)
         }
     }
 
-    printf("Letters %i\n", lettercount);
-    printf("Words %i\n", wordcount);
-    printf("Sentence %i\n", sentencecount);
+    //printf("Letters %i\n", lettercount);
+    //printf("Words %i\n", wordcount);
+    //printf("Sentence %i\n", sentencecount);
 }
 
 
