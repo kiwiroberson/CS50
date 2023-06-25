@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 
+int count_letters(string text)
+
 int main(void)
 {
     // Get sample Sentence, save as variable.
@@ -19,6 +21,9 @@ int main(void)
 
     //NUMBER OF SENTENCES
     float numperiod = 0;
+
+    int count_letters(string text)
+
 
 
     do
