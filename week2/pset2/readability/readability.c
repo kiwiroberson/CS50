@@ -22,7 +22,7 @@ int main(void)
     //NUMBER OF SENTENCES
     float numperiod = 0;
 
-    int count_letters(string p);
+   int count_letters(string p);
 
 
 
@@ -81,20 +81,24 @@ int main(void)
             printf("Grade %i\n", index);
         }
     }
+
+     printf("Letters %i\n", x);
 }
 
 
-int count_letters()
+int count_letters(string p)
 {
     int g = 0;
-    for (int j = 0, p[j] != 0000; j++)
+    int j = 0;
+    while (p[j] != 0000)
     {
-    if (((p[i] >= 65) && (p[i] <= 90)) || ((p[i] >= 97) && (p[i] <= 122)))
+    if (((p[j] >= 65) && (p[j] <= 90)) || ((p[j] >= 97) && (p[j] <= 122)))
     {
         g++;
     }
+    j++;
     }
-    return g
+    return g;
 }
 
 
@@ -119,4 +123,3 @@ int count_letters()
 
 
 
-}
