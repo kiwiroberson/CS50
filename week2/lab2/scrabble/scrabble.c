@@ -56,7 +56,7 @@ int main(void)
 
 
 
-int compute_score(string word)
+int compute_score(string p)
 //Compute and return score for string
 {
 

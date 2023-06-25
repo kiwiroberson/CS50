@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int count_letters(string p);
+int count_letters(string passage);
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
     //NUMBER OF SENTENCES
     float numperiod = 0;
 
-   int count_letters(string p);
+   int lettercount = count_letters(p);
 
 
 
@@ -82,7 +82,7 @@ int main(void)
         }
     }
 
-     printf("Letters %i\n", x);
+     printf("Letters %i\n", g);
 }
 
 
