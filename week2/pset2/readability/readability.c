@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int count_letters(string text)
+int count_letters(string p);
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
     //NUMBER OF SENTENCES
     float numperiod = 0;
 
-    int count_letters(string text)
+    int count_letters(string p);
 
 
 
@@ -81,11 +81,20 @@ int main(void)
             printf("Grade %i\n", index);
         }
     }
+}
 
 
-int count_letters(string text)
+int count_letters()
 {
-    
+    int g = 0;
+    for (int j = 0, p[j] != 0000; j++)
+    {
+    if (((p[i] >= 65) && (p[i] <= 90)) || ((p[i] >= 97) && (p[i] <= 122)))
+    {
+        g++;
+    }
+    }
+    return g
 }
 
 
