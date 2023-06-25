@@ -49,7 +49,7 @@ int main(void)
 
 
     // NUMBER OF LETTERS PER 100 WORD
-    float numletters100word = (l * 100 / numspace);
+    float numletters100word = (lettercount * 100 / numspace);
 
 
     //number of sentences per 100 words
@@ -101,6 +101,20 @@ int count_letters(string p)
     return g;
 }
 
+int count_words(string p)
+{
+    int g = 0;
+    int j = 0;
+    while (p[j] != 0000)
+    {
+    if (p[j]==32)
+    {
+        g++;
+    }
+    j++;
+    }
+    return g;
+}
 
     //index = 0.0588 * L - 0.296 * S - 15.8;
 
