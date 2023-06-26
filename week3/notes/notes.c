@@ -14,10 +14,12 @@
 
     // selection sort
         //swap smallest number to start as you move along on sequential reads
-        //proportional to n^2
+        //proportional to n^2 in best and worst case
+        //theta
 
     //bubble sort
         //largest numbers bubble up to the top
+        //
 
 int Linear_search(doors)
 
