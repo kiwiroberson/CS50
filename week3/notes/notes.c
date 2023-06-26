@@ -5,8 +5,14 @@
 
 //linear search
 //search each value from L-->R if found return treue
-/binary search starts in middle
+//binary search starts in middle
 
+
+//make struct data types
+
+//In searchng sorting data important to search quickly
+
+    //
 
 int Linear_search(doors)
 
