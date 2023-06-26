@@ -16,7 +16,8 @@
         //swap smallest number to start as you move along on sequential reads
 
     //bubble sort
-
+        //largest numbers bubble up to the top
+        
 int Linear_search(doors)
 
 
