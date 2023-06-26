@@ -5,6 +5,9 @@
 
 //linear search
 //search each value from L-->R if found return treue
+/binary search starts in middle
+
+
 int Linear_search(doors)
 
 
