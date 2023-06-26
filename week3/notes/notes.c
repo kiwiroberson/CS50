@@ -5,7 +5,7 @@
 
 //linear search
 //search each value from L-->R if found return treue
-bool Linear_search(doors)
+int Linear_search(doors)
 
 
 
@@ -13,26 +13,27 @@ int main(void)
 {
 
 int door[1] = get_int("int: ");
-bool Linear_search(doors);
+int x = Linear_search(doors);
 
+printf("%i\n", x);
 }
 
 
 
-bool Linear_search(doors)
+int Linear_search(doors)
 {
 
     while (i < 5);
     {
         if (doors[i] == 50)
         {
-            return true;
+            return 1;
         }
         else
         {
             i++;
         }
     }
-    return false;
+    return 0;
 }
 
