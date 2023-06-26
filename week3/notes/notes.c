@@ -8,10 +8,11 @@
 bool Linear_search(doors)
 
 
-int main (void)
+
+int main(void)
 {
 
-door[1] = get_int("int: ");
+int door[1] = get_int("int: ");
 bool Linear_search(doors);
 
 }
