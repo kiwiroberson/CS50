@@ -1,22 +1,16 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
 
-//Search algorithm
 
-//linear search
-//search each value from L-->R if found return treue
 int Linear_search(doors)
-
 
 int main(void)
 {
-    int door[1] = get_int("int: ");
+ int doors[1] = get_int("int: ");
     int x = Linear_search(doors);
 
     printf("%i\n", x);
 }
-
-
 
 int Linear_search(doors)
 {
