@@ -12,7 +12,10 @@
 
 //In searchng sorting data important to search quickly
 
-    //
+    // selection sort
+        //swap smallest number to start as you move along on sequential reads
+
+    //bubble sort
 
 int Linear_search(doors)
 
