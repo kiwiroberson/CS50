@@ -25,5 +25,6 @@ int main(void)
 
 int convert(string input)
 {
-    // TODO
+    int n = strlen(input)
+    input[n]
 }
