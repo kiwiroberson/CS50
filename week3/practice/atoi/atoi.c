@@ -26,5 +26,9 @@ int main(void)
 int convert(string input)
 {
     int n = strlen(input)
+
+    if (n == 1)
+        
+
     input[n]
 }
