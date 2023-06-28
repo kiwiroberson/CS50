@@ -43,23 +43,17 @@
 Collatz conjecture
 
     //
- int i = 0
-int collatz (integer)
-    {
+int collatz (int n)
+{
+    //base case
     if (n == 1)
-    {
-        return (0 + i)
-    }
-    if (n is even)
-    {
-        n = n / 2
-    }
+        return (0 + i);
+    //even numbers
+    else if ((n % 2) == 0)
+        return 1 + collatz(n / 2);
+    //odd numbers
     else
-    {
-        n = 3 * n + 1
-    }
-    i++
-    int collatz (n);
+        return 1 + collatz( 3 * n + 1);
 }
 
 int Linear_search(doors)
