@@ -21,6 +21,25 @@
         //largest numbers bubble up to the top
         //
 
+    //Merge sort
+        //Sort left half numbers,
+            //Sort left half of that
+                //Sort left half of that
+                    //One number left
+                    //Sort right half
+                    //Merge
+                //Sort right half
+                //Merge
+            //Sort right half
+            //Merge
+        //Sort right half
+        //Merge
+        //List fully sorted!
+
+        
+
+
+
 int Linear_search(doors)
 
 
