@@ -30,8 +30,11 @@ int convert(string input)
     if (n == 1)
         return int input[n - 1];
     else
-        return convert(input) + 
-
+    {
+        return int input[n - 1];
+        DELETE INPUT [n - 1];
+        convert(input);
+    }
 
     input[n]
 }
