@@ -27,11 +27,11 @@ int convert(string input)
 {
     int n = strlen(input);
     if (n == 1)
-        return ((input[n - 1]) - 48);
+        return ();
     else
     {
         input[n - 1] = '\0';
-        return 10 * convert(input) + ((input[n - 1]));
+        return 10 * convert(input) + (input[n - 1]);
     }
 
 }
