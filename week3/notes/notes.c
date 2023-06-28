@@ -35,8 +35,8 @@
         //Sort right half
         //Merge
         //List fully sorted!
+        //Actually this is the same step being undertaken recersivly.....
 
-        
 
 
 
