@@ -32,7 +32,7 @@ int convert(string input)
     else
     {
         input[n - 1] = '\0';
-        return 10 * convert(input) + o;
+        return o + 10 * convert(input);
     }
 
 }
