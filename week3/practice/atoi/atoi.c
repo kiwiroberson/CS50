@@ -31,8 +31,8 @@ int convert(string input)
         return ((input[n - 1]) - 48);
     else
     {
-      
-        return n * convert(input);
+        input[n - 1] = 0;
+        return convert(input);
     }
 
 }
