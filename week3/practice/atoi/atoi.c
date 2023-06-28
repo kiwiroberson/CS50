@@ -32,7 +32,7 @@ int convert(string input)
     else
     {
         input[n - 1] = 0;
-        return convert(input);
+        return convert(input) + ((input[n - 1]) - 48) ;
     }
 
 }
