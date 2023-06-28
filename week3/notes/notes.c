@@ -36,6 +36,8 @@
         //Merge
         //List fully sorted!
         //Actually this is the same step being undertaken recersivly.....
+        //Runnning time of n Log n
+        
 
 
 
