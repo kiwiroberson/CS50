@@ -26,12 +26,13 @@ int main(void)
 int convert(string input)
 {
     int n = strlen(input);
+    int o = input[n - 1] - 48;
     if (n == 1)
-        return ();
+        return o;
     else
     {
         input[n - 1] = '\0';
-        return 10 * convert(input) + (input[n - 1]);
+        return 10 * convert(input) + o;
     }
 
 }
