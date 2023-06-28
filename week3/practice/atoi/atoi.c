@@ -25,16 +25,16 @@ int main(void)
 
 int convert(string input)
 {
-    int n = strlen(input)
+    int n = strlen(input);
 
     if (n == 1)
-        return int ((input[n - 1]) - 48);
+        return ((input[n - 1]) - 48);
     else
     {
-        return int input[n - 1];
-        DELETE INPUT [n - 1];
+        return input[n - 1];
+        input[n - 1] = 92;
+        input[n] = 0;
         convert(input);
     }
 
-    input[n]
 }
