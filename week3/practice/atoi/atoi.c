@@ -30,7 +30,7 @@ int convert(string input)
         return ((input[n - 1]) - 48);
     else
     {
-        input[n - 1] = NUL;
+        input[n - 1] = '\0';
         return 10 * convert(input);
     }
 
