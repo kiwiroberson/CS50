@@ -28,7 +28,7 @@ int convert(string input)
     int n = strlen(input)
 
     if (n == 1)
-        return int input[n - 1];
+        return int ((input[n - 1]) - 48);
     else
     {
         return int input[n - 1];
