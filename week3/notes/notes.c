@@ -43,7 +43,7 @@
 Collatz conjecture
 
     //
-
+ int i = 0
 int collatz (integer)
     {
     if (n == 1)
@@ -59,6 +59,7 @@ int collatz (integer)
         n = 3 * n + 1
     }
     i++
+    int collatz (n);
 }
 
 int Linear_search(doors)
