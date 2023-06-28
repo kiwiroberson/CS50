@@ -38,9 +38,11 @@
         //Actually this is the same step being undertaken recersivly.....
         //Runnning time of n Log n
         //Needs to use additonal memory space for sotring axillary array before merging.
-        
 
 
+Collatz conjecture
+
+    // 
 
 
 int Linear_search(doors)
