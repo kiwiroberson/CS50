@@ -65,7 +65,7 @@ int main(void)
 void sort_cities(void)
 {
 
-    if (k < NUM_CITIES)
+    if (k >= NUM_CITIES)
         return 1;
     if temps[j].temp > temps[j + 1].temp;
         {temps.[NUM_CITIES + 1] = temps[j].temp;
