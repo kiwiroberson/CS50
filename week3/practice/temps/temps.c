@@ -66,7 +66,7 @@ void sort_cities(void)
     if (k >= NUM_CITIES)
         return 1;
         for ( int k = 0; k < NUM_CITIES; k++)
-            int l = NUM_CITIES - k;
+            {int l = NUM_CITIES - k;
             if temps[j].temp > temps[j + 1].temp;
         {temps.[NUM_CITIES + 1] = temps[j].temp;
         temps[j].temp = temps[j + 1].temp;
