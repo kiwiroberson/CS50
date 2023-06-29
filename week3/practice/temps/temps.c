@@ -72,6 +72,7 @@ void sort_cities(void)
         temps[j].temp = temps[j + 1].temp;
         temps[j + 1].temp = temps.[NUM_CITIES + 1];
         temps.[NUM_CITIES + 1] = 0;
+        j++;
         k++;
         sort_cities();
         }
