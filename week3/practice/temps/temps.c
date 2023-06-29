@@ -76,4 +76,10 @@ void sort_cities(void)
         k++;
         sort_cities();
         }
+        else
+        {
+            j++;
+            sort_cities();
+        }
+
 }
