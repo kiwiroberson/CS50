@@ -49,6 +49,7 @@ int main(void)
     temps[9].city = "San Francisco";
     temps[9].temp = 66;
 
+    j = 0;
     sort_cities();
 
     printf("\nAverage July Temperatures by City\n\n");
@@ -62,5 +63,9 @@ int main(void)
 // TODO: Sort cities by temperature in descending order
 void sort_cities(void)
 {
+
     if (temps[i])
+        return 1;
+    if temps[j].temp > temps[j + 1].temp
+        //swap
 }
