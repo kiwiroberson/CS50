@@ -30,7 +30,7 @@ int convert(string input)
     if (n == 1)
         return o;
     else
-    {
+    {cdweek3/pract
         input[n - 1] = '\0';
         return o + 10 * convert(input);
     }
