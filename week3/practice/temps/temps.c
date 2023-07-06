@@ -17,6 +17,8 @@ avg_temp temps[NUM_CITIES];
 
 void sort_cities(void);
 
+int l = 0;
+
 int main(void)
 {
     temps[0].city = "Austin";
@@ -56,30 +58,42 @@ int main(void)
     for (int i = 0; i < NUM_CITIES; i++)
     {
         printf("%s: %i\n", temps[i].city, temps[i].temp);
+
     }
+      printf("runs:%i\n", l);
 }
 
 // TODO: Sort cities by temperature in descending order
 void sort_cities(void)
 {
-
-    if (k >= NUM_CITIES)
-        return 1;
-        for ( int k = 0 int l = NUM_CITIES - k; k < l; k++)
-            {int l = NUM_CITIES - k;
-            if temps[j].temp > temps[j + 1].temp;
-        {temps.[NUM_CITIES + 1] = temps[j].temp;
-        temps[j].temp = temps[j + 1].temp;
-        temps[j + 1].temp = temps.[NUM_CITIES + 1];
-        temps.[NUM_CITIES + 1] = 0;
-        j++;
-        k++;
-        sort_cities();
-        }
-        else
+    //run loop NUM_CITIES times from 0 to
+    for (int j = 0; j < NUM_CITIES; j++)
+    {
+        //compare .temp position 0 and 1, if position 0 > position 1 then swap positons and rerun loop at next positon.
+        for (int k = 0; k < NUM_CITIES - 1 - j; k++)
         {
-            j++;
-            sort_cities();
+            if (temps[k].temp < temps[k + 1].temp)
+            {
+                avg_temp  temporary_element[1];
+                temporary_element[0] = temps[k];
+                temps[k] = temps [k + 1];
+                temps[k + 1] = temporary_element[0];
+                l++;
+
+            }
+            //else keep in situ and rerun loop after incremment.
+            else
+            {
+               l++;
+            }
         }
 
+    }
 }
+
+
+
+
+
+
+
