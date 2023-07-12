@@ -18,7 +18,7 @@ candidate candidates[MAX];
 
 // Number of candidates
 int candidate_count;
-
+int j = 0;
 
 // Function prototypes
 bool vote(string name);
@@ -67,7 +67,11 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    if
+    if (j == candidate_count)
+    {
+        return false
+    }
+    if( name = )
 
 
 
