@@ -97,18 +97,11 @@ void bubble_run(void)
                 temporary_element[0] = temps[k];
                 temps[k] = temps [k + 1];
                 temps[k + 1] = temporary_element[0];
-                k++;
-                l++;
-                bubble_run();
+
 
             }
-            //else keep in situ and rerun loop after incremment.
-            else
-            {
-                k++;
-                l++;
-                bubble_run();
-            }
+            k++;
+            bubble_run();
     }
 
 }
