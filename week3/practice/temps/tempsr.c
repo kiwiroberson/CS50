@@ -78,8 +78,8 @@ void sort_cities(void)
     {
         l++;
         j++;
-        bubble_run()
-        sort_cities()
+        bubble_run();
+        sort_cities();
     }
 }
 
@@ -99,7 +99,7 @@ void bubble_run(void)
                 temps[k + 1] = temporary_element[0];
                 k++;
                 l++;
-                bubble_run()
+                bubble_run();
 
             }
             //else keep in situ and rerun loop after incremment.
@@ -107,7 +107,7 @@ void bubble_run(void)
             {
                 k++;
                 l++;
-                bubble_run()
+                bubble_run();
             }
     }
 
