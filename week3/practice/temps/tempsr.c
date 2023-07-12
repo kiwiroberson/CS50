@@ -19,6 +19,7 @@ void sort_cities(void);
 void bubble_run(void);
 
 int l = 0;
+int m = 0;
 int j = 0;
 int k = 0;
 
@@ -63,7 +64,7 @@ int main(void)
         printf("%s: %i\n", temps[i].city, temps[i].temp);
 
     }
-      printf("runs:%i\n", l);
+      printf("runs1:%i runs2:%i\n", l, m);
 }
 
 // TODO: Sort cities by temperature in descending order
@@ -74,13 +75,11 @@ void sort_cities(void)
     {
         return;
     }
-    else
-    {
-        l++;
-        j++;
-        bubble_run();
-        sort_cities();
-    }
+    l++;
+    j++;
+    bubble_run();
+    sort_cities();
+
 }
 
 void bubble_run(void)
@@ -89,19 +88,18 @@ void bubble_run(void)
     {
         return;
     }
-    else
-    {
-         if (temps[k].temp < temps[k + 1].temp)
+    if (temps[k].temp < temps[k + 1].temp)
             {
                 avg_temp  temporary_element[1];
                 temporary_element[0] = temps[k];
                 temps[k] = temps [k + 1];
                 temps[k + 1] = temporary_element[0];
             }
+        
             k++;
-            l++;
+            m++;
             bubble_run();
-    }
+   }
 
-}
+
 
