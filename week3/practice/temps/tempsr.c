@@ -94,11 +94,16 @@ void bubble_run(void)
                 temporary_element[0] = temps[k];
                 temps[k] = temps [k + 1];
                 temps[k + 1] = temporary_element[0];
-            }
-        
-            k++;
+                k++;
             m++;
             bubble_run();
+            }
+else{
+     k++;
+            m++;
+            bubble_run();
+}
+
    }
 
 
