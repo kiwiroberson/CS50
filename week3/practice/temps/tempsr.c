@@ -72,4 +72,9 @@ void sort_cities(void)
     {
         return;
     }
-    
+    else
+    {
+        bubble_run()
+    }
+}
+
