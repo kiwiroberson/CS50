@@ -1,8 +1,7 @@
-sort1 uses: TODO
+sort1 uses: bubble sort
+worst case proportial to n^2, best case proportional to n
 
-
-
-How do you know?: TODO
+How do you know?:
 random 5000 : 0.073
 random 50000: 12.7 sec
 reversed 5000: 0.085
@@ -14,6 +13,7 @@ sort2 uses: Merge sort
 
 How do you know?:
 Increase in time to excessly prortionl to increase in problem.
+proportioal to the logn
 random 5000 : 0.054
 random 50000: 1.2
 reversed 5000: 0.049
@@ -21,9 +21,9 @@ reversed 50000: 2.2
 sorted 50000: 1.4
 
 
-sort3 uses:
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?: best and worse cases take the same amount o time, proportional ton n^2
 random 5000 : 0.045
 random 50000: 6.3
 reversed 5000: 0.049
