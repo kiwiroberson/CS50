@@ -20,6 +20,7 @@ void bubble_run(void);
 
 int l = 0;
 int j = 0;
+int k = 0;
 
 int main(void)
 {
@@ -87,6 +88,7 @@ void bubble_run(void)
     if (k == NUM_CITIES - j)
     {
         l++;
+        k++;
         return;
     }
 }
