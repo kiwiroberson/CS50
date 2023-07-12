@@ -77,11 +77,9 @@ bool vote(string name)
         candidates[j].votes = candidates[j].votes + 1;
         return true;
     }
-    else
-    {
+
         j++;
         vote(name);
-    }
 
 }
 
