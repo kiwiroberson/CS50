@@ -67,7 +67,11 @@ int main(void)
 void sort_cities(void)
 {
     //run loop NUM_CITIES times from 0 to
-    for (int j = 0; j < NUM_CITIES; j++)
+    if (j = NUM_CITIES)
+    {
+        return;
+    }
+    else
     {
         //compare .temp position 0 and 1, if position 0 > position 1 then swap positons and rerun loop at next positon.
         for (int k = 0; k < NUM_CITIES - 1 - j; k++)
@@ -78,6 +82,7 @@ void sort_cities(void)
                 temporary_element[0] = temps[k];
                 temps[k] = temps [k + 1];
                 temps[k + 1] = temporary_element[0];
+                j++;
                 l++;
 
             }
