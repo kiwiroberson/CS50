@@ -90,6 +90,7 @@ void sort_cities(void)
             //else keep in situ and rerun loop after incremment.
             else
             {
+                
                l++;
             }
         }
