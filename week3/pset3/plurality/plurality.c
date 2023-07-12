@@ -71,7 +71,7 @@ bool vote(string name)
     {
         return false
     }
-    if( name = )
+    if(name = )
 
 
 
