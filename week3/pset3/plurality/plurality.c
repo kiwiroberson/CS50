@@ -67,14 +67,21 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
+    if (j == candidate_count)
+    {
+        j = 0;
+        return false;
+    }
     if(name == candidates[j].name)
     {
         candidates[j].votes = candidates[j].votes + 1;
+        j = 0;
         return true;
     }
 
         j++;
         vote(name);
+        return false;
 
 }
 
