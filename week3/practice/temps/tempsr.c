@@ -72,34 +72,4 @@ void sort_cities(void)
     {
         return;
     }
-    else
-    {
-        //compare .temp position 0 and 1, if position 0 > position 1 then swap positons and rerun loop at next positon.
-        j++;
-        for (int k = 0; k < NUM_CITIES - 1 - j; k++)
-        {
-            if (temps[k].temp < temps[k + 1].temp)
-            {
-                avg_temp  temporary_element[1];
-                temporary_element[0] = temps[k];
-                temps[k] = temps [k + 1];
-                temps[k + 1] = temporary_element[0];
-                l++;
-
-            }
-            //else keep in situ and rerun loop after incremment.
-            else
-            {
-               l++;
-            }
-        }
-
-    }
-}
-
-
-
-
-
-
-
+    
