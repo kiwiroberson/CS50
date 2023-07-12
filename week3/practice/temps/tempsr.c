@@ -16,6 +16,7 @@ avg_temp;
 avg_temp temps[NUM_CITIES];
 
 void sort_cities(void);
+void bubble_run(void);
 
 int l = 0;
 int j = 0;
@@ -74,7 +75,19 @@ void sort_cities(void)
     }
     else
     {
+        l++;
+        j++;
         bubble_run()
+        sort_cities()
+    }
+}
+
+void bubble_run(void)
+{
+    if (k == NUM_CITIES - j)
+    {
+        l++;
+        return;
     }
 }
 
