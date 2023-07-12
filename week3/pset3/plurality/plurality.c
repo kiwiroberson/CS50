@@ -19,6 +19,7 @@ candidate candidates[MAX];
 // Number of candidates
 int candidate_count;
 
+
 // Function prototypes
 bool vote(string name);
 void print_winner(void);
@@ -66,7 +67,11 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    if
+
+
+
+
     return false;
 }
 
