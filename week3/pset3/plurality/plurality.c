@@ -80,8 +80,8 @@ bool vote(string name)
     }
 
         j++;
-        vote();
-        return false;
+        vote(name);
+        return true;
 
 }
 
