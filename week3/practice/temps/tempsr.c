@@ -86,6 +86,7 @@ void bubble_run(void)
 {
     if (k == 10)
     {
+        k = 0;
         return;
     }
     if (temps[k].temp < temps[k + 1].temp)
