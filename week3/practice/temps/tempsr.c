@@ -18,6 +18,7 @@ avg_temp temps[NUM_CITIES];
 void sort_cities(void);
 
 int l = 0;
+int j = 0;
 
 int main(void)
 {
@@ -67,7 +68,7 @@ int main(void)
 void sort_cities(void)
 {
     //run loop NUM_CITIES times from 0 to
-    if (j = NUM_CITIES)
+    if (j == NUM_CITIES)
     {
         return;
     }
