@@ -84,7 +84,7 @@ void sort_cities(void)
 
 void bubble_run(void)
 {
-    if (k == 10)
+    if (k == NUM_CITIES - j)
     {
         k = 0;
         return;
@@ -96,16 +96,17 @@ void bubble_run(void)
                 temps[k] = temps [k + 1];
                 temps[k + 1] = temporary_element[0];
                 k++;
-            m++;
-            bubble_run();
+                m++;
+                bubble_run();
             }
-else{
-     k++;
-            m++;
-            bubble_run();
-}
+    else
+    {
+        k++;
+        m++;
+        bubble_run();
+    }
 
-   }
+}
 
 
 
