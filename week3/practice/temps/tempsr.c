@@ -91,5 +91,9 @@ void bubble_run(void)
         k++;
         return;
     }
+    else
+    {
+        
+    }
 }
 
