@@ -70,7 +70,7 @@ bool vote(string name)
     if (j == candidate_count)
     {
         j = 0;
-        return false;
+        return true;
     }
     if(name == candidates[j].name)
     {
