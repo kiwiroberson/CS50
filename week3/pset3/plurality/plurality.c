@@ -18,7 +18,7 @@ candidate candidates[MAX];
 
 // Number of candidates
 int candidate_count;
-int j = 0;
+
 
 // Function prototypes
 bool vote(string name);
@@ -67,22 +67,16 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    if (j == candidate_count)
+    for (int j = 0; j < candidate_count; j++)
     {
-        j = 0;
+        if(name == candidates[j].name)
+        {
+            candidates[j].votes = candidates[j].votes + 1;
+            return true;
+        }
         return false;
     }
-    if(name == candidates[j].name)
-    {
-        candidates[j].votes = candidates[j].votes + 1;
-        j = 0;
-        return true;
-    }
-
-        j++;
-        vote(name);
-        return true;
-
+ return false
 }
 
 // Print the winner (or winners) of the election
