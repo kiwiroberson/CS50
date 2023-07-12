@@ -69,16 +69,17 @@ bool vote(string name)
 {
     if (j == candidate_count)
     {
+        j = 0;
         return false;
     }
-    if(name = candidates[j].name)
+    if(name == candidates[j].name)
     {
-        candidates[j].votes = candidates[j].votes + 1
-        j++;
+        candidates[j].votes = candidates[j].votes + 1;
         return true;
     }
     else
     {
+        j++;
         vote(name);
     }
 
