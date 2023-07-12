@@ -85,28 +85,31 @@ void sort_cities(void)
 
 void bubble_run(void)
 {
-    if (k == NUM_CITIES - j)
+    if (k == 10)
     {
-        l++;
-        k++;
         return;
     }
     else
     {
-        if (temps[k].temp < temps[k + 1].temp)
-        {
-            avg_temp  temporary_element[1];
-            temporary_element[0] = temps[k];
-            temps[k] = temps [k + 1];
-            temps[k + 1] = temporary_element[0];
-            k++;
-            l++;
-            return;
-        }
-        else;
-        {
-            l++;
-        }
+         if (temps[k].temp < temps[k + 1].temp)
+            {
+                avg_temp  temporary_element[1];
+                temporary_element[0] = temps[k];
+                temps[k] = temps [k + 1];
+                temps[k + 1] = temporary_element[0];
+                k++;
+                l++;
+                bubble_run()
+
+            }
+            //else keep in situ and rerun loop after incremment.
+            else
+            {
+                k++;
+                l++;
+                bubble_run()
+            }
     }
+
 }
 
