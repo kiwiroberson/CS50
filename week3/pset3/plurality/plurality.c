@@ -57,7 +57,9 @@ int main(int argc, string argv[])
         if (!vote(name))
         {
             printf("Invalid vote.\n");
+
         }
+        printf("Candidate 1: %s%i"candidates[1].name, candidates[1].votes)
     }
 
     // Display winner of election
