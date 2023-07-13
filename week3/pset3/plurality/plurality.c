@@ -24,6 +24,8 @@ int candidate_count;
 bool vote(string name);
 void print_winner(void);
 
+int k = 0;
+
 int main(int argc, string argv[])
 {
     // Check for invalid usage
@@ -74,7 +76,7 @@ bool vote(string name)
     {
         if(name == candidates[1].name)
         {
-            candidates[1].votes =  1;
+            k++;
             return true;
         }
 
