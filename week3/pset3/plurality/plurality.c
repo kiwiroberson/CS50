@@ -59,7 +59,7 @@ int main(int argc, string argv[])
             printf("Invalid vote.\n");
 
         }
-        printf( "Candidate 1: %i" candidates[1].votes);
+        printf( "Candidate 1: % i\n") candidates[1].votes;
     }
 
     // Display winner of election
