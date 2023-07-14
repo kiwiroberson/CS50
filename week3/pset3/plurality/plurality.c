@@ -25,6 +25,8 @@ bool vote(string name);
 void print_winner(void);
 
 int k = 0;
+int l = 0;
+string a = "James";
 
 int main(int argc, string argv[])
 {
@@ -61,7 +63,17 @@ int main(int argc, string argv[])
             printf("Invalid vote.\n");
 
         }
-        printf("Candidate 1: %s,%i\n", candidates[1].name , k);
+
+        if(!strcmp("James", candidates[1].name))
+        {
+            printf("Matched\n");
+
+        }
+        else
+        {
+            printf("unmatched\n");
+        }
+        printf("Candidate 1: %s votes:%i\n", candidates[1].name , k);
 
     }
 
@@ -72,17 +84,14 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    for (int j = 0; j < candidate_count; j++)
+    for (int j = 1; j < candidate_count+1; j++)
     {
-        if(name == candidates[1].name)
-        {
-            k++;
-            return true;
-        }
 
-    }
- return true;
+
+        }
+         return false;
 }
+
 
 // Print the winner (or winners) of the election
 void print_winner(void)
