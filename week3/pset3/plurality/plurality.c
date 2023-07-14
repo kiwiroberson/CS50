@@ -64,7 +64,9 @@ int main(int argc, string argv[])
 
         }
 
-        if(!strcmp("James", candidates[1].name))
+string b = James
+
+        if(!strcmp(b , candidates[1].name))
         {
             printf("Matched\n");
 
