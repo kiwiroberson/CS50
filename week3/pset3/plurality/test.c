@@ -20,7 +20,7 @@ int main(void)
 
         if(!strcmp (candidates[0].name, a))
         {
-            printf("Yes");
+            printf("Yes\n");
         }
 
 }
