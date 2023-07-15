@@ -64,7 +64,7 @@ int main(int argc, string argv[])
 
         }
 
-string b = James
+string b = "James"
 
         if(!strcmp(b , candidates[1].name))
         {
