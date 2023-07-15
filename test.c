@@ -12,7 +12,7 @@ candidate;
 
 int main(void)
 {
-    candidate candiates[2];
+    candidate candidates[2];
 
     candidates[0].name = James;
     string a = James;
