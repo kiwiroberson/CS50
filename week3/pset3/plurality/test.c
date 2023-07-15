@@ -18,9 +18,9 @@ int main(void)
     string a = "James";
 
 
-        if(strcmp (candidates[0].name, a))
+        if(!strcmp (candidates[0].name, a))
         {
-            
+            printf("Yes");
         }
 
 }
