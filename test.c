@@ -1,6 +1,7 @@
-#include cs50.h
-#include stdio.h
-#include string.h
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
 
 typedef struct
 {
@@ -11,11 +12,11 @@ candidate;
 
 int main(void)
 {
-    candidate caniddates[2]
+    candidate candiates[2];
 
-    candidate[0].name = James
-    string a = James
+    candidates[0].name = James;
+    string a = James;
 
-    printf(strcomp(canidate[0].name, a))
+    printf(strcomp(canidate[0].name, a));
 
 }
