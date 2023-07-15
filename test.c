@@ -11,7 +11,11 @@ candidate;
 
 int main(void)
 {
-    candidate.names
+    candidate caniddates[2]
+
+    candidate[0].name = James
     string a = James
+
+    printf(strcomp(canidate[0].name, a))
 
 }
