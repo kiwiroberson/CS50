@@ -14,9 +14,13 @@ int main(void)
 {
     candidate candidates[2];
 
-    candidates[0].name = James;
-    string a = James;
+    candidates[0].name = "James";
+    string a = "James";
 
-    printf(strcomp(canidate[0].name, a));
+
+        if(strcmp (candidates[0].name, a))
+        {
+            
+        }
 
 }
