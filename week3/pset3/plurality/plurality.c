@@ -89,10 +89,10 @@ void print_winner(void)
                 candidate  temporary_element[1];
                 temporary_element[0] = candidates[k];
                 candidates[k] = candidates[k + 1];
-                canididates[k + 1] = temporary_element[0];
+                candidates[k + 1] = temporary_element[0];
             }
     }
-    printf(candidates[].)
+    printf("%s", candidates[candidate_count].name);
 
     return;
 }
