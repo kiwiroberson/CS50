@@ -85,6 +85,7 @@ void print_winner(void)
     int highest_votes = 0;
     int k = 0;
     int l = 0;
+    winners[]
     for (int i = 0; i < candidate_count; i++)
     {
 
