@@ -78,7 +78,7 @@ bool vote(string name)
             return false;
         }
     }
-
+    return true;
 }
 
 
