@@ -92,7 +92,7 @@ void print_winner(void)
                 canididates[k + 1] = temporary_element[0];
             }
     }
-    printf(candidates[])
+    printf(candidates[].)
 
     return;
 }
