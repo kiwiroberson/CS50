@@ -92,7 +92,7 @@ void print_winner(void)
                 candidates[k + 1] = temporary_element[0];
             }
     }
-    printf("%s", candidates[candidate_count].name);
+    printf("%s", candidates[2].name);
 
     return;
 }
