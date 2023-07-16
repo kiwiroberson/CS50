@@ -67,7 +67,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     string a = candidates[1].name;
-    if(strcmp(name, a))
+    if(strcmp(name, a) == 0)
     {
         return true;
     }
