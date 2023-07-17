@@ -86,7 +86,7 @@ void print_winner(void)
 {
 
 
-
+//reverse sort candidates in array by votes
     for (int i = 0; i < candidate_count; i++)
     {
         for (int j = 0; j < candidate_count - i; j++)
@@ -119,7 +119,7 @@ void print_winner(void)
 int k = 1;
     for (int l = 0; l < k; l++)
     {
-    printf("%s\n", candidates[candidate_count - 1].name);
+    printf("%s\n", candidates[0].name);
     }
     return;
 }
