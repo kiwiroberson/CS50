@@ -86,28 +86,31 @@ void print_winner(void)
 {   //declare counting variables
     int highest_votes = 0;
     int k = 0;
-    int l = 0;
+
     //declare winners array
-    string winners[candidate_count]
+    string winners[candidate_count];
 
     for (int i = 0; i < candidate_count; i++)
     {
-
+        //find highest vote tally
         if (candidates[i].votes > highest_votes)
         {
             highest_votes = candidates[i].votes;
         }
-
+        //record all names with highest vote tally
+        //record number of joint winners
         if(highest_votes == candidates[i].votes)
         {
-            winners[i] = candidates[i].name
+            winners[i] = candidates[i].name;
+
+            k++;
         }
 
     }
 
-    for (l; l > 0; l--)
+    for (int l = 0; l < k; l++)
     {
-    printf("%s\n", candidates[k].name);
+    printf("%s\n", winners[l]);
     }
     return;
 }
