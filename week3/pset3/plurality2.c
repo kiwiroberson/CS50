@@ -103,6 +103,10 @@ void print_winner(void)
             }
         }
 
+    int highest_vote = candidates[candidate_count - 1].votes
+
+    
+
 
 
 
