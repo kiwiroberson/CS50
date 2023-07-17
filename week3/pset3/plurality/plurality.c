@@ -91,14 +91,14 @@ void print_winner(void)
     {
         for (int j = 0; j < candidate_count - i; j++)
         {
-            if (candidates[i].votes < candidates[i + 1].votes)
+            if (candidates[j].votes < candidates[j + 1].votes)
             {
             //declare swap array
             candidate swap[1];
             //swap candidates[i] and i + 1
-            swap[0] = candidates[i];
-            candidates[i] = candidates[i + 1];
-            candidates[i + 1] = swap[0];
+            swap[0] = candidates[j];
+            candidates[j] = candidates[j + 1];
+            candidates[j + 1] = swap[0];
             }
         }
 
