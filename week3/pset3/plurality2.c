@@ -83,28 +83,27 @@ bool vote(string name)
 
 // Print the winner (or winners) of the election
 void print_winner(void)
-{   //declare counting variables
-    int highest_votes = 0;
-    int k = 0;
+{
 
-    //declare winners array
-    string winners[candidate_count];
 
     for (int i = 0; i < candidate_count; i++)
     {
-        //find highest vote tally
-        if (candidates[i].votes > highest_votes)
-        {
-            highest_votes = candidates[i].votes;
-        }
-        //record all names with highest vote tally
-        //record number of joint winners
-        if(highest_votes == candidates[i].votes)
-        {
-            winners[i] = candidates[i].name;
 
-            k++;
+
+
+        if (candidates[i].votes < candidates[i + 1].votes)
+        {
+            //declare swap array
+            candidate swap[1];
+            //swap candidates[i] and i + 1
+            swap[0] = candidates[i];
+            candidates[i] = candidates[i + 1];
+            candidates[i + 1] = swap[0];
+
         }
+
+
+
 
     }
 
