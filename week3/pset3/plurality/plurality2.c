@@ -102,7 +102,8 @@ void print_winner(void)
             }
         }
 
-    int highest_vote = candidates[candidate_count - 1].votes;
+
+
 
 
 
@@ -116,7 +117,9 @@ void print_winner(void)
     }
 
 //first checks number of joint winners, then prints all with that number of wins
-int k = 1;
+    int highest_vote = candidates[0].votes;
+    for (int i )
+
     for (int l = 0; l < k; l++)
     {
     printf("%s\n", candidates[0].name);
