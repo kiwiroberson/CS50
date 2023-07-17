@@ -83,53 +83,36 @@ bool vote(string name)
 
 // Print the winner (or winners) of the election
 void print_winner(void)
-{
+{   //declare counting variables
+    int highest_votes = 0;
+    int k = 0;
 
+    //declare winners array
+    string winners[candidate_count];
 
-//reverse sort candidates in array by votes
     for (int i = 0; i < candidate_count; i++)
     {
-        for (int j = 0; j < candidate_count - i; j++)
+        //find highest vote tally
+        if (candidates[i].votes > highest_votes)
         {
-            if (candidates[i].votes < candidates[i + 1].votes)
-            {
-            //declare swap array
-            candidate swap[1];
-            //swap candidates[i] and i + 1
-            swap[0] = candidates[i];
-            candidates[i] = candidates[i + 1];
-            candidates[i + 1] = swap[0];
-            }
+            highest_votes = candidates[i].votes;
         }
+        //record all names with highest vote tally
+        //record number of joint winners
+        if(highest_votes == candidates[i].votes)
+        {
+            winners[i] = candidates[i].name;
 
-
-
-
-
-
-
-
-
-
-
-
+            k++;
+        }
 
     }
 
 //first checks number of joint winners, then prints all with that number of wins
-    int highest_vote = candidates[0].votes;
-    int joint_winners = 0;
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if(candidates[0].votes == candidates[i].votes)
-        {
-            joint_winners++;
-        }
-    }
 
-    for (int l = 0; l < joint_winners; l++)
+    for (int l = 0; l < k; l++)
     {
-    printf("%s\n", candidates[l].name);
+    printf("%s\n", winners[l]);
     }
     return;
 }
