@@ -105,7 +105,7 @@ void print_winner(void)
 
     int highest_vote = candidates[candidate_count - 1].votes
 
-    
+
 
 
 
@@ -120,7 +120,7 @@ void print_winner(void)
 
     for (int l = 0; l < k; l++)
     {
-    printf("%s\n", winners[l]);
+    printf("%s\n", candidates[candidate_count - 1].name);
     }
     return;
 }
