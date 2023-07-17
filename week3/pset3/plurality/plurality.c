@@ -88,20 +88,21 @@ void print_winner(void)
     int k = 0;
     int l = 0;
     //declare winners array
-    winners[candidate_count]
+    string winners[candidate_count]
 
     for (int i = 0; i < candidate_count; i++)
     {
 
         if (candidates[i].votes > highest_votes)
-            {
-               highest_votes = candidates[i].votes;
-               k = i;
-            }
-        else if(candidates[i].votes == highest_votes)
-            {
-                l++
-            }
+        {
+            highest_votes = candidates[i].votes;
+        }
+
+        if(highest_votes == candidates[i].votes)
+        {
+            winners[i] = candidates[i].name
+        }
+
     }
 
     for (l; l > 0; l--)
