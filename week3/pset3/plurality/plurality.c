@@ -108,6 +108,8 @@ void print_winner(void)
 
     }
 
+//first checks number of joint winners, then prints all with that number of wins
+
     for (int l = 0; l < k; l++)
     {
     printf("%s\n", winners[l]);
