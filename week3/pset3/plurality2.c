@@ -87,21 +87,25 @@ void print_winner(void)
     joint winners
 
 
+
     for (int i = 0; i < candidate_count; i++)
     {
-
-
-
-        if (candidates[i].votes < candidates[i + 1].votes)
+        for j = 0; j < candidate_count - i; j++)
         {
+            if (candidates[i].votes < candidates[i + 1].votes)
+            {
             //declare swap array
             candidate swap[1];
             //swap candidates[i] and i + 1
             swap[0] = candidates[i];
             candidates[i] = candidates[i + 1];
             candidates[i + 1] = swap[0];
-
+            }
         }
+
+
+
+
 
 
 
