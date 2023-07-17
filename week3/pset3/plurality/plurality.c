@@ -88,7 +88,8 @@ void print_winner(void)
     int k = 0;
     int l = 0;
     //declare winners array
- 
+    winners[candidate]
+
     for (int i = 0; i < candidate_count; i++)
     {
 
