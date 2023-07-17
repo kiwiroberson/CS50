@@ -68,6 +68,8 @@ bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
+        //Compare strings 'name' and candidate name field, if mathing increment vote tally, and state true
+        //if no match state false.
         if(strcmp(name, candidates[i].name) == 0)
         {
             candidates[i].votes++;
