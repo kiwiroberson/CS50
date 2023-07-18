@@ -160,7 +160,10 @@ bool print_winner(void)
     int 50percent = ((candidate_count - round) / 2) + 1;
     for (int i = 0; i < candidate_count - round; i++)
     {
-        
+        if(candidates[i].votes >= 50percent)
+        {
+            print
+        }
     }
     return false;
 }
