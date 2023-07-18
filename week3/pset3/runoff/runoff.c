@@ -158,13 +158,15 @@ void tabulate(void)
 bool print_winner(void)
 {
     int 50percent = ((candidate_count - round) / 2) + 1;
-    for (int i = 0; i < candidate_count - round; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if(candidates[i].votes >= 50percent)
         {
-            print
+            printf("%s\n", candidates[i].name)
+            return true;
         }
     }
+    round++;
     return false;
 }
 
