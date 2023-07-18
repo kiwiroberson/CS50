@@ -179,7 +179,7 @@ bool print_winner(void)
             totalvoters++;
         }
     }
-    int halfvote = totalvoters / 2;
+    int halfvote = totalvoters / 2 + 1;
     for (int i = 0; i < candidate_count; i++)
     {
 
