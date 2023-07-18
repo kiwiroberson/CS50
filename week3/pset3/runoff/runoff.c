@@ -150,7 +150,7 @@ void tabulate(void)
     {
         for(int j = 0; j < candidate_count; j++)
         {
-            if(candidates[i].eliminated = false)
+            if(candidates[i].eliminated == false)
             {
                 candidates[preferences[i][j]].votes++;
                 break;
@@ -165,12 +165,12 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    int 50percent = ((candidate_count - vround) / 2) + 1;
+    int half = ((candidate_count - vround) / 2) + 1;
     for (int i = 0; i < candidate_count; i++)
     {
-        if(candidates[i].votes >= 50percent)
+        if(candidates[i].votes >= half)
         {
-            printf("%s\n", candidates[i].name)
+            printf("%s\n", candidates[i].name);
             return true;
         }
     }
