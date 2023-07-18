@@ -178,7 +178,11 @@ bool print_winner(void)
         {
             totalvoters++;
         }
-       int halfvote = totalvoters / 2;
+    }
+    int halfvote = totalvoters / 2;
+    for (int i = 0; i < candidate_count; i++)
+    {
+
         if(candidates[i].votes > halfvote)
         {
             printf("%s\n",candidates[i].name);
