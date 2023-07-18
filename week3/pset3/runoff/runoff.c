@@ -136,7 +136,7 @@ bool vote(int voter, int rank, string name)
         preferences[voter][i] = rank;
         return true;
     }
-    
+
 
     }
     return false;
@@ -145,7 +145,7 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
+    for 
     return;
 }
 
