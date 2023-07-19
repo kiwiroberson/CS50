@@ -172,7 +172,7 @@ bool print_winner(void)
 {
 
 
-    int halfvote = (voter_count / 2) + 1;
+    int halfvote = (voter_count / 2);
 
     for (int i = 0; i < candidate_count; i++)
     {
