@@ -52,12 +52,18 @@ int main(int argc, char *argv[])
         printf("Unsupported file format.\n");
         return 4;
     }
-    
+
     // Write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
 
     // Write outfile's BITMAPINFOHEADER
     fwrite(&bi, sizeof(BITMAPINFOHEADER), 1, outptr);
+
+    // Change outfile typedef struct tagBITMAPINFOHEADER to negative
+
+
+
+
 
     // Determine padding for scanlines
     int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
