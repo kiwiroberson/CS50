@@ -61,6 +61,7 @@ int main(int argc, char *argv[])
 
     // Change outfile typedef struct tagBITMAPINFOHEADER to negative
 
+    
 
 
 
