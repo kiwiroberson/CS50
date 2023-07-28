@@ -53,6 +53,10 @@ int main(int argc, char *argv[])
         return 4;
     }
 
+    //Transform BITMAPINFOHEADER vertical to negaitive
+
+    bi.biHeight = bi.biHeight * -1;
+
 
 
     // Write outfile's BITMAPFILEHEADER
@@ -60,13 +64,6 @@ int main(int argc, char *argv[])
 
     // Write outfile's BITMAPINFOHEADER
     fwrite(&bi, sizeof(BITMAPINFOHEADER), 1, outptr);
-
-    // Change outfile typedef struct tagBITMAPINFOHEADER to negative
-
-
-
-
-
 
     // Determine padding for scanlines
     int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
