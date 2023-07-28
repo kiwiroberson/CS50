@@ -53,6 +53,8 @@ int main(int argc, char *argv[])
         return 4;
     }
 
+
+
     // Write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
 
@@ -61,7 +63,7 @@ int main(int argc, char *argv[])
 
     // Change outfile typedef struct tagBITMAPINFOHEADER to negative
 
-    
+
 
 
 
