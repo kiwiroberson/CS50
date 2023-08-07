@@ -66,11 +66,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     RGBTRIPLE tempimage;
     if (width % 2 == 0)
     {
-        w = width - 1 / 2;
+        w = width / 2;
     }
     else
     {
-        w = (width / 2) - 1;
+        w = (width + 1 / 2);
     }
 
      for(int i = 0; i < height; i++)
