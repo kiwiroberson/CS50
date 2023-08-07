@@ -64,11 +64,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     if (width % 2 == 0)
     {
-        int w = width;
+        int w = width / 2;
     }
     else
     {
-        int w = width + 1;
+        int w = (width + 1) / 2;
     }
 
      for(int i = 0; i < height; i++)
