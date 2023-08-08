@@ -19,10 +19,9 @@ int main(int argc, char *argv[])
 
     //repeat until end of card
     char *buffer[]
-    while(fread(buffer, 1, 512, *file) == BLOCK_SIZE)
+    while(fread(buffer, 1, 512, *file) == 512)
     {
 
-        fread(&buffer, 512, 1, *file)
 
 
 
