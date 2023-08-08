@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         //create new filenames
         FILE *img = fopen(filename, "w");
         //write jpg data to filenames
-        fwrite(buffer, 1, 512, img);
+        fwrite(&buffer, sizeof(BYTE), 512, img);
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
     //free filemame memory
