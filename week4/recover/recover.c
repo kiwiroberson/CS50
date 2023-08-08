@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
             fwrite(buffer, sizeof(BYTE), 512, img);
             jpegcount++;
             blockcount++;
-        
+
 
             for (int i = 0; i < 512; i++)
             {
@@ -70,6 +70,7 @@ int main(int argc, char *argv[])
     //free buffer memory
     free(buffer);
     fclose(file);
+    fclose(img);
 
     //print number of jpegs found for testing
     printf("Photo number:%i\n", jpegcount);
