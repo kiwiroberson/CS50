@@ -13,33 +13,13 @@ typedef uint8_t BYTE;
     if (file !=NULL)
     {
 
-
-
-
-
-
-
     //repeat until end of card
 
-    BYTE *buffer = malloc(512);
+    char *buffer = malloc(4);
+    buffer[0] = 'a';
+    buffer[1] = '\0';
 
-    while(fread(&buffer, 1, 512, file) == 512)
-    {
-        fread(&buffer, 1, 512, file);
-
-
-        printf("%s\n", buffer);
-    free(buffer);
-
-        //read 512bytes into buffer array
-        //look for begining of JPEG with fread - (look for: 0xff 0xd8 0xff 0xe0...0xef)
-
-            //if first jpeg write to 000.jpeg
-
-            //else close previous jpeg and start new
-        //if already found continue writing in old jpeg
-
-    //close remaining files
+    printf("%s\n", buffer);
 
     }
     }
