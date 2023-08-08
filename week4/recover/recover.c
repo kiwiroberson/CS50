@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
         fclose(img);
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
+    
     for (int i = 0; i < 512; i++)
             {
                 buffer[i] = 0;
