@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     //look for jpeg starting signature
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
-        if(img != NULL)
+        if(img == NULL)
         {
             fclose(img);
             n = 0;
