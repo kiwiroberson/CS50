@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
 
     int c = 0;
-    int n = 0;
+
     if ( argc != 2)
     {
         printf("please enter one term only\n");
@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
     //look for jpeg starting signature
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
-        c++;
-        n = 1;
+
+
         //allocate space for filename
         char filename[8];
         //write new filenames to memory
@@ -49,20 +49,15 @@ int main(int argc, char *argv[])
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
 
+    c++;
+    
     for (int i = 0; i < 512; i++)
             {
                 buffer[i] = 0;
             }
 
     }
-    else
-    {
-        char filename[8];
-        sprintf(filename, "%03i.jpg", c);
-        FILE *img = fopen(filename, "w");
-        fwrite(buffer, sizeof(BYTE), 512, &img[512 * n + 1]);
-        n++;
-    }
+
 
 
     }
