@@ -5,6 +5,7 @@
 int main(int argc, char *argv[])
 {
 typedef uint8_t BYTE;
+BYTE a;
 
     //check type of entry valid
 
@@ -15,14 +16,14 @@ typedef uint8_t BYTE;
 
     //repeat until end of card
 
-    char *buffer = malloc(4);
+    BYTE *buffer = malloc(512);
     buffer[0] = 'a';
     buffer[1] = '\0';
 
     printf("%s\n", buffer);
 
     }
-    }
+
     else
     {
         printf("please enter valid filename\n");
