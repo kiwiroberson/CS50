@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
             fwrite(buffer, sizeof(BYTE), 512, img);
             jpegcount++;
             blockcount++;
+        
 
             for (int i = 0; i < 512; i++)
             {
