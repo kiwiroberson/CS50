@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
             return
         }
 
-    FILE *file = fopen(argv[1], "r");
 
 
     //repeat until end of card
