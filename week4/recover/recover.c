@@ -52,11 +52,10 @@ int main(int argc, char *argv[])
         //write jpg data to filenames
         fwrite(buffer, sizeof(BYTE), 512, img);
 
-    //testing printing number of jpegs
-    printf("%i\n", buffer[0]);
 
-    c++;
-    n++;
+
+    jpegcount++;
+    blockcount++;
 
     for (int i = 0; i < 512; i++)
             {
@@ -64,14 +63,11 @@ int main(int argc, char *argv[])
             }
 
     }
-    else
+    else if (img != NULL)
     {
       fwrite(buffer, sizeof(BYTE), 512, img]);
-      n++;
+      blockcount++;
     }
-
-
-
     }
     //free buffer memory
     free(buffer);
