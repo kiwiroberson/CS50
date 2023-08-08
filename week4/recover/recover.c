@@ -8,7 +8,8 @@ int main(int argc, char *argv[])
 {
     if ( argc != 2)
     {
-        printf("Useage: %s filename\n", argv[0]);
+        printf("please enter one term only\n");
+        return 1;
     }
 
 
@@ -21,6 +22,15 @@ int main(int argc, char *argv[])
         printf("please enter valid filename\n");
         return 1;
     }
+
+    BYTE *buffer = malloc(512);
+
+    buffer[0] = 1;
+
+    printf("%i\n", buffer[0])
+
+    free(buffer);
+
 
 
 
