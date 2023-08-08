@@ -61,10 +61,7 @@ int main(int argc, char *argv[])
             }
 
     }
-    else
-    {
-        fwrite(buffer, sizeof(BYTE), 512, img);
-    }
+  
 
 
     }
