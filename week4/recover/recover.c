@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
         }
         else if (img != NULL)
         {
-            fwrite(buffer, sizeof(BYTE), 512, img]);
+            fwrite(buffer, sizeof(BYTE), 512, img);
             blockcount++;
         }
     }
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     fclose(file);
 
     //print number of jpegs found for testing
-    printf("Photo number:%i\n", c);
+    printf("Photo number:%i\n", jpegcount);
 
 
 return 0;
