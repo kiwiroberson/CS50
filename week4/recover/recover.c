@@ -36,38 +36,35 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, 512, file) == 512)
     {
     //look for jpeg starting signature
-    if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
-    {
-        if(img != NULL)
+        if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            fclose(img);
-            blockcount = 0;
-        }
-        //allocate space for filename
-        char filename[8];
-        //write new filenames to memory
-        sprintf(filename, "%03i.jpg", jpegcount);
-        //create new filenames
-        img = fopen(filename, "w");
-        //write jpg data to filenames
-        fwrite(buffer, sizeof(BYTE), 512, img);
+            if(img != NULL)
+            {
+                fclose(img);
+                blockcount = 0;
+            }
+            //allocate space for filename
+            char filename[8];
+            //write new filenames to memory
+            sprintf(filename, "%03i.jpg", jpegcount);
+            //create new filenames
+            img = fopen(filename, "w");
+            //write jpg data to filenames
+            fwrite(buffer, sizeof(BYTE), 512, img);
+            jpegcount++;
+            blockcount++;
 
-
-
-    jpegcount++;
-    blockcount++;
-
-    for (int i = 0; i < 512; i++)
+            for (int i = 0; i < 512; i++)
             {
                 buffer[i] = 0;
             }
 
-    }
-    else if (img != NULL)
-    {
-      fwrite(buffer, sizeof(BYTE), 512, img]);
-      blockcount++;
-    }
+        }
+        else if (img != NULL)
+        {
+            fwrite(buffer, sizeof(BYTE), 512, img]);
+            blockcount++;
+        }
     }
     //free buffer memory
     free(buffer);
