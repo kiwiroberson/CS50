@@ -87,49 +87,48 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
+// Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    RGBTRIPLE tempImage[height][width];
-
-    for (int i = 0; i < height; i++)
+    int tempBlue;
+    int tempRed;
+    int tempGreen;
+    int c = 0;
+    for(int i = 1; i < height; i++)
     {
-        for (int j = 0; j < width; j++)
+        for(int j = 1; j < width; j++)
         {
-            int tempBlue = 0;
-            int tempRed = 0;
-            int tempGreen = 0;
-            int c = 0;
-
-            for (int k = -1; k <= 1; k++)
+            for(int k = -1; k < 2; k++)
             {
-                for (int l = -1; l <= 1; l++)
+                for(int l = -1; l < 2; l++)
                 {
-                    int newRow = i + k;
-                    int newCol = j + l;
-
-                    if (newRow >= 0 && newRow < height && newCol >= 0 && newCol < width)
-                    {
-                        tempBlue += image[newRow][newCol].rgbtBlue;
-                        tempRed += image[newRow][newCol].rgbtRed;
-                        tempGreen += image[newRow][newCol].rgbtGreen;
-                        c++;
-                    }
+                if (j + l < 0 || j + l > width || i + k < 0 || i + k > height)
+                {
+                    break;
+                }
+                else
+                {
+                    tempBlue += image[i + k][j + l].rgbtBlue;
+                    tempRed += image[i + k][j + l].rgbtRed;
+                    tempGreen += image[i + k][j + l].rgbtGreen;
+                    c++;
+                }
                 }
             }
 
-            tempImage[i][j].rgbtBlue = (int) round((float) tempBlue / c);
-            tempImage[i][j].rgbtRed = (int) round((float) tempRed / c);
-            tempImage[i][j].rgbtGreen = (int) round((float) tempGreen / c);
+        image[i][j].rgbtBlue = (inttempBlue / c;
+        image[i][j].rgbtRed = tempRed/ c;
+        image[i][j].rgbtGreen = tempGreen / c;
+        c = 0;
+        tempBlue = 0;
+        tempRed = 0;
+        tempGreen = 0;
+
         }
+
     }
 
-    // Copy the blurred image back to the original image
-    for (int i = 0; i < height; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
-            image[i][j] = tempImage[i][j];
-        }
-    }
+
+
+    return;
 }
-
