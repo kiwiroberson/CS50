@@ -20,11 +20,12 @@ typedef uint8_t BYTE;
 
 
     //repeat until end of card
-    BYTE buffer[512];
+    
+    BYTE buffer[sizeof(file)];
     while(fread(&buffer, 1, 512, file) == 512)
     {
             fread(&buffer, 1, 512, file);
-            printf("%hhu\n", buffer[0][0]);
+            printf("%s\n", buffer[0]);
 
 
         //read 512bytes into buffer array
