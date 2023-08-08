@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
 {
 
     int c = 0;
+    int n = 0;
 
     if ( argc != 2)
     {
@@ -40,6 +41,7 @@ int main(int argc, char *argv[])
         if(img != NULL)
         {
             fclose(img);
+            n = 0;
         }
         //allocate space for filename
         char filename[8];
@@ -54,6 +56,7 @@ int main(int argc, char *argv[])
     printf("%i\n", buffer[0]);
 
     c++;
+    n++;
 
     for (int i = 0; i < 512; i++)
             {
@@ -61,7 +64,12 @@ int main(int argc, char *argv[])
             }
 
     }
-  
+    else
+    {
+      fwrite(buffer, sizeof(BYTE), 512, &img[n * 512]);
+      n++;
+    }
+
 
 
     }
