@@ -36,12 +36,15 @@ int main(int argc, char *argv[])
     {
         c++;
         char *filename = malloc(8);
+        //write new filenames to memory
         sprintf(filename, "%03i.jpg", c);
+        //create new filenames
         FILE *img = fopen(filename, "w");
-
+        //write jpg data to filenames
         fwrite(buffer, 1, 512, img);
-
+    //testing printing number of jpegs
     printf("%i\n", buffer[0]);
+    //free filemame memory
         free(filename);
     }
 
