@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 
 
     //repeat until end of card
-    while(fread(buffer, 1, BLOCK_SIZE, raw_file) == BLOCK_SIZE)
+    while(fread(buffer, 1, BLOCK_SIZE, *file) == BLOCK_SIZE)
     {
-        fread(buffer, 512, 1, )
+        fread(buffer, 512, 1, *file)
 
 
 
