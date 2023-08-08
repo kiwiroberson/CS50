@@ -80,8 +80,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         for(int j = 0; j < w; j++)
         {
             temppixel = image[i][j];
-            image[i][j] = image[i][width - j];
-            image[i][width - j] = temppixel;
+            image[i][j] = image[i][width - 1 - j];
+            image[i][width - 1 - j] = temppixel;
         }
     }
     return;
