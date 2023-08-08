@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 
     while (fread(buffer, 1, 512, file) == 512)
     {
-    if(buffer[0] != 0xff)
+    if(buffer[0] == 0xff)
     {
-        break;
-    }
 
     printf("%i\n", buffer[0]);
+
+    }
 
     free(buffer);
     }
