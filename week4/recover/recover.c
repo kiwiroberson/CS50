@@ -7,7 +7,7 @@ typedef uint8_t BYTE;
 int main(int argc, char *argv[])
 {
 
-    int c = 0;
+    int c = 1;
     if ( argc != 2)
     {
         printf("please enter one term only\n");
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
         malloc
-        sprintf(
+        sprintf(filename, "%03i.jpg, c);
     printf("%i\n", buffer[0]);
     c++;
     }
