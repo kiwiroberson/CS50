@@ -28,7 +28,10 @@ int main(int argc, char *argv[])
 
     while (fread(buffer, 1, 512, file) == 512)
     {
-    if()
+    if(buffer[0] != 0xff)
+    {
+        break;
+    }
 
     printf("%i\n", buffer[0]);
 
