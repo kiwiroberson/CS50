@@ -7,8 +7,8 @@ typedef uint8_t BYTE;
 int main(int argc, char *argv[])
 {
 
-    int c = 0;
-    int n = 0;
+    int jpegcount = 0;
+    int blockcount = 0;
 
     if ( argc != 2)
     {
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-      fwrite(buffer, sizeof(BYTE), 512, img);
+      fwrite(buffer, sizeof(BYTE), 512, img]);
       n++;
     }
 
