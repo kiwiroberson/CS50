@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
 
     BYTE *buffer = malloc(512);
 
-    buffer[0] = 0xff;
+    fread(buffer, 1, 512, file);
 
-    printf("%i\n", buffer[0]);
+    printf("%i\n", buffer[600]);
 
     free(buffer);
 
