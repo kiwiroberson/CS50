@@ -24,7 +24,7 @@ typedef uint8_t BYTE;
     while(fread(&buffer, 1, 512, file) == 512)
     {
             fread(&buffer, 1, 512, file);
-            printf("%s\n", buffer);
+            printf("%hhu\n", buffer[0][0]);
 
 
         //read 512bytes into buffer array
