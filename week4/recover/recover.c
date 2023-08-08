@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
 
-
+        fclose(img);
         //allocate space for filename
         char filename[8];
         //write new filenames to memory
@@ -45,19 +45,22 @@ int main(int argc, char *argv[])
         FILE *img = fopen(filename, "w");
         //write jpg data to filenames
         fwrite(buffer, sizeof(BYTE), 512, img);
-        fclose(img);
+
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
 
     c++;
-    
+
     for (int i = 0; i < 512; i++)
             {
                 buffer[i] = 0;
             }
 
     }
-
+    else
+    {
+        fwrite(buffer, sizeof(BYTE), 512, img);
+    }
 
 
     }
