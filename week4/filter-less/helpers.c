@@ -103,7 +103,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 {
                 if (j + l == 0)
                 {
-                    
+                    break;
                 }
                 tempBlue = tempBlue + image[i + k][j + l].rgbtBlue;
                 tempRed = tempRed + image[i + k][j + l].rgbtRed;
