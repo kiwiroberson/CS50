@@ -18,10 +18,11 @@ int main(int argc, char *argv[])
 
 
     //repeat until end of card
+    char *buffer[]
     while(fread(buffer, 1, 512, *file) == BLOCK_SIZE)
     {
-        malloc()
-        fread(buffer, 512, 1, *file)
+
+        fread(&buffer, 512, 1, *file)
 
 
 
