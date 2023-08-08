@@ -23,14 +23,17 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+
     BYTE *buffer = malloc(512);
 
-    fread(buffer, 1, 512, file);
+    while (fread(buffer, 1, 512, file) == 512)
+    {
+    if()
 
-    printf("%i\n", buffer[5000]);
+    printf("%i\n", buffer[0]);
 
     free(buffer);
-
+    }
 
 
 
