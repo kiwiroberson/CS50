@@ -46,12 +46,17 @@ int main(int argc, char *argv[])
         fclose(img);
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
+    for (int i = 0; i < 512; i++)
+            {
+                buffer[i] = 0;
+            }
     }
 
 
     }
     //free buffer memory
     free(buffer);
+    fclose(file);
 
     //print number of jpegs found for testing
     printf("Photo number:%i\n", c);
