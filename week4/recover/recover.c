@@ -29,6 +29,8 @@ int main(int argc, char *argv[])
     //allocate buffer memory
     BYTE *buffer = malloc(512);
 
+    FILE *img = NULL;
+
     //read file and loop through 512byte blocks
     while (fread(buffer, 1, 512, file) == 512)
     {
@@ -41,7 +43,7 @@ int main(int argc, char *argv[])
         //write new filenames to memory
         sprintf(filename, "%03i.jpg", c);
         //create new filenames
-        FILE *img = fopen(filename, "w");
+        img = fopen(filename, "w");
         //write jpg data to filenames
         fwrite(buffer, sizeof(BYTE), 512, img);
 
