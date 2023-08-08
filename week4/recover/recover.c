@@ -14,9 +14,11 @@ int main(int argc, char *argv[])
 
 
     //open a new jpeg file
-
+    //fopen
+    //fwrite
     //write 512bytes until new jpeg found
 
+    //detect end of file
 
 
 }
