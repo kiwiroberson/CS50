@@ -20,13 +20,16 @@ typedef uint8_t BYTE;
 
 
     //repeat until end of card
-    
-    BYTE buffer[sizeof(file)];
+
+    BYTE *buffer = malloc(512);
+
     while(fread(&buffer, 1, 512, file) == 512)
     {
-            fread(&buffer, 1, 512, file);
-            printf("%s\n", buffer[0]);
+        fread(&buffer, 1, 512, file);
 
+
+        printf("%s\n", buffer);
+    free(buffer);
 
         //read 512bytes into buffer array
         //look for begining of JPEG with fread - (look for: 0xff 0xd8 0xff 0xe0...0xef)
