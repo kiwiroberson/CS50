@@ -4,7 +4,9 @@
 int main(int argc, char *argv[])
 {
     //open memory card into memory with fopen
-    
+    //check type of entry
+
+    FILE *file = fopen(argv[1], "r");
 
 
     //repeat until end of card
