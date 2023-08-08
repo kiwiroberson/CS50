@@ -93,15 +93,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     int tempRed;
     int tempGreen;
     int c = 0;
-    for(int i = 0; i < height; i++)
+    for(int i = 1; i < height; i++)
     {
-        for(int j = 0; j < width; j++)
+        for(int j = 1; j < width; j++)
         {
             for(int k = -1; k < 2; k++)
             {
                 for(int l = -1; l < 2; l++)
                 {
-                if (j + l < 0 || j + l > width)
+                if (j + l < 0 || j + l > width || i + k < 0 || i + k > height)
                 {
                     break;
                 }
