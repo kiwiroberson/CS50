@@ -21,7 +21,7 @@ typedef uint8_t BYTE;
 
     //repeat until end of card
     BYTE buffer[512];
-    while(fread(buffer, 1, 512, *file) == 512)
+    while(fread(&buffer, 1, 512, *file) == 512)
     {
 
 
