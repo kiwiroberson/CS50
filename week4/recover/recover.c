@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
     fread(buffer, 1, 512, file);
 
-    printf("%i\n", buffer[600]);
+    printf("%i\n", buffer[5000]);
 
     free(buffer);
 
