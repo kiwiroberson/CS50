@@ -7,8 +7,11 @@ int main(int argc, char *argv[])
     // fopen *f
 
 
+
     //look for begining of JPEG
+    //fread
     //look for: 0xff 0xd8 0xff 0xe0...0xef
+
 
     //open a new jpeg file
 
