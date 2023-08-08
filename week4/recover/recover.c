@@ -35,17 +35,17 @@ int main(int argc, char *argv[])
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
         c++;
-        char *filename = malloc(8);
+        //allocate space for filename
+        char filename[8];
         //write new filenames to memory
         sprintf(filename, "%03i.jpg", c);
         //create new filenames
         FILE *img = fopen(filename, "w");
         //write jpg data to filenames
-        fwrite(&buffer, sizeof(BYTE), 512, img);
+        fwrite(buffer, sizeof(BYTE), 512, img);
+        fclose(img);
     //testing printing number of jpegs
     printf("%i\n", buffer[0]);
-    //free filemame memory
-        free(filename);
     }
 
 
