@@ -38,15 +38,15 @@ int main(int argc, char *argv[])
     //look for jpeg starting signature
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
-        if(img == NULL)
+        if(img != NULL)
         {
             fclose(img);
-            n = 0;
+            blockcount = 0;
         }
         //allocate space for filename
         char filename[8];
         //write new filenames to memory
-        sprintf(filename, "%03i.jpg", c);
+        sprintf(filename, "%03i.jpg", jpegcount);
         //create new filenames
         img = fopen(filename, "w");
         //write jpg data to filenames
