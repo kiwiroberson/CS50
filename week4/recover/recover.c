@@ -16,12 +16,13 @@ BYTE a;
 
     //repeat until end of card
 
-    int *buffer = malloc(512);
-    buffer[0] = 0xff;
-    buffer[1] = '\0';
+    BYTE *buffer = malloc(512);
+    fread(&buffer, 1, 512, file);
 
-    printf("%i\n", buffer);
 
+    printf("%i\n", buffer[0]);
+
+    free(buffer);
     }
 
     else
