@@ -5,9 +5,10 @@ int main(int argc, char *argv[])
 {
     //open memory card into memory with fopen
     //check type of entry
-    if (!typedef(argv) \= char*)
+    if (!fopen(argv[1], "r"))
         {
-            printf("please enter filename\n")
+            printf("please enter filename\n");
+            return
         }
 
     FILE *file = fopen(argv[1], "r");
