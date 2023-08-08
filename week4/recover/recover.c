@@ -7,7 +7,7 @@ typedef uint8_t BYTE;
 int main(int argc, char *argv[])
 {
 
-    int c = 1;
+    int c = 0;
     if ( argc != 2)
     {
         printf("please enter one term only\n");
@@ -34,10 +34,15 @@ int main(int argc, char *argv[])
     //look for jpeg starting signature
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
-        malloc
+        c++;
+        char *filename = malloc(8);
         sprintf(filename, "%03i.jpg, c);
+        FILE *img = fopen(filename, "w")
+
+        
+
     printf("%i\n", buffer[0]);
-    c++;
+
     }
 
 
