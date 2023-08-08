@@ -56,7 +56,8 @@ int main(int argc, char *argv[])
     }
     else
     {
-        FILE *img = fopen()
+        sprintf(filename, "%03i.jpg", c);
+        FILE *img = fopen(filename, "w");
         fwrite(buffer, sizeof(BYTE), 512, img[512 * n + 1])
     }
 
