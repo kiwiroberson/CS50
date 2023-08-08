@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
         c++;
+        int n = 0;
         //allocate space for filename
         char filename[8];
         //write new filenames to memory
@@ -51,11 +52,11 @@ int main(int argc, char *argv[])
             {
                 buffer[i] = 0;
             }
-            
+
     }
     else
     {
-        fwrite(buffer, sizeof(BYTE), 512, img)
+        fwrite(buffer, sizeof(BYTE), 512, img[512 * n + 1])
     }
 
 
