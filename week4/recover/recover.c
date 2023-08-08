@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
+typedef uint8_t BYTE;
 
     //check type of entry valid
 
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
 
 
     //repeat until end of card
-    char *buffer[]
+    BYTE buffer[512];
     while(fread(buffer, 1, 512, *file) == 512)
     {
 
