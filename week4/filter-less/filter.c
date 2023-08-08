@@ -103,7 +103,6 @@ int main(int argc, char *argv[])
         // Blur
         case 'b':
             blur(height, width, image);
-            printf("%i", c);
             break;
 
         // Grayscale
