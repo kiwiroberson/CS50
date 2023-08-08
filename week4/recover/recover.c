@@ -36,7 +36,6 @@ int main(int argc, char *argv[])
     if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
 
-        fclose(img);
         //allocate space for filename
         char filename[8];
         //write new filenames to memory
