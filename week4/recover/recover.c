@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     while(fread(buffer, 1, BLOCK_SIZE, raw_file) == BLOCK_SIZE)
     {
 
-    
+
 
         //read 512bytes into buffer array
         //look for begining of JPEG with fread - (look for: 0xff 0xd8 0xff 0xe0...0xef)
