@@ -114,7 +114,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         c = 0;
         tempBlue = 0;
         tempRed = 0;
-        tmepGreen = 0;
+        tempGreen = 0;
 
         }
 
