@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     if (!fopen(argv[1], "r"))
         {
             printf("please enter filename\n");
-            return
+            return 1;
         }
 
 
