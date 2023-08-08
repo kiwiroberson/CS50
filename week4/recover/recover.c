@@ -16,8 +16,8 @@ BYTE a;
 
     //repeat until end of card
 
-    BYTE *buffer = malloc(512);
-    fread(&buffer, 1, 512, file);
+    BYTE *buffer[512] = malloc(512);
+    fread(*buffer, 1, 512, file);
 
 
     printf("%i\n", buffer[0]);
