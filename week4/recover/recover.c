@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
     }
     else
     {
+        FILE *img = fopen()
         fwrite(buffer, sizeof(BYTE), 512, img[512 * n + 1])
     }
 
