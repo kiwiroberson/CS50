@@ -16,11 +16,11 @@ BYTE a;
 
     //repeat until end of card
 
-    BYTE *buffer = malloc(512);
-    buffer[0] = 'a';
+    int *buffer = malloc(512);
+    buffer[0] = 0xff;
     buffer[1] = '\0';
 
-    printf("%s\n", buffer);
+    printf("%i\n", buffer);
 
     }
 
