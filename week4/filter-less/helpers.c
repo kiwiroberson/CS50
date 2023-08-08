@@ -102,7 +102,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 tempimage.rgbtBlue = tempimage.rgbtBlue + image[i + k][j + l].rgbtBlue;
                 tempimage.rgbtRed = tempimage.rgbtRed + image[i + k][j + l].rgbtRed;
                 tempimage.rgbtGreen = tempimage.rgbtGreen + image[i + k][j + l].rgbtGreen;
-                c++
+                c++;
                 }
             }
 
