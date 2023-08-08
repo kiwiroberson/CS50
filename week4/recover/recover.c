@@ -3,17 +3,27 @@
 
 int main(int argc, char *argv[])
 {
-    //open memory card into memory with fopen
-    //check type of entry
+
+    //check type of entry valid
     if (!fopen(argv[1], "r"))
         {
-            printf("please enter filename\n");
+            printf("please enter valid filename\n");
             return 1;
         }
+    //open memory card into memory with fopen
+    FILE *file = fopen(argv[1], "r");
+
+
+
+
 
 
 
     //repeat until end of card
+    while(fread(buffer, 1, BLOCK_SIZE, raw_file) == BLOCK_SIZE)
+    {
+
+    
 
         //read 512bytes into buffer array
         //look for begining of JPEG with fread - (look for: 0xff 0xd8 0xff 0xe0...0xef)
@@ -25,6 +35,6 @@ int main(int argc, char *argv[])
 
     //close remaining files
 
-
-
+    }
+return 0;
 }
