@@ -36,13 +36,13 @@ int main(int argc, char *argv[])
     {
         c++;
         char *filename = malloc(8);
-        sprintf(filename, "%03i.jpg, c);
-        FILE *img = fopen(filename, "w")
+        sprintf(filename, "%03i.jpg", c);
+        FILE *img = fopen(filename, "w");
 
-        fwrite()
+        fwrite(buffer, 512, 1, img);
 
     printf("%i\n", buffer[0]);
-
+        free(filename);
     }
 
 
