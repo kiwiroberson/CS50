@@ -129,6 +129,10 @@ bool check(char* word)
             }
             return 0;
         }
+        if (cursor->children[index] == NULL)
+        {
+            return 0;
+        }
         cursor = cursor->children[index];
     }
 
