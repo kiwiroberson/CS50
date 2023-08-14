@@ -61,7 +61,8 @@ bool load(const char *dictionary)
         int index = hash(word);
 
         tmp->next = table[index];
-        table[index] = 
+        table[index] = tmp;
+        free(tmp);
 
     }
 
