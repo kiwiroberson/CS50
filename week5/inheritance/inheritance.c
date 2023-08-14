@@ -68,7 +68,11 @@ person *create_family(int generations)
             {
               if (rand() % 2 == 0)
               {
-                a->alleles[i] = parent(j)->allele[0]
+                a->alleles[i] = parent(j)->allele[0];
+              }
+              else
+              {
+                a->alleles[i] = parent(j)->allele[1];
               }
             }
 
