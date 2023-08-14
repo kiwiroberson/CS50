@@ -111,14 +111,14 @@ int main(int argc, char *argv[])
 bool check(char* word)
 {
     //start cursor at root
-    *cursor = root;
+    cursor = *root;
     //find length of name string
     int l = strlen(word)
     //iterate over every letter in name string
     for (i = 0; i < l; i++)
     {
         //look for first letter of string,
-        word[i] 
+        word[i]
 
     }
 
