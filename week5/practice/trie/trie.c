@@ -122,6 +122,7 @@ bool check(char* word)
         //check for end of trie structure
         if (i == n - 1)
         {
+            cursor = cursor->children[index];
             if (cursor->is_word == 1)
             {
                 return 1;
