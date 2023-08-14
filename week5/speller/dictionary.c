@@ -2,6 +2,9 @@
 
 #include <ctype.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -77,7 +80,7 @@ bool load(const char *dictionary)
 
 //true of able to load, false if not
     fclose(file);
-    free(tmp);
+
     return true;
 }
 
