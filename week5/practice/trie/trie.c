@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
 }
 
 // TODO: Complete the check function, return true if found, false if not found
-bool check(char* word)
+bool check(char *word)
 {
     //start cursor at root
     node *cursor = root;
@@ -135,11 +135,6 @@ bool check(char* word)
         }
         cursor = cursor->children[index];
     }
-
-
-
-
-
     return false;
 }
 
