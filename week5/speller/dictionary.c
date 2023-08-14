@@ -43,12 +43,6 @@ bool check(const char *word)
     }
     return false;
 
-
-
-
-
-    // TODO
-    return false;
 }
 
 // Hashes word to a number
