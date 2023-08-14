@@ -60,7 +60,6 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    size_counter += 1;
     return toupper(word[0]) - 'A';
 }
 
