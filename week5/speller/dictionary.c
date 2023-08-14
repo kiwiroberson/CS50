@@ -127,11 +127,12 @@ bool unload(void)
 
         while (cursor->next != NULL)
         {
+            
             node *tmp = cursor;
             cursor = cursor->next;
             free(tmp);
         }
-        free(table[i]);
+
 
     }
     return true;
