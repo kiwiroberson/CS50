@@ -110,13 +110,17 @@ int main(int argc, char *argv[])
 // TODO: Complete the check function, return true if found, false if not found
 bool check(char* word)
 {
+    //start cursor at root
+    *cursor = root;
+    //find length of name string
+    int l = strlen(word)
+    //iterate over every letter in name string
+    for (i = 0; i < l; i++)
+    {
+        //look for first letter of string,
+        word[i] 
 
-*cursor = root;
-
-for (i; i < strlen(word); i++)
-{
-    
-}
+    }
 
 
 
