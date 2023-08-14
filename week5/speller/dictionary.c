@@ -47,11 +47,8 @@ bool load(const char *dictionary)
 
     //read strings from file
     //as loop
-    char *a = NULL;
-    while a != EOF;
-    {
-        a = fscanf(file, "%s", word)
-    }
+    char buffer[46];
+    fscanf(file, "%s", buffer);
 
     //create a new node to store current word
     //allocate memory
