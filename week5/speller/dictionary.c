@@ -52,10 +52,9 @@ bool load(const char *dictionary)
     while (fscanf(file, "%s", word) != EOF)
     {
         //create a new node to store current word and allocate memory
-
         node *tmp  = malloc(sizeof(node));
-        if (tmp != NULL)
         //copy word into node
+        if (tmp != NULL)
         {
             strcpy(tmp->word, word);
         }
