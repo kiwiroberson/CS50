@@ -58,7 +58,7 @@ bool load(const char *dictionary)
         {
             strcpy(tmp->word, word);
         }
-
+        
         //hash function to find location for node
         int index = hash(word);
 
