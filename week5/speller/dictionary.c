@@ -31,8 +31,8 @@ bool check(const char *word)
 {
     int index = hash(word);
 
-    *cursor = malloc(sizeof(node))
-    cursor = table[index];
+
+    node *cursor = table[index];
 
     while (cursor->next != NULL)
     {
@@ -42,7 +42,9 @@ bool check(const char *word)
         return true;
         }
         else
-        {cursor = cursor->next}
+        {
+            cursor = cursor->next;
+        }
     }
     free(cursor);
     return false;
