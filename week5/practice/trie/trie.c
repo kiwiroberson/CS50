@@ -112,16 +112,17 @@ bool check(char* word)
 {
     //start cursor at root
     node *cursor = root;
-    //find length of name string
-    int l = strlen(word)
+
     //iterate over every letter in name string
     for (i = 0; int n = strlen(word); i < n; i++)
     {
         //look for first letter of string,
+        //find index of letter
         int index = tolower(word[i]) - 'a';
+        //check for end of trie structure
         if (cursor->children[index] != NULL)
         {
-            
+
         }
 
 
