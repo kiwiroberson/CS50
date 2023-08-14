@@ -81,14 +81,6 @@ person *create_family(int generations)
         }
 
 
-
-        char x = parent0->alleles[0];
-        char y = parent0->alleles[1];
-
-
-        a->alleles[0] = parent0->alleles[0];
-        a->alleles[1] = parent1->alleles[0];
-
     }
 
     // If there are no generations left to create
