@@ -32,8 +32,7 @@ bool check(const char *word)
     int index = hash(word);
 
 
-    node *cursor = malloc(sizeof(node))
-    cursor = table[index];
+    *cursor = table[index];
 
     while (cursor->next != NULL)
     {
