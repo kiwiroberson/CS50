@@ -30,7 +30,7 @@ bool check(const char *word)
 {
     int index = hash(word);
 
-    cursor = table[index];
+    *cursor = table[index];
 
     while (cursor->next != NULL)
     {
