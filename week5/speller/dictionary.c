@@ -30,16 +30,16 @@ bool check(const char *word)
 {
     int index = hash(word);
 
-    pointer = table[index];
+    cursor = table[index];
 
-    while (pointer->next != NULL)
+    while (cursor->next != NULL)
     {
-        if (strcasecmp(pointer->word, word) == 0)
+        if (strcasecmp(cursor->word, word) == 0)
         {
         return true;
         }
         else
-        {pointer = pointer->next}
+        {cursor = cursor->next}
     }
     return false;
 
