@@ -96,7 +96,6 @@ bool load(const char *dictionary)
             //set pointers in correct order
             tmp->next = table[index];
             table[index] = tmp;
-            free(tmp);
         }
         else
         {
