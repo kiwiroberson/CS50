@@ -57,27 +57,28 @@ bool load(const char *dictionary)
         if (tmp != NULL)
         {
             strcpy(tmp->word, word);
+
+            //hash function to find location for node
+            int index = hash(word);
+
+            //insert word into linked list
+            //set pointers in correct order
+            tmp->next = table[index];
+            table[index] = tmp;
+            free(tmp);
         }
-        
-        //hash function to find location for node
-        int index = hash(word);
-
-        //insert word into linked list
-        //set pointers in correct order
-        tmp->next = table[index];
-        table[index] = tmp;
-        free(tmp);
-
+        else
+        {
+            fclose(file);
+            free(tmp);
+            return false;
+        }
     }
 
-
-
-
-
-
-
 //true of able to load, false if not
-    return false;
+    fclose(file);
+    free(tmp);
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
