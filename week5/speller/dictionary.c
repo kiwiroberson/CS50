@@ -119,7 +119,15 @@ bool unload(void)
 {
     for (i = 0, i < N; i++)
     {
-        
+        node cursor = table[i];
+
+        while (cursor->next != NULL)
+        {
+            node tmp = cursor;
+            cursor = cursor->next;
+            free(tmp);
+        }
+        free(cursor);
     }
     return false;
 }
