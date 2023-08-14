@@ -37,7 +37,11 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // open dictionary file
-
+    fopen(dictionary) = 
+    if(fopen(dictionary) == NULL)
+    {
+        return false;
+    }
 
     //read strings from file
     //as loop
