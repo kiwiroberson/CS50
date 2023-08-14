@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 bool check(char* word)
 {
     //start cursor at root
-    node cursor = *root;
+    node *cursor = root;
     //find length of name string
     int l = strlen(word)
     //iterate over every letter in name string
@@ -119,6 +119,10 @@ bool check(char* word)
     {
         //look for first letter of string,
         int index = tolower(word[i]) - 'a';
+        if (cursor->children[index] != NULL)
+        {
+            
+        }
 
 
     }
