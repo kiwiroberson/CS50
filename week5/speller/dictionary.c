@@ -32,7 +32,7 @@ bool check(const char *word)
     int index = hash(word);
 
 
-    *cursor = table[index];
+    node *cursor = table[index];
 
     if(cursor == NULL)
     {
