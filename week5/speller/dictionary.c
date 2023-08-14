@@ -39,8 +39,19 @@ bool load(const char *dictionary)
     // open dictionary file
 
     //read strings from file
+    //as loop
 
-    //
+    //create a new node to store current word
+    //allocate memory
+    //copy word into node
+
+    //hash function to find location for node
+    //use hash function
+
+    //insert word into linked list
+    //set pointers in correct order
+
+
     return false;
 }
 
