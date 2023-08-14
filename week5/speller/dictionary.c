@@ -55,12 +55,13 @@ bool load(const char *dictionary)
         if (tmp != NULL)
         {
             strcpy(tmp->word, word);
-            tmp->next = NULL;
+
         }
 
         int index = hash(word);
 
-        table[in]
+        tmp->next = table[index];
+        table[index] = 
 
     }
 
