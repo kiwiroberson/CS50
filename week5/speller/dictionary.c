@@ -95,6 +95,8 @@ bool load(const char *dictionary)
             //set pointers in correct order
             tmp->next = table[index];
             table[index] = tmp;
+            size_counter++;
+
         }
         else
         {
@@ -106,7 +108,6 @@ bool load(const char *dictionary)
 
 //true of able to load, false if not
     fclose(file);
-
     return true;
 }
 
