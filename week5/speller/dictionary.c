@@ -51,30 +51,31 @@ bool load(const char *dictionary)
     char word[46];
     while (fscanf(file, "%s", word) != EOF)
     {
+        //create a new node to store current word and allocate memory
+
         node *tmp  = malloc(sizeof(node));
         if (tmp != NULL)
+        //copy word into node
         {
             strcpy(tmp->word, word);
-
         }
 
+        //hash function to find location for node
         int index = hash(word);
 
+        //insert word into linked list
+        //set pointers in correct order
         tmp->next = table[index];
         table[index] = tmp;
         free(tmp);
 
     }
 
-    //create a new node to store current word
-    //allocate memory
-    //copy word into node
 
-    //hash function to find location for node
-    //use hash function
 
-    //insert word into linked list
-    //set pointers in correct order
+
+
+
 
 //true of able to load, false if not
     return false;
