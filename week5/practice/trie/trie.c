@@ -115,7 +115,7 @@ bool check(char* word)
     //find length of name string
     int l = strlen(word)
     //iterate over every letter in name string
-    for (i = 0; i < l; i++)
+    for (i = 0; int n = strlen(word); i < n; i++)
     {
         //look for first letter of string,
         word[i]
