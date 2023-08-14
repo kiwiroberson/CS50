@@ -120,9 +120,9 @@ bool check(char* word)
         //find index of letter
         int index = tolower(word[i]) - 'a';
         //check for end of trie structure
-        if (cursor->children[index] != NULL)
+        if (cursor->children[index] = NULL)
         {
-
+            return 
         }
 
 
