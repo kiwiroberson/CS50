@@ -64,17 +64,16 @@ person *create_family(int generations)
 
         for (int i = 0; i < 2; i++)
         {
-            for (int j = 0; j < 2; j++)
-            {
+
               if (rand() % 2 == 0)
               {
-                a->alleles[i] = parent'j'->allele[0];
+                a->alleles[i] = parent0->allele[0];
               }
               else
               {
-                a->alleles[i] = parent"j"->allele[1];
+                a->alleles[i] = parent0->allele[1];
               }
-            }
+
 
         }
         char x = parent0->alleles[0];
