@@ -51,7 +51,14 @@ bool load(const char *dictionary)
     char word[46];
     while (fscanf(file, "%s", word) != EOF)
     {
-
+        tmp  = malloc(sizeof(node))
+        if (tmp == NULL)
+        {
+            free(tmp);
+            fclose(file);
+            return false;
+        }
+        
     }
 
     //create a new node to store current word
