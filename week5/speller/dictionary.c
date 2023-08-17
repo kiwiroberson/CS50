@@ -136,7 +136,7 @@ unsigned int size(void)
 
 bool unload(void)
 {
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < 1; i++)
     {
         node *cursor = list;
 
@@ -154,23 +154,3 @@ bool unload(void)
 
 
 
-
-
-
-//bool unload(void)
-//{
-//    for (int i = 0; i < N; i++)
-//    {
-        node *cursor = list;
-
-        while (cursor != NULL)
-        {
-            node *tmp = cursor;
-            cursor = cursor->next;
-            free(tmp);
-        }
-
-
-    }
-    return true;
-}
