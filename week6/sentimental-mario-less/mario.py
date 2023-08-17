@@ -5,20 +5,12 @@ def main():
     buildblock(n)
 
 
-
-
-
-
-
-
-
 def getnumber():
     while True:
         n = cs50.get_int("What number? ")
-        if n > 0:
+        if n > 0 and n < 9:
             return n
-        elif n < 8:
-            return n
+
 
 def buildblock(n):
     m = 1
