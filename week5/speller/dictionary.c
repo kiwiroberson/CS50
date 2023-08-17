@@ -26,7 +26,7 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-node *list = NULL;
+node *list[N] = NULL;
 
 
 
@@ -136,7 +136,7 @@ unsigned int size(void)
 
 bool unload(void)
 {
-    for (int i = 0; i < 1; i++)
+    for (int i = 0; i < N; i++)
     {
         node *cursor = list;
 
