@@ -17,6 +17,13 @@ typedef struct node
 }
 node;
 
+typedef struct tnode
+{
+    char word[LENGTH + 1];
+    struct node *next;
+}
+tnodenode;
+
 //start counter for size function
 int size_counter = 0;
 
