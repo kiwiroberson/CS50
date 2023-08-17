@@ -26,6 +26,7 @@ const unsigned int N = 26;
 
 // Hash table
 node *list;
+node *list = malloc(sizeof(node));
 
 
 
