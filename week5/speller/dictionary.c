@@ -97,7 +97,7 @@ bool load(const char *dictionary)
             return false;
         }
         int wlength = strlen(word);
-        word[wlength + 1] = 'a';
+        word[wlength] = '\0';
         strcpy(tmp->word, word);
 
 
