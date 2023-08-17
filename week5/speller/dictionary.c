@@ -36,7 +36,7 @@ bool check(const char *word)
     int index = hash(word);
 
 
-    node *cursor = list;
+    node *cursor = list[index];
 
     if(cursor == NULL)
     {
@@ -69,8 +69,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    return 0;
-    //return toupper(word[0]) - 'A';
+    return toupper(word[0]) - 'A';
 }
 
 // Loads dictionary into memory, returning true if successful, else false
