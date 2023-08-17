@@ -15,7 +15,7 @@ def main():
 def getnumber():
     while True:
         n = cs50.get_int("What number? ")
-        if n > 1:
+        if n > 0:
             return n
         elif n < 8:
             return n
