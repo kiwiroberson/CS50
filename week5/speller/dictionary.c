@@ -14,6 +14,7 @@ typedef struct node
 {
     char word[LENGTH + 1];
     struct node *next;
+    int valid;
 }
 node;
 
@@ -42,7 +43,7 @@ bool check(const char *word)
         return false;
     }
 
-    while (cursor->next != NULL)
+    while (cursor->valid == 1)
     {
         if (strcasecmp(cursor->word, word) == 0)
         {
@@ -106,6 +107,7 @@ bool load(const char *dictionary)
 
         //insert word into linked list
         //set pointers in correct order
+        tmp->valid = 1;
         tmp->next = NULL;
         tmp->next = list;
 
