@@ -98,6 +98,8 @@ bool load(const char *dictionary)
         }
 
         strcpy(tmp->word, word);
+        int wlength = strlen(tmp->word);
+        tmp->word[wlength + 1] = '\0';
 
         //hash function to find location for node
         int index = hash(word);
