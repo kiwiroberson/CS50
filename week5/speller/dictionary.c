@@ -25,7 +25,8 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N] = malloc(N * sizeof(node));
+node *table[N];
+
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -67,6 +68,13 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
+
+    // Initialize each element of the array
+    for (int i = 0; i < N; i++)
+    {
+        table[i] = NULL;  // Initialize each bucket as an empty linked list
+    }
+
     // open dictionary file
     FILE *file = fopen(dictionary, "r");
     if(file == NULL)
