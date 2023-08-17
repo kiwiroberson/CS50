@@ -99,7 +99,7 @@ bool load(const char *dictionary)
 
         //insert word into linked list
         //set pointers in correct order
-        table[index] = 0;
+
         tmp->next = table[index];
         table[index] = tmp;
         size_counter++;
