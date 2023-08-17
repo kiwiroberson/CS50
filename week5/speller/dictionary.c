@@ -85,8 +85,14 @@ bool load(const char *dictionary)
         node *tmp  = malloc(sizeof(node));
         //copy word into node
         //true of able to load, false if not
-        if (tmp != NULL)
+        if (tmp == NULL)
         {
+            fclose(file);
+            free(tmp);
+            return false;
+        }
+
+
             strcpy(tmp->word, word);
 
             //hash function to find location for node
@@ -97,17 +103,9 @@ bool load(const char *dictionary)
             tmp->next = table[index];
             table[index] = tmp;
             size_counter++;
-            fclose(file);
         return true;
-
-        }
-        else
-        {
-            fclose(file);
-            free(tmp);
-            return false;
-        }
     }
+            fclose(file);
 
     return 2;
 }
