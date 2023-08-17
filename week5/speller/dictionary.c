@@ -26,7 +26,7 @@ const unsigned int N = 26;
 
 // Hash table
 node *list;
-list->next = 
+
 
 
 // Returns true if word is in dictionary, else false
@@ -84,7 +84,7 @@ bool load(const char *dictionary)
 
     //read strings from file
     //as loop
-
+    
     char word[LENGTH + 1];
     while (fscanf(file, "%s", word) != EOF)
     {
