@@ -91,21 +91,20 @@ bool load(const char *dictionary)
             return false;
         }
 
+        strcpy(tmp->word, word);
 
-            strcpy(tmp->word, word);
+        //hash function to find location for node
+        int index = hash(word);
 
-            //hash function to find location for node
-            int index = hash(word);
-
-            //insert word into linked list
-            //set pointers in correct order
-            tmp->next = table[index];
-            table[index] = tmp;
-            size_counter++;
+        //insert word into linked list
+        //set pointers in correct order
+        tmp->next = table[index];
+        table[index] = tmp;
+        size_counter++;
 
     }
-            fclose(file);
- return true;
+    fclose(file);
+    return true;
 
 }
 
