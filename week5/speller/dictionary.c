@@ -103,11 +103,11 @@ bool load(const char *dictionary)
             tmp->next = table[index];
             table[index] = tmp;
             size_counter++;
-        return true;
+
     }
             fclose(file);
+ return true;
 
-    return 2;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
