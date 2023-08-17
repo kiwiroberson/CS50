@@ -77,14 +77,13 @@ bool load(const char *dictionary)
     FILE *file = fopen(dictionary, "r");
     if(file == NULL)
     {
-        fclose(file);
         return false;
     }
 
 
     //read strings from file
     //as loop
-    
+
     char word[LENGTH + 1];
     while (fscanf(file, "%s", word) != EOF)
     {
