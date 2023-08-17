@@ -18,7 +18,6 @@ typedef struct node
 node;
 
 
-
 //start counter for size function
 int size_counter = 0;
 
@@ -26,7 +25,7 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-int *table[N];
+node *table[N];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
