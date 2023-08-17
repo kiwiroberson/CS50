@@ -25,7 +25,7 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N];
+node *list;
 
 
 // Returns true if word is in dictionary, else false
@@ -34,7 +34,7 @@ bool check(const char *word)
     int index = hash(word);
 
 
-    node *cursor = table[index];
+    node *cursor = list;
 
     if(cursor == NULL)
     {
@@ -70,7 +70,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
 
-   
+
 
     // open dictionary file
     FILE *file = fopen(dictionary, "r");
@@ -105,8 +105,9 @@ bool load(const char *dictionary)
         //insert word into linked list
         //set pointers in correct order
         tmp->next = NULL;
-        tmp->next = table[index];
-        table[index] = tmp;
+        tmp->next = list;
+
+        list = tmp;
         size_counter++;
 
     }
@@ -127,7 +128,7 @@ bool unload(void)
 {
     for (int i = 0; i < N; i++)
     {
-        node *cursor = table[i];
+        node *cursor = list;
 
         while (cursor != NULL)
         {
