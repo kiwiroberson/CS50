@@ -38,18 +38,20 @@ bool check(const char *word)
 
     node *cursor = list;
 
-    if(cursor == NULL)
-    {
-        return false;
-    }
+
 
     while (cursor->valid == 1)
     {
+        if(cursor == NULL)
+        {
+            return false;
+        }
+
         if (strcasecmp(cursor->word, word) == 0)
         {
-        
         return true;
         }
+        
         else
         {
             cursor = cursor->next;
