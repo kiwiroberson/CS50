@@ -23,6 +23,7 @@ def getnumber():
 def buildblock(n):
     for x in range(n):
         print("#" * n)
+        n = n - 1
 
 
 main()
