@@ -84,6 +84,7 @@ bool load(const char *dictionary)
         //create a new node to store current word and allocate memory
         node *tmp  = malloc(sizeof(node));
         //copy word into node
+        //true of able to load, false if not
         if (tmp != NULL)
         {
             strcpy(tmp->word, word);
@@ -96,6 +97,8 @@ bool load(const char *dictionary)
             tmp->next = table[index];
             table[index] = tmp;
             size_counter++;
+            fclose(file);
+        return true;
 
         }
         else
@@ -106,9 +109,7 @@ bool load(const char *dictionary)
         }
     }
 
-//true of able to load, false if not
-    fclose(file);
-    return true;
+    return 2;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
