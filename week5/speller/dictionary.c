@@ -17,12 +17,7 @@ typedef struct node
 }
 node;
 
-typedef struct tnode
-{
-    char word[LENGTH + 1];
-    struct node *next;
-}
-tnodenode;
+
 
 //start counter for size function
 int size_counter = 0;
@@ -31,7 +26,7 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N];
+int *table[N];
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
