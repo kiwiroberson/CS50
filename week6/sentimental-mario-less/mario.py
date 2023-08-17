@@ -21,8 +21,8 @@ def getnumber():
             return n
 
 def buildblock(n):
+    m = 1
     for x in range(n):
-        m = 1
         print(" " * (n-1) + "#" * m)
         n = n - 1
         m = m + 1
