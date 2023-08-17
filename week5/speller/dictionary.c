@@ -26,7 +26,7 @@ int size_counter = 0;
 const unsigned int N = 26;
 
 // Hash table
-node *list[N] = NULL;
+node *list[N];
 
 
 
@@ -113,9 +113,9 @@ bool load(const char *dictionary)
         //set pointers in correct order
         tmp->valid = 1;
         tmp->next = NULL;
-        tmp->next = list;
+        tmp->next = list[index];
 
-        list = tmp;
+        list[index] = tmp;
         size_counter++;
 
     }
@@ -137,7 +137,7 @@ bool unload(void)
 {
     for (int i = 0; i < N; i++)
     {
-        node *cursor = list;
+        node *cursor = list[i];
 
         while (cursor != NULL)
         {
