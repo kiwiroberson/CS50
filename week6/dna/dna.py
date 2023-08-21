@@ -21,9 +21,8 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
-    name = 'Bob'
-
-    print(reader['Bob'])
+    for row in reader:
+        print(row)
    # for name in reader:
        # longest_match(seq, reader[name])
 
