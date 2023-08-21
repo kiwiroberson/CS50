@@ -20,7 +20,7 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    print(reader)
+    print(reader[1])
     # TODO: Check database for matching profiles
 
     return
