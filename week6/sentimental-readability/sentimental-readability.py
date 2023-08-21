@@ -24,7 +24,7 @@ def main():
 def count_letters(text):
     n = 0
     for a in text:
-        if a.islower():
+        if a.isalpha():
             n += 1
     return n
 
