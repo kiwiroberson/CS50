@@ -6,17 +6,17 @@ import argparse
 def main():
 
     # TODO: Check for command-line usage
-    print(sys.argv.count(''))
-    print(f"Incorrect number of files")
-    return 1
+    if len(sys.argv) == 1:
+        print(f"Incorrect number of files")
+        return 1
 
 
     # TODO: Read database file into a variable
-    with open(database, newline='') as database:
-        reader = csv.dictreader(database)
+    with open(sys.argv[1], newline='') as database:
+        reader = csv.DictReader(database)
     # TODO: Read DNA sequence file into a variable
-    with open(sequence) as sequence:
-        reader = read(sequence)
+    with open(sys.argv[2]) as sequence:
+        reader = reader(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
 
