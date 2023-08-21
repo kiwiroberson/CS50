@@ -11,7 +11,7 @@ def main():
     qr = change - q * 0.25
 
     d = math.trunc(qr / 0.1)
-    dr = qr - d * 0.1
+    dr = round(qr - d * 0.1, 2)
 
     n = math.trunc(dr / 0.05)
     nr = dr - n * 0.05
