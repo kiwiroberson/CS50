@@ -6,8 +6,7 @@ import argparse
 def main():
 
     # TODO: Check for command-line usage
-    if sys.argv != 3:
-        print(args.counter)
+    if sys.argv[1]:
         print(f"Incorrect number of files")
         return 1
 
