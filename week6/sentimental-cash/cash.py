@@ -1,6 +1,7 @@
 import cs50
 import math
 
+
 def main():
     change = 0
     while change <= 0:
@@ -19,18 +20,6 @@ def main():
     p = math.trunc(nr / 0.01)
 
     print(q+d+n+p)
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
 main()
