@@ -1,7 +1,6 @@
 import cs50
 
 def main():
-    ##get text for analysis
     text = cs50.get_string("Text: ")
 
     ##Run analysis
@@ -10,7 +9,7 @@ def main():
 
     ##calculate score
     CLi = round(0.0588 * L - 0.296 * S - 15.8, 0)
-    CLi - round(CLi, 0)
+    
 
     ##print score
     if CLi < 1:
@@ -40,7 +39,7 @@ def count_words(text):
 def count_sentences(text):
     n = 0
     for a in text:
-        if a == '.' or a == '?' or a == '?':
+        if a == '.' or a == '?' or a == '!':
             n += 1
     return n
 
