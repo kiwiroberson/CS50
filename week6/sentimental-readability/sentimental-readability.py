@@ -14,19 +14,14 @@ def main():
 
     ##Test
     l = count_letters(text)
-    print("Letters: " + l)
+    print(l)
 
 
 
 
 
 def count_letters(text):
-    l = 0
-    n = 0
-    while (text[n] != " "):
-        if (text[n] >=65 and text[n]) <=90:
-            l += 1
-        n += 1
+    l = text.lower().count('')
     return l
 
 
