@@ -7,7 +7,6 @@ def main():
     while change <= 0:
         change = cs50.get_float("Change owed: ")
 
-
     q = math.trunc(change / 0.25)
     qr = round(change - q * 0.25, 2)
 
