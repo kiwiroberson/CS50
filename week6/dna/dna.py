@@ -6,9 +6,9 @@ import argparse
 def main():
 
     # TODO: Check for command-line usage
-    if sys.argv[1]:
-        print(f"Incorrect number of files")
-        return 1
+    print(sys.argv.count())
+    print(f"Incorrect number of files")
+    return 1
 
 
     # TODO: Read database file into a variable
