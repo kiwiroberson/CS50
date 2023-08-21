@@ -1,4 +1,4 @@
-import cs50 import get_string
+from cs50 import get_string
 
 def main():
     ##get text for analysis
