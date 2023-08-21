@@ -5,12 +5,27 @@ def main():
     ##get text for analysis
     text = cs50.get_string("Text: ")
 
-    ##calculate score
+    ##Run analysis
+    L = count_letters(text) / count_words(text) * 100
+    S = count_sentences(text) / count_words(text) * 100
 
-    ##round score
+
+    ##calculate score
+    CLi = round(0.0588 * L - 0.296 * S - 15.8, 0)
+
+
+
+
 
     ##print score
-    print("Grade " )
+    if CLi < 1:
+        print("Before Grade 1" )
+        return
+    elif CLi > 16:
+        print("Grade 16+")
+        return
+    print("Grade: " + CLi)
+
 
     ##Test
     ##lcount = count_letters(text)
