@@ -2,10 +2,10 @@ import csv
 import sys
 
 
-def main(database, sequence):
+def main():
 
     # TODO: Check for command-line usage
-    if argv != 3:
+    if argc != 3:
         print(f"Incorrect number of files")
         return 1
 
