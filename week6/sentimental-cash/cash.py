@@ -11,13 +11,15 @@ def main():
     dr = qr % 0.1
 
     n = math.trunc(dr / 0.05)
-    p = dr % 0.05
+    nr = qr % 0.05
+
+    p = math.trunc(nr / 0.01)
 
     print(q)
     print(d)
     print(n)
-    print(dr)
     print(p)
+    print()
     print(q+d+n+p)
 
 
