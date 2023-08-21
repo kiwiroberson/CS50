@@ -13,7 +13,7 @@ def main():
     print("Grade " )
 
     ##Test
-    l = count_letters(text)
+    count_letters(text)
     print(l)
 
 
