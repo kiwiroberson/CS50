@@ -6,11 +6,12 @@ def main(argv, argc):
 
     # TODO: Check for command-line usage
     if argv != 2
-        
+        print(f"Incorrect files")
+        return 1
 
 
     # TODO: Read database file into a variable
-
+    csv.reader(argv)
     # TODO: Read DNA sequence file into a variable
 
     # TODO: Find longest match of each STR in DNA sequence
