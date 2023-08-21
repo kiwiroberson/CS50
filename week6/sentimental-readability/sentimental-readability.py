@@ -4,4 +4,11 @@ import math
 def main():
 
 
-def
+def count_letters():
+
+
+def count_words():
+
+
+def count_sentences():
+    
