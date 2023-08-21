@@ -12,9 +12,24 @@ def main():
     ##print score
     print("Grade " x)
 
+    ##Test
+    print("Letters: " l)
+    
+
 
 def count_letters():
-    
+    l = 0
+    n = 0
+    while (text[n] != " "):
+        if int(text[n] >=65 && <=90):
+            l += 1
+        n += 1
+
+
+
+
+
+
 
 
 
