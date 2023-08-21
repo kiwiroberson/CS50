@@ -21,7 +21,7 @@ def main():
 
 
 def count_letters(text):
-    l = text.lower().count('')
+    l = text.lower().count('') - text
     return l
 
 
