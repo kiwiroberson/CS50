@@ -38,7 +38,7 @@ def count_words(text):
 def count_sentences(text):
     n = 0
     for a in text:
-        if a.ispunct():
+        if a == '.' or a == '?' or a == '?':
             n += 1
 
 
