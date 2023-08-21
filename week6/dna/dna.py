@@ -5,7 +5,8 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if argc != 3:
+    if sys.argv != 3:
+        print(sys.argv)
         print(f"Incorrect number of files")
         return 1
 
