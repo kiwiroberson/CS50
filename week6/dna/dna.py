@@ -2,17 +2,18 @@ import csv
 import sys
 
 
-def main(argv, argc):
+def main(x, y):
 
     # TODO: Check for command-line usage
-    if argv != 2
-        print(f"Incorrect files")
+    if argv != 3
+        print(f"Incorrect number of files")
         return 1
 
 
     # TODO: Read database file into a variable
-    csv.dictreader(argv)
+    csv.dictreader(x)
     # TODO: Read DNA sequence file into a variable
+    open(y, r)
 
     # TODO: Find longest match of each STR in DNA sequence
 
