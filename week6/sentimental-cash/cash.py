@@ -8,13 +8,13 @@ def main():
 
 
     q = math.trunc(change / 0.25)
-    qr = round(change % 0.25, 2)
+    qr = change - q * 0.25
 
     d = math.trunc(qr / 0.1)
-    dr = round(qr % 0.1, 2)
+    dr = qr - d * 0.1
 
     n = math.trunc(dr / 0.05)
-    nr = round(qr % 0.05, 2)
+    nr = dr - n * 0.05
 
     p = math.trunc(nr / 0.01)
 
