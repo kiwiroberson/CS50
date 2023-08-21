@@ -1,15 +1,16 @@
 import cs50
+import math
 
 def main():
     change = cs50.get_float("Change owed: ")
 
-    q = round(change / 0.25)
+    q = math.trunc(change / 0.25)
     qr = change % 0.25
 
-    d = round(qr / 0.1)
+    d = math.trunc(qr / 0.1)
     dr = qr % 0.1
 
-    n = round(dr / 0.05)
+    n = trunc(dr / 0.05)
     p = dr % 0.05
 
     print(q)
