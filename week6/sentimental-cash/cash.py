@@ -10,7 +10,7 @@ def main():
     d = math.trunc(qr / 0.1)
     dr = qr % 0.1
 
-    n = trunc(dr / 0.05)
+    n = math.trunc(dr / 0.05)
     p = dr % 0.05
 
     print(q)
