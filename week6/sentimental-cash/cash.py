@@ -14,8 +14,6 @@ def main():
 
     print(q+d+n+p)
 
-main()
-
 
 
 
