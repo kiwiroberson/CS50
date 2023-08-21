@@ -16,8 +16,8 @@ def main():
     print(q)
     print(d)
     print(n)
+    print(dr)
     print(p)
-    print()
     print(q+d+n+p)
 
 
