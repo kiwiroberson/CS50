@@ -1,24 +1,24 @@
 import cs50
 
 def main():
+    # Get text for analysis
     text = cs50.get_string("Text: ")
 
-    ##Run analysis
+    # Run analysis
     L = count_letters(text) / count_words(text) * 100
     S = count_sentences(text) / count_words(text) * 100
 
-    ##calculate score
-    CLi = round(0.0588 * L - 0.296 * S - 15.8, 0)
-    
+    # Calculate score
+    CLi = 0.0588 * L - 0.296 * S - 15.8
+    CLi -= round(CLi)
 
-    ##print score
+    # Print score
     if CLi < 1:
-        print("Before Grade 1" )
-        return
+        print("Before Grade 1")
     elif CLi > 16:
         print("Grade 16+")
-        return
-    print("Grade: " + str(int(CLi)))
+    else:
+        print("Grade:", int(CLi))
 
 def count_letters(text):
     n = 0
@@ -27,14 +27,12 @@ def count_letters(text):
             n += 1
     return n
 
-
 def count_words(text):
     n = 1
     for a in text:
         if a.isspace():
             n += 1
     return n
-
 
 def count_sentences(text):
     n = 0
@@ -43,7 +41,5 @@ def count_sentences(text):
             n += 1
     return n
 
-
-main()
-
-
+if __name__ == "__main__":
+    main()
