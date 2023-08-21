@@ -29,18 +29,18 @@ def count_letters(text):
 
 
 def count_words(text):
-    n = 0
+    n = 1
     for a in text:
         if a.isspace():
             n += 1
-
+    return n
 
 def count_sentences(text):
     n = 0
     for a in text:
         if a == '.' or a == '?' or a == '?':
             n += 1
-
+    return n
 
 main()
 
