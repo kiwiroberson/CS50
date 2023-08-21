@@ -8,20 +8,18 @@ def main():
 
 
     q = math.trunc(change / 0.25)
-    qr = change - q * 0.25
+    qr = round(change - q * 0.25, 2)
 
     d = math.trunc(qr / 0.1)
     dr = round(qr - d * 0.1, 2)
 
     n = math.trunc(dr / 0.05)
-    nr = dr - n * 0.05
+    nr = round(dr - n * 0.05, 2)
 
     p = math.trunc(nr / 0.01)
 
     print(q+d+n+p)
-    print (qr)
-    print(dr)
-    print(nr)
+    
 
 
 
