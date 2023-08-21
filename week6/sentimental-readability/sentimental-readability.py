@@ -15,19 +15,18 @@ def main():
     ##Test
     ##lcount = count_letters(text)
 
-    print(text.islower())
+    print(count_letters(text))
 
 
 
 
 
 def count_letters(text):
-    ##l = text.lower().count('')
-
-    l = text.islower
-
-    return l
-
+    n = 0
+    for a in text:
+        if a.islower():
+            n += 1
+    return n
 
 
 
