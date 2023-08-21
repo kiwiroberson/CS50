@@ -8,6 +8,7 @@ def main(argv, argc):
     if argv != 2
         
 
+
     # TODO: Read database file into a variable
 
     # TODO: Read DNA sequence file into a variable
