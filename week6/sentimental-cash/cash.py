@@ -2,6 +2,7 @@ import cs50
 import math
 
 def main():
+    while True
     change = cs50.get_float("Change owed: ")
 
     q = math.trunc(change / 0.25)
