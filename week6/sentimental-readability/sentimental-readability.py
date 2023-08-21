@@ -16,9 +16,8 @@ def main():
     ##lcount = count_letters(text)
 
     print(count_letters(text))
-
-
-
+    print(count_words(text))
+    print(count_sentences(text))
 
 
 def count_letters(text):
@@ -29,17 +28,19 @@ def count_letters(text):
     return n
 
 
+def count_words(text):
+    n = 0
+    for a in text:
+        if a.isspace():
+            n += 1
 
 
+def count_sentences(text):
+    n = 0
+    for a in text:
+        if a.ispunct():
+            n += 1
 
-
-
-
-def count_words():
-    w = 0
-
-def count_sentences():
-    s = 0
 
 main()
 
