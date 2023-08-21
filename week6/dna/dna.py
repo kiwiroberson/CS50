@@ -5,6 +5,8 @@ import sys
 def main(argv, argc):
 
     # TODO: Check for command-line usage
+    if argv != 2
+        
 
     # TODO: Read database file into a variable
 
