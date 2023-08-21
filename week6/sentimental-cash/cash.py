@@ -16,8 +16,11 @@ def main():
     p = math.trunc(nr / 0.01)
 
     print(q)
+    print(qr)
     print(d)
+    print(dr)
     print(n)
+    print(nr)
     print(p)
     print()
     print(q+d+n+p)
