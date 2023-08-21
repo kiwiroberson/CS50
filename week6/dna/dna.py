@@ -7,7 +7,7 @@ def main():
 
     # TODO: Check for command-line usage
     if sys.argv != 3:
-        print()
+        print(args.counter)
         print(f"Incorrect number of files")
         return 1
 
