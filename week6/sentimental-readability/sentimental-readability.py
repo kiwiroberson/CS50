@@ -10,20 +10,24 @@ def main():
     ##round score
 
     ##print score
-    print("Grade " x)
+    print("Grade " )
 
     ##Test
-    print("Letters: " l)
-    
+    l = count_letters(text)
+    print("Letters: " + l)
 
 
-def count_letters():
+
+
+
+def count_letters(text):
     l = 0
     n = 0
     while (text[n] != " "):
-        if int(text[n] >=65 && <=90):
+        if (text[n] >=65 and text[n]) <=90:
             l += 1
         n += 1
+    return l
 
 
 
@@ -34,7 +38,11 @@ def count_letters():
 
 
 def count_words():
-
+    w = 0
 
 def count_sentences():
+    s = 0
+
+main()
+
 
