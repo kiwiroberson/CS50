@@ -12,6 +12,11 @@ def main():
     n = round(dr / 0.05)
     p = dr % 0.05
 
+    print(q)
+    print(d)
+    print(n)
+    print(p)
+    print()
     print(q+d+n+p)
 
 
