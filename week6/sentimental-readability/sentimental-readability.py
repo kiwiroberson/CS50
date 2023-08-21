@@ -1,8 +1,8 @@
-import cs50
+import cs50 import get_string
 
 def main():
     ##get text for analysis
-    text = cs50.get_string("Text: ")
+    text = get_string("Text: ")
 
     ##Run analysis
     L = count_letters(text) / count_words(text) * 100
