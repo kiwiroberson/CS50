@@ -1,5 +1,4 @@
 import cs50
-import math
 
 def main():
     ##get text for analysis
@@ -9,13 +8,9 @@ def main():
     L = count_letters(text) / count_words(text) * 100
     S = count_sentences(text) / count_words(text) * 100
 
-
     ##calculate score
     CLi = round(0.0588 * L - 0.296 * S - 15.8, 0)
-
-
-
-
+    CLi - round(CLi, 0)
 
     ##print score
     if CLi < 1:
@@ -24,16 +19,7 @@ def main():
     elif CLi > 16:
         print("Grade 16+")
         return
-    print(CLi)
-
-
-    ##Test
-    ##lcount = count_letters(text)
-
-    print(count_letters(text))
-    print(count_words(text))
-    print(count_sentences(text))
-
+    print("Grade: " + str(int(CLi)))
 
 def count_letters(text):
     n = 0
