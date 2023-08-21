@@ -13,15 +13,15 @@ def main():
     print("Grade " )
 
     ##Test
-    count_letters(text)
-    print(l)
+    lcount = count_letters(text)
+    print(lcount)
 
 
 
 
 
 def count_letters(text):
-    l = text.lower().count('') - text
+    l = text.lower().count('')
     return l
 
 
