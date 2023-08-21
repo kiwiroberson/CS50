@@ -24,7 +24,7 @@ def main():
     elif CLi > 16:
         print("Grade 16+")
         return
-    print("Grade: " + CLi)
+    print(CLi)
 
 
     ##Test
