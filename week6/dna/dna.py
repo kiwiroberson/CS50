@@ -2,7 +2,7 @@ import csv
 import sys
 
 
-def main(x, y):
+def main(database, sequence):
 
     # TODO: Check for command-line usage
     if argv != 3
@@ -11,10 +11,11 @@ def main(x, y):
 
 
     # TODO: Read database file into a variable
-    with open(x, newline='') as csvfile:
-    reader = csv.dictreader(csvfile)
+    with open(database, newline='') as database:
+    reader = csv.dictreader(database)
     # TODO: Read DNA sequence file into a variable
-    open(y, r)
+    with open(sequence) as sequence:
+    reader = read(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
 
