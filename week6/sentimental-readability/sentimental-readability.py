@@ -1,18 +1,18 @@
 from cs50 import get_string
 
 def main():
-    ##get text for analysis
+    #get text for analysis
     text = get_string("Text: ")
 
-    ##Run analysis
+
+    #Run analysis
     L = count_letters(text) / count_words(text) * 100
     S = count_sentences(text) / count_words(text) * 100
 
-    ##calculate score
+    #calculate score
     CLi = round(0.0588 * L - 0.296 * S - 15.8, 0)
-    CLi - round(CLi, 0)
 
-    ##print score
+    #print score
     if CLi < 1:
         print("Before Grade 1" )
         return
