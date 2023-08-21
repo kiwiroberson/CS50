@@ -1,12 +1,13 @@
 import csv
 import sys
+import argparse
 
 
 def main():
 
     # TODO: Check for command-line usage
     if sys.argv != 3:
-        print(sys.argv)
+        print()
         print(f"Incorrect number of files")
         return 1
 
