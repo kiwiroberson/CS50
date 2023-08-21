@@ -15,7 +15,7 @@ def main():
     ##Test
     ##lcount = count_letters(text)
 
-    print(text.islower)
+    print(text.islower())
 
 
 
