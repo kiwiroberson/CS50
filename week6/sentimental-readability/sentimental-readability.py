@@ -13,8 +13,9 @@ def main():
     print("Grade " )
 
     ##Test
-    lcount = count_letters(text)
-    print(lcount)
+    ##lcount = count_letters(text)
+
+    print(text.islower)
 
 
 
