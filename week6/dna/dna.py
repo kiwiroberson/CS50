@@ -1,6 +1,7 @@
 import csv
 import sys
 import argparse
+import pandas
 
 
 def main():
@@ -14,10 +15,8 @@ def main():
     with open(sys.argv[2]) as sequence:
         seq = sequence.read()
     # TODO: Read database file into a variable
-    with open(sys.argv[1], 'r', newline='') as database:
-        reader = csv.reader(database)
-        for row in reader:
-            print(row[1])
+    data = pd.read_csv(sys.argv[1])
+    print(data)
 
 
 
