@@ -17,8 +17,8 @@ def main():
     with open(sys.argv[1], 'r', newline='') as database:
         reader = csv.reader(database)
         for row in reader:
-            print(row)
-    
+            print(row[1])
+
 
 
 
