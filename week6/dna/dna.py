@@ -16,7 +16,7 @@ def main():
         seq = sequence.read()
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
-    print(data[])
+    print(data[:0])
 
 
 
