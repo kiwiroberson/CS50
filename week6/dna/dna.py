@@ -38,7 +38,7 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    print(data.columns[2:5])
+    print(data.loc[0])
 
     return
 
