@@ -29,7 +29,6 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    counter = {}
     countern = []
 
     for n in range (len(tnr)):
@@ -38,7 +37,7 @@ def main():
 
     # TODO: Check database for matching profiles
     while(True):
-        for i in range(1,(len(data.index))):
+        for i in range(0,(len(data.index))):
             comp = []
             for j in range(1,(len(tnr) + 1)):
                 comp.append(data.loc[i][j])
@@ -47,7 +46,6 @@ def main():
                 print (data.loc[i][0])
                 return
         print(countern)
-        print(f'length tnr', len(tnr))
         print(f'No match')
         return
     return
