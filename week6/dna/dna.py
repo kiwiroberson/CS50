@@ -23,7 +23,6 @@ def main():
     for col in data.columns[1:]:
        tnr.append(col)
 
-    print('length:', len(tnr))
 
 
 
@@ -41,7 +40,7 @@ def main():
 
     for i in range(1,3):
         comp = []
-        for j in range(1,3):
+        for j in range(1,len(tnr)):
             comp.append(data.loc[i][j])
         if(comp == countern):
             print (data.loc[i][0])
