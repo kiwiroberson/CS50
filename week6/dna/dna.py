@@ -23,17 +23,11 @@ def main():
     for col in data.columns[1:]:
        tnr.append(col)
 
-
-
-
-
-
     # TODO: Find longest match of each STR in DNA sequence
     countern = []
 
     for n in range (len(tnr)):
         countern.append(longest_match(seq, tnr[n]))
-
 
     # TODO: Check database for matching profiles
     while(True):
