@@ -35,10 +35,10 @@ def main():
     for n in range (3):
         l = len(tnr[n])
         m = 0
-        counter.update(tnr[n]:0)
+        counter.update({tnr[n]:0})
         while (m < len(seq)):
             if (tnr[n] == seq[m : m + l]):
-                counter[n] =+ 1
+                counter[n
                 m = m + l + 1
             else:
                 m = m + 1
