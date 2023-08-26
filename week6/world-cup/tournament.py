@@ -15,12 +15,14 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
+    counts = {}
     # TODO: Read teams into memory from file
     with open(sys.argv[1]) as file:
         reader = csv.DictReader(file)
         for row in reader:
             row['rating'] = int(row['rating'])
             teams.append(row)
+            counts[(row['teams'])
 
 
 
@@ -28,9 +30,10 @@ def main():
 
 
     counts = {}
+
     # TODO: Simulate N tournaments and keep track of win counts
     winner = simulate_tournament(teams)
-    counts.update = counts[winner] + 1
+
     print(winner)
 
 
