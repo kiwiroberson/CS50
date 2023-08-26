@@ -20,10 +20,10 @@ def main():
 
     y = 0
     for col in data.columns[1:]:
-        a = col
+        a+"y" = col
         y =+1
 
-    print(a)
+    print(a0)
 
 
 
