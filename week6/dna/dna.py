@@ -34,7 +34,6 @@ def main():
     for n in range (3):
         countern.append(longest_match(seq, tnr[n]))
 
-    print(countern)
 
     # TODO: Check database for matching profiles
 
