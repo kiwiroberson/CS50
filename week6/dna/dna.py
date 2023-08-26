@@ -23,7 +23,7 @@ def main():
     for col in data.columns[1:]:
        tnr.append(col)
 
-       print("length:" + string(len(tnr)))
+       print('length:', len(tnr))
 
 
 
