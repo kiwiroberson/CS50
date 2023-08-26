@@ -35,7 +35,7 @@ def main():
     for n in range (3):
         l = len(tnr[n])
         m = 0
-        counter.append(0)
+        counter.update(tnr[n]:0)
         while (m < len(seq)):
             if (tnr[n] == seq[m : m + l]):
                 counter[n] =+ 1
