@@ -32,7 +32,7 @@ def main():
     counter = {}
     countern = []
 
-    for n in range (3):
+    for n in range (len(tnr)):
         countern.append(longest_match(seq, tnr[n]))
 
 
@@ -47,6 +47,7 @@ def main():
                 print (data.loc[i][0])
                 return
         print(countern)
+        print(f'length tnr', len(tnr))
         print(f'No match')
         return
     return
