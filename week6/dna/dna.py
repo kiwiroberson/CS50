@@ -17,10 +17,12 @@ def main():
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
 
+    print(data)
 
-    for col in data.columns:
-        repeats = list(col)
-        print(repeats)
+    for col in data.columns[1:]:
+
+        a = list(col)
+        print(a)
 
 
 
