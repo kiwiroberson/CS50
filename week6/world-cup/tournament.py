@@ -22,19 +22,20 @@ def main():
         for row in reader:
             row['rating'] = int(row['rating'])
             teams.append(row)
-            counts[(row['teams'])
+            counts[(row['team'])] = 0
 
 
 
 
 
 
-    counts = {}
+
 
     # TODO: Simulate N tournaments and keep track of win counts
     winner = simulate_tournament(teams)
 
     print(winner)
+    counts[winner] =+ 1
 
 
 
