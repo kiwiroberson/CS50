@@ -40,9 +40,10 @@ def main():
     print(data.iloc[1][1:4])
     comp = []
     i = 1
-    for i in range(4):
+    for i in range(1,4):
         comp.append(data.loc[1][i])
-    print(comp)
+    if(comp == countern):
+        print (data.loc[1][0])
 
     return
 
