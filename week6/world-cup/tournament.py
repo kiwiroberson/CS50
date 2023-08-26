@@ -30,7 +30,7 @@ def main():
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
     winner = simulate_tournament(teams)
-    counts[winner] = counts[winner] + 1
+    counts.update = counts[winner] + 1
     print(winner)
 
 
