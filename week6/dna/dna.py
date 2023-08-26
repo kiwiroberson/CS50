@@ -14,17 +14,16 @@ def main():
   # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2]) as sequence:
         seq = sequence.read()
+
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
 
-    print(data)
-
-    seq = []
+    tnr = []
 
     for col in data.columns[1:]:
-       seq.append(col)
+       tnr.append(col)
 
-    print(seq[0])
+    print(tnr[0])
 
 
 
