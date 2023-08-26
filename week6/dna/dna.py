@@ -38,7 +38,7 @@ def main():
 
     # TODO: Check database for matching profiles
     print(data.iloc[1][1:4])
-    if (data.iloc[1][1:4] == countern):
+    if ((data.iloc[1][1:4] == countern)== True):
         print(data.iloc[0])
 
     return
