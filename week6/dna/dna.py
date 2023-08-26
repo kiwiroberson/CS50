@@ -38,12 +38,13 @@ def main():
         counter.update({tnr[n]:0})
         while (m < len(seq)):
             if (tnr[n] == seq[m : m + l]):
-                counter[tnr[n]] =+ 1
+                counter[tnr[n]] = counter[tnr[n]] + 1
                 m = m + 1
             else:
                 m = m + 1
 
     print(counter)
+    print(value(counter.values))
 
    # for name in reader:
        # longest_match(seq, reader[name])
