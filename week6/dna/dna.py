@@ -30,8 +30,17 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
+    counter = []
 
-    if()
+    for n in range 3:
+        l = len(tnr[n])
+        m = 0
+        while (m < len(seq))
+            if (tnr[n] == seq[m : m + l]):
+                counter[n] =+ 1
+                m = m + l + 1
+            else():
+                m = m + 1
 
    # for name in reader:
        # longest_match(seq, reader[name])
