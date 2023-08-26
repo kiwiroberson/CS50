@@ -38,8 +38,11 @@ def main():
 
     # TODO: Check database for matching profiles
     print(data.iloc[1][1:4])
-    if ((data.iloc[1][1:4] == countern)== True):
-        print(data.iloc[0])
+    comp = []
+    i = 1
+    for i in range(4):
+        comp.append(data.loc[1][i])
+    print(comp)
 
     return
 
