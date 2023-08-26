@@ -38,11 +38,10 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    for i in range(1,len(data.index)):
+    for i in range(1,(len(data.index))):
         comp = []
-        for j in range(1,len(tnr)):
+        for j in range(1,(len(tnr) + 1)):
             comp.append(data.loc[i][j])
-        print(comp)
 
         if(comp == countern):
 
