@@ -37,13 +37,13 @@ def main():
     print(countern)
 
     # TODO: Check database for matching profiles
-    print(data.iloc[1][1:4])
-    comp = []
-    i = 1
-    for i in range(1,4):
-        comp.append(data.loc[1][i])
-    if(comp == countern):
-        print (data.loc[1][0])
+
+    for i in range(1,3):
+        comp = []
+        for j in range(1,4):
+            comp.append(data.loc[i][j])
+        if(comp == countern):
+            print (data.loc[i][0])
 
     return
 
