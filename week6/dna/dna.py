@@ -15,6 +15,8 @@ def main():
     with open(sys.argv[2]) as sequence:
         seq = sequence.read()
 
+        print(seq[0])
+
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
 
@@ -29,6 +31,7 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
 
+    if()
 
    # for name in reader:
        # longest_match(seq, reader[name])
