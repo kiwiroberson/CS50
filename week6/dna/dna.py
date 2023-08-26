@@ -17,11 +17,14 @@ def main():
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
 
+    print(data)
 
+    seq = []
 
     for col in data.columns[1:]:
-       a.append = list(col)
-    print(a)
+       seq.append(col)
+
+    print(seq[0])
 
 
 
