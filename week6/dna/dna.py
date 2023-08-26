@@ -15,8 +15,6 @@ def main():
     with open(sys.argv[2]) as sequence:
         seq = sequence.read()
 
-        print(seq[0])
-
     # TODO: Read database file into a variable
     data = pd.read_csv(sys.argv[1])
 
@@ -25,7 +23,7 @@ def main():
     for col in data.columns[1:]:
        tnr.append(col)
 
-    print(tnr[0])
+
 
 
 
@@ -34,11 +32,13 @@ def main():
     countern = []
 
     for n in range (3):
-        longest_match(seq, tnr[n])
-   # for name in reader:
-       # longest_match(seq, reader[name])
+        countern.append(longest_match(seq, tnr[n]))
+
+    print(countern)
 
     # TODO: Check database for matching profiles
+
+    print(data.columns[2:5])
 
     return
 
