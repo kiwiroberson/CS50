@@ -43,7 +43,7 @@ def main():
         for j in range(1,len(tnr)):
             comp.append(data.loc[i][j])
         print(comp)
-      
+
         if(comp == countern):
 
             print (data.loc[i][0])
