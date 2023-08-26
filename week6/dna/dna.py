@@ -18,12 +18,10 @@ def main():
     data = pd.read_csv(sys.argv[1])
 
 
-    y = 0
-    for col in data.columns[1:]:
-        a+"y" = col
-        y =+1
 
-    print(a0)
+    for col in data.columns[1:]:
+       a.append = list(col)
+    print(a)
 
 
 
