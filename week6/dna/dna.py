@@ -34,23 +34,7 @@ def main():
     countern = []
 
     for n in range (3):
-        l = len(tnr[n])
-        m = 0
-        counter.update({tnr[n]:0})
-        countern.append(0)
-        while (m < len(seq)):
-            if (tnr[n] == seq[m : m + l]):
-                counter[tnr[n]] += 1
-                countern[n] += 1
-                m = m + 1
-            else:
-                m = m + 1
-
-    print(counter)
-    print(countern)
-    for i in counter:
-        print(counter[i])
-
+        longest_match(seq, tnr[n])
    # for name in reader:
        # longest_match(seq, reader[name])
 
