@@ -39,7 +39,7 @@ def main():
         while (m < len(seq)):
             if (tnr[n] == seq[m : m + l]):
                 counter[tnr[n]] =+ 1
-                m = m + l + 1
+                m = m + 1
             else:
                 m = m + 1
 
