@@ -10,8 +10,8 @@ with open("students.csv", "r") as file:
     #iterate over rows
     for row in reader:
         print(row["id"])
-    #insert id and name into students table1 via SQLite3
+        #insert id and name into students table1 via SQLite3
+        
 
-    #insert house name and head into table2
-
-    #insert house allocation information into table3
+        #insert house name and head into table2
+        #insert house allocation information into table3
