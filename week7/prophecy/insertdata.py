@@ -21,4 +21,4 @@ with open("students.csv", "r") as file:
         for i in range(4):
             db.execute("INSERT INTO house (id, house) VALUES (?, ?)", houses[i], heads[i])
         #insert house allocation information into table3
-        
+        db.execute("INSERT INTO house_assignment (student_id, house_id) VALUES (?, ?)", row["id"], houses.index(row["house"]))
