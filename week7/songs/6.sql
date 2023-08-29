@@ -1,0 +1,1 @@
+"terminal.integrated.copyOnSelection": true"terminal.integrated.copyOnSelection": true
