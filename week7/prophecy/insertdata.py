@@ -18,10 +18,10 @@ with open("students.csv", "r") as file:
     reader =  csv.DictReader(file)
     for row in reader:
         #insert id and name into students table1 via SQLite3
-        db.execute("INSERT INTO students(id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
+        db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
         #insert house name and head into table2
         for i in range(4):
-            db.execute("INSERT INTO house(id, house) VALUES (?, ?)", houses[i], heads[i])
+            db.execute("INSERT INTO house (id, house, head) VALUES (?, ?, ?)", i, houses[i], heads[i])
             print(houses[i])
         #insert house allocation information into table3
         db.execute("INSERT INTO house_assignment (student_id, house_id) VALUES (?, ?)", row["id"], houses.index(row["house"]))
