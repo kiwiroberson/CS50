@@ -6,11 +6,13 @@ CREATE TABLE students (
 
 CREATE TABLE house (
     id INTEGER,
-    house_name TEXT,
-    
-)
+    house TEXT,
+    head TEXT,
+    PRIMARY KEY(id)
+);
 
 CREATE TABLE link (
     student_id INTEGER,
     house_id INTEGER,
+    FOR
 )
