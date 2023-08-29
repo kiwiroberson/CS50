@@ -5,10 +5,12 @@ CREATE TABLE students (
 );
 
 CREATE TABLE house (
-
+    id INTEGER,
+    house_name TEXT,
+    
 )
 
 CREATE TABLE link (
     student_id INTEGER,
-    house ID
+    house_id INTEGER,
 )
