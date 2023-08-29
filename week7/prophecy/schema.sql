@@ -1,4 +1,4 @@
-CREATE TABLE students1 (
+CREATE TABLE students (
     id INTEGER,
     student_name TEXT,
     PRIMARY KEY(id)

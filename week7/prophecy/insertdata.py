@@ -11,8 +11,8 @@ with open("students.csv", "r") as file:
     for row in reader:
         print(row["id"])
         #insert id and name into students table1 via SQLite3
-        db.execute("INSERT INTO students1 (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
-        db.execute("INSERT INTO students1 (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
+        db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
+        db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
 
 
         #insert house name and head into table2
