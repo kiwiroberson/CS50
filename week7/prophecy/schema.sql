@@ -11,7 +11,7 @@ CREATE TABLE house (
     PRIMARY KEY(id)
 );
 
-CREATE TABLE link (
+CREATE TABLE house_assignment (
     student_id INTEGER,
     house_id INTEGER,
     FOREIGN KEY(student_id) REFERENCES students(id),
