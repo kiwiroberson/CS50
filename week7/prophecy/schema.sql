@@ -1,3 +1,6 @@
+drop TABLE house_assignment;
+drop TABLE students;
+drop TABLE house;
 CREATE TABLE students (
     id INTEGER,
     student_name TEXT,
@@ -17,3 +20,7 @@ CREATE TABLE house_assignment (
     FOREIGN KEY(student_id) REFERENCES students(id),
     FOREIGN KEY(house_id) REFERENCES house(id)
 );
+
+drop TABLE house_assignment;
+drop TABLE students;
+drop TABLE house;

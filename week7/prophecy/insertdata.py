@@ -13,7 +13,7 @@ with open("students.csv", "r") as file:
             houses.append(row["house"])
         if row["head"] not in heads:
             heads.append(row["head"])
-
+#insert house name and head into table2
 for i in range(4):
             db.execute("INSERT INTO house (id, house, head) VALUES (?, ?, ?)", i, houses[i], heads[i])
 
@@ -22,8 +22,6 @@ with open("students.csv", "r") as file:
     for row in reader:
         #insert id and name into students table1 via SQLite3
         db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
-        #insert house name and head into table2
-
         #insert house allocation information into table3
         db.execute("INSERT INTO house_assignment (student_id, house_id) VALUES (?, ?)", row["id"], houses.index(row["house"]))
 
