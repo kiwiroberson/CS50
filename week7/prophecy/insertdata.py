@@ -7,16 +7,16 @@ houses = []
 #open students.csv
 with open("students.csv", "r") as file:
     reader =  csv.DictReader(file)
-    for row in reader:
-        print(list(row["house"]))
+    print(list(reader))
 
 
 
 
-        #insert id and name into students table1 via SQLite3
-        #db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
-        #db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
+
+#insert id and name into students table1 via SQLite3
+#db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
+# #db.execute("INSERT INTO students (id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
 
 
-        #insert house name and head into table2
-        #insert house allocation information into table3
+#insert house name and head into table2
+#insert house allocation information into table3
