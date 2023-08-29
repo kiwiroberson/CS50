@@ -7,7 +7,7 @@ houses = []
 #open students.csv
 with open("students.csv", "r") as file:
     reader =  csv.DictReader(file)
-    print(list(reader))
+    print(reader.Keys())
 
 
 
