@@ -14,6 +14,8 @@ with open("students.csv", "r") as file:
         if row["head"] not in heads:
             heads.append(row["head"])
 
+with open("students.csv", "r") as file:
+    reader =  csv.DictReader(file)
     for row in reader:
         #insert id and name into students table1 via SQLite3
         db.execute("INSERT INTO students(id, student_name) VALUES (?, ?)", row["id"], row["student_name"])
@@ -23,3 +25,4 @@ with open("students.csv", "r") as file:
             print(houses[i])
         #insert house allocation information into table3
         db.execute("INSERT INTO house_assignment (student_id, house_id) VALUES (?, ?)", row["id"], houses.index(row["house"]))
+
