@@ -11,15 +11,10 @@ with open("students.csv", "r") as file:
     #iterate over rows to make list of houses
     houses = []
     for row in reader:
-        if(row["house"] IN houses)
+        if row["house"] in houses:
             break
-        else
+        else:
             houses.append(row["house"])
-
-    for row in reader:
-        if(row["house"] IN houses)
-            break
-        else houses.append(row["house"])
 
         print(houses)
         #make list of houses
