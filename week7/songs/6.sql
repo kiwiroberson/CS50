@@ -1,4 +1,1 @@
-ngs/ $ "terminal.integrated.copyOnSelection": true
-bash: terminal.integrated.copyOnSelection:: command not found
-week7/songs/ $ ^C
-week7/songs/ $
+SELECT songs.name FROM songs JOIN artists on songs.artist_id = artists.id WHERE artists.name = "Post Malone";
