@@ -16,7 +16,7 @@ with open("students.csv", "r") as file:
         else:
             houses.append(row["house"])
 
-        print(houses)
+        print(iter)
         #make list of houses
 
 
