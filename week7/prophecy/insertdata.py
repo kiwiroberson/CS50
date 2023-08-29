@@ -7,17 +7,8 @@ houses = []
 #open students.csv
 with open("students.csv", "r") as file:
     reader =  csv.DictReader(file)
-
-    #iterate over rows to make list of houses
-
-        for row in reader:
-            if row["house"] in houses:
-                break
-            else:
-                houses.append(row["house"])
-
-        print(row["house"])
-        #make list of houses
+    for row in reader:
+        print(list(row["house"]))
 
 
 
