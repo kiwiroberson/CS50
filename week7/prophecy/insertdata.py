@@ -11,7 +11,7 @@ with open("students.csv", "r") as file:
     for row in reader:
         print(row["id"])
         #insert id and name into students table1 via SQLite3
-        
+        db.execute("INSERT INTO students1 id)
 
         #insert house name and head into table2
         #insert house allocation information into table3
