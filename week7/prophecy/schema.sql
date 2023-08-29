@@ -15,4 +15,5 @@ CREATE TABLE link (
     student_id INTEGER,
     house_id INTEGER,
     FOREIGN KEY student_id students(id)
-)
+    FOREIGN KEY house_id house(id)
+);
