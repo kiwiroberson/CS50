@@ -17,6 +17,7 @@ AND month = "7"
 AND day = "28"
 
     -- avenue #1: left car park in 10 mins after theft - security footage
+    
 
     --avenue #2: In morning theif withdrawing money at ATM in Legett street
 
