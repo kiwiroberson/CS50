@@ -1,4 +1,4 @@
-SELECT *
+SELECT name
 FROM atm_transactions
 JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
 JOIN people ON bank_accounts.person_id = people.id

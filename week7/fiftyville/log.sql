@@ -34,6 +34,24 @@ AND day = "28"
 
 
     --avenue #2: In morning theif withdrawing money at ATM in Legett street
+    SELECT *
+FROM atm_transactions
+JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
+JOIN people ON bank_accounts.person_id = people.id
+WHERE year = "2021"
+AND month = "7"
+AND day = "28"
+AND atm_location = "Leggett Street"
+| Bruce   |
+| Kaelyn  |
+| Diana   |
+| Brooke  |
+| Kenny   |
+| Iman    |
+| Luca    |
+| Taylor  |
+| Benista |
+
 
     -- avenue #3: as leaving bakery theif called someone for less than a minute,
     --              planned to take earliest outward flight on 29/7/21 - accomplice  person buying ticket
