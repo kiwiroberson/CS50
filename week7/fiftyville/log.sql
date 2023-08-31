@@ -53,8 +53,24 @@ AND atm_location = "Leggett Street"
 | Benista |
 
 
-    -- avenue #3: as leaving bakery theif called someone for less than a minute,
-    --              planned to take earliest outward flight on 29/7/21 - accomplice  person buying ticket
+    -- avenue #3.1: as leaving bakery theif called someone for less than a minute,
+    --             #3.2 planned to take earliest outward flight on 29/7/21 -
+    --              #3.3 accomplice  person buying ticket
 
-
+SELECT name
+FROM people
+JOIN phone_calls ON  people.phone_number = phone_calls.caller
+WHERE year = "2021"
+AND month = "7"
+AND day = "28"
+AND duration < 60
+--| Sofia   |
+--| Kelsey  |
+--| Bruce   |
+--| Kelsey  |
+--| Taylor  |
+--| Diana   |
+--| Carina  |
+--| Kenny   |
+--| Benista |
 
