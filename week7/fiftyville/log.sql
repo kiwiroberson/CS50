@@ -58,7 +58,7 @@ AND atm_location = "Leggett Street"
     --              #3.3 accomplice  person buying ticket
 
 SELECT *
-FROM people,
+FROM people
 JOIN phone_calls ON  people.phone_number = phone_calls.caller
 WHERE year = "2021"
 AND month = "7"
