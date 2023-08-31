@@ -1,5 +1,5 @@
-SELECT DISTINCT movie_id from stars
-JOIN stars ON stars.movie_id= movies.id
+SELECT DISTINCT title from stars
+JOIN stars ON movies.id = stars.movie_id
 JOIN people on stars.person_id = people.id
 WHERE people.name = "Bradley Cooper" OR people.name = "Jennifer Lawrence"
 
