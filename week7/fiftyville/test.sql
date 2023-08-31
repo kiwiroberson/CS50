@@ -1,7 +1,8 @@
-SELECT bakery_security_logs.id, hour, minute, activity, bakery_security_logs.license_plate, name
-FROM bakery_security_logs
-JOIN people ON bakery_security_logs.license_plate = people.license_plate
+SELECT *
+FROM atm_transactions
+JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
+JOIN people ON bank_accounts.person_id = people.id
 WHERE year = "2021"
 AND month = "7"
 AND day = "28"
-
+AND atm_location = "Leggett Street"
