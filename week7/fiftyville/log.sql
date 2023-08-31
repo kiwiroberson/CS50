@@ -66,11 +66,18 @@ AND day = "28"
 AND duration < 60
 --| Sofia   |
 --| Kelsey  |
---| Bruce   |
+--| Bruce   | - phoned dianna
 --| Kelsey  |
---| Taylor  |
+--| Taylor  | - phoned James
 --| Diana   |
 --| Carina  |
 --| Kenny   |
 --| Benista |
 
+
+
+SELECT *
+FROM people
+JOIN phone_calls ON  people.phone_number = phone_calls.caller
+
+AND phone_number = "(676) 555-6554"
