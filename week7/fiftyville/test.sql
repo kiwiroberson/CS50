@@ -5,7 +5,7 @@ JOIN flights ON passengers.flight_id = flights.id
 WHERE year = "2021"
 AND month = "7"
 AND day = "29"
-ORDER BY hour
+AND hour = "8"
 
 AND name IN
 (
