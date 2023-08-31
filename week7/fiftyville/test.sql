@@ -1,6 +1,6 @@
 SELECT name
-FROM atm_transactions
-JOIN bank_accounts ON atm_transactions.account_number = bank_accounts.account_number
+FROM people
+JOIN phone_calls ON  = phone_calls.
 JOIN people ON bank_accounts.person_id = people.id
 WHERE year = "2021"
 AND month = "7"
