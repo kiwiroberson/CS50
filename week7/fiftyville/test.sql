@@ -1,4 +1,4 @@
-SELECT name
+SELECT name, hour, minute
 FROM people
 JOIN passengers ON  people.passport_number = passengers.passport_number
 JOIN flights ON passengers.flight_id = flights.id
