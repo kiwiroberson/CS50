@@ -10,6 +10,12 @@ AND street  = "Humphrey Street"
 
 -- reports theft of duck at 10:15am, three witnesses all interview transcripts mention bakery
 --query interview database
+SELECT id, name, transcript
+FROM interviews
+WHERE year = "2021"
+AND month = "7"
+AND day = "28"
+
     -- avenue #1: left car park in 10 mins after theft - security footage
 
     --avenue #2: In morning theif withdrawing money at ATM in Legett street
