@@ -5,6 +5,7 @@ JOIN flights ON passengers.flight_id = flights.id
 WHERE year = "2021"
 AND month = "7"
 AND day = "29"
+ORDER BY hour
 
 AND name IN
 (
@@ -38,6 +39,8 @@ JOIN people ON bakery_security_logs.license_plate = people.license_plate
 WHERE year = "2021"
 AND month = "7"
 AND day = "28"
+AND hour = "10"
+AND minute BETWEEN "15" AND "25"
 )
 
 
