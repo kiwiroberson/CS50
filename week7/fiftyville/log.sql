@@ -10,4 +10,7 @@ AND street  = "Humphrey Street"
 
 -- reports theft of duck at 10:15am, three witnesses all interview transcripts mention bakery
 --query interview database
+    -- avenue #1: left car park in 10 mins after theft
+
+    -- avenue 2: 
 
