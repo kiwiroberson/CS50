@@ -42,15 +42,15 @@ WHERE year = "2021"
 AND month = "7"
 AND day = "28"
 AND atm_location = "Leggett Street"
-| Bruce   |
-| Kaelyn  |
-| Diana   |
-| Brooke  |
-| Kenny   |
-| Iman    |
-| Luca    |
-| Taylor  |
-| Benista |
+--| Bruce   |
+--| Kaelyn  |
+--| Diana   |
+--| Brooke  |
+--| Kenny   |
+--| Iman    |
+--| Luca    |
+--| Taylor  |
+--| Benista |
 
 
     -- avenue #3.1: as leaving bakery theif called someone for less than a minute,
