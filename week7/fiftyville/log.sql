@@ -66,9 +66,9 @@ AND day = "28"
 AND duration < 60
 --| Sofia   |
 --| Kelsey  |
---| Bruce   | - phoned dianna
+--| Bruce   | - phoned Robin
 --| Kelsey  |
---| Taylor  | - phoned James
+--| Taylor  |
 --| Diana   |
 --| Carina  |
 --| Kenny   |
