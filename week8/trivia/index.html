@@ -33,9 +33,22 @@
         </div>
 
         <script>
-              let body = document.querySelector('body');
-            body.querySelector('#1').addEventListener('click', function() {
-                body.querySelector('#1').style.backgroundColor = 'green';
+
+            let body = document.querySelector('body');
+            document.querySelector('#1').addEventListener('click', function() {
+                body.querySelector('#1').style.backgroundColor = 'red';
+            });
+            document.querySelector('#2').addEventListener('click', function() {
+                body.querySelector('#2').style.backgroundColor = 'red';
+            });
+            document.querySelector('#3').addEventListener('click', function() {
+                body.querySelector('#3').style.backgroundColor = 'green';
+            });
+            document.querySelector('#4').addEventListener('click', function() {
+                body.querySelector('#4').style.backgroundColor = 'red';
+            });
+            document.querySelector('#5').addEventListener('click', function() {
+                body.querySelector('#5').style.backgroundColor = 'red';
             });
         </script>
     </body>
