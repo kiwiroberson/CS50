@@ -6,15 +6,23 @@
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
     </head>
+
     <script>
-        document.addEventlistener('DOMContentLoaded', function() {
-            let correct = document.querySelector('.correct");
-                correct.addEventlistener('click', function() {
-                    correct.style.backgroundColor = 'green';
-                    document.querySelector('#feedback1').innerHTML = 'Correct!';
-                })
-        })
+        document.addEventListener('DOMContentLoaded', function() {
+            let correct = document.querySelector('.correct');
+            correct.addEventListener('click', function() {
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#feedback1').innerHTML = 'Correct!';
+            });
+
+            let incorrect = document.querySelector('.incorrect');
+            correct.addEventListener('click', function() {
+                correct.style.backgroundColor = 'red';
+                document.querySelector('#feedback1').innerHTML = 'incorrect!';
+            });
+        });
     </script>
+
     <body>
         <div class="header">
             <h1>Trivia!</h1>
