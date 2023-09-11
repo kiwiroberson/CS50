@@ -22,6 +22,10 @@
                     document.querySelector('#feedback1').innerHTML = 'incorrect!';
                 });
             }
+
+            if (answer.input == "Cornwall"){
+                document.querySelector('#feedback2').innerHTML = 'Correct!';
+            }
         });
 
     </script>
@@ -47,9 +51,11 @@
                 <h2>Part 2: Free Response</h2>
                 <hr>
                 <h3>What is the most southerly county in England?</h3>
-                <form method="get">
+                <form id="answer" method="get">
                     <input>
                     <button>Answer</button>
+                    <p id="feedback2"></p>
+
 
                 </form>
 
