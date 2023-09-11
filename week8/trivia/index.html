@@ -15,10 +15,10 @@
                 document.querySelector('#feedback1').innerHTML = 'Correct!';
             });
 
-            let incorrect = document.querySelector('.incorrect');
-            correct.addEventListener('click', function() {
-                correct.style.backgroundColor = 'red';
-                document.querySelector('#feedback1').innerHTML = 'incorrect!';
+            let incorrect = document.querySelectorAll('.incorrect');
+            incorrect.addEventListener('click', function() {
+                incorrect.style.backgroundColor = 'red';
+                document.querySelectorAll('#feedback1').innerHTML = 'incorrect!';
             });
         });
     </script>
