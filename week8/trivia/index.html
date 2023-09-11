@@ -24,11 +24,15 @@
             }
 
 
-            let a
-
-            if (answer.input == "Cornwall"){
-                document.querySelector('#feedback2').innerHTML = 'Correct!';
+            let answerButton = document.querySelector('#answer-button')
+            answerButton.addEventListener('click', function() {
+                let answerInput = document.querySelector('#answer-input').value
+                if (answerInput.toLowerCase() =="cornwall"{
+                    document.querySelector('#feeedback2').innerHTML = 'Correct';
+                }
             }
+
+
         });
 
     </script>
