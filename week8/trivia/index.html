@@ -5,13 +5,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
-        <script>
-            document.querySelector('#1').addEventListener('click', function() {
-                document.querySelector('#1').style.backgroundColor = 'green';
-            });
-        </script>
+
     </head>
     <body>
+
         <div class="header">
             <h1>Trivia!</h1>
         </div>
@@ -21,7 +18,7 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                     <h3>How many bones are there in the wrist?</h3>
-                    <button style="background-color: blue;" id="1"> Four </button>
+                    <button id="1"> Four </button>
                     <button id="2"> Five </button>
                     <button id="3"> Eight </button>
                     <button id="4"> Ten </button>
@@ -34,5 +31,11 @@
                 <!-- TODO: Add free response question here -->
             </div>
         </div>
+
+        <script>
+            document.querySelector('#1').addEventListener('click', function() {
+                document.querySelector('#1').style.backgroundColor = 'green';
+            });
+        </script>
     </body>
 </html>
