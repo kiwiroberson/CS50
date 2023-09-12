@@ -12,14 +12,16 @@
         <script>
           document.addEventListener('DOMContentLoaded', function() {
               let hospital = document.querySelectorAll('.hospital');
-              
-                hospital.addEventListener('click', function() {
-                    hospital.style.backgroundColor = 'green';
-                    uhbw.style.backgroundColor = 'grey';
-
+              for(let i = 0; i < hospital; i++)
+              {
+                  hospital[i].addEventListener('click', function()
+                  {
+                      hospital[i].style.backgroundColor = 'green';
+                    }
+                }
             });
 
-          });
+
         </script>
 
     </head>
