@@ -1,3 +1,7 @@
+body {
+    background-color: darkblue;
+}
+
 p {
 
     text-align: left;
@@ -10,4 +14,8 @@ h1 {
 
 .pink {
     color: pink;
+}
+
+.lightblue {
+    color: lightblue;
 }
