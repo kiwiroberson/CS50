@@ -1,10 +1,13 @@
 body {
     background-color: darkblue;
+    margin: 100px;
 }
 
 p {
 
     text-align: left;
+
+
 }
 
 h1 {
