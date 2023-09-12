@@ -21,9 +21,9 @@
                 <form action="/" method="post">
                     <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
                     <select name="month">
-                        <option value="1">Jan</option>
-                        <option value="2">Feb</option>
-                        <option value="3"
+                        {% for i in i<13; i++ %}
+                            <option value="{{ i }}>{{ i }}</option>
+                        {% endfor %}
                 </form>
             </div>
 
