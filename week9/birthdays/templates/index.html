@@ -20,10 +20,11 @@
                 <!-- TODO: Create a form for users to submit a name, a month, and a day -->
                 <form action="/" method="post">
                     <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+                    <input autocomplete="off" autofocus name="day" placeholder="Day" type="number">
                     <select name="month">
-                        {% for i in i<13; i++ %}
-                            <option value="{{ i }}>{{ i }}</option>
-                        {% endfor %}
+                        <option name="1">Jan</option>
+
+
                 </form>
             </div>
 
