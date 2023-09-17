@@ -26,8 +26,8 @@
                         <option name="2">Feb</option>
                         <option name="3">Mar</option>
                         <option name="4">Apr</option>
-                        <option name="5">Apr</option>
-                        <option name="6">Apr</option>
+                        <option name="5">May</option>
+                        <option name="6">Jun</option>
                         <option name="7">Jul</option>
                         <option name="8">Aug</option>
                         <option name="9">Sep</option>
@@ -55,7 +55,7 @@
                             <tr>
                                 <td>{{ person.name }}</td>
                                 <td>{{ person.day }} / {{ person.month }}</td>
-                                <td><form><button type="submit">del</button></form>
+                                <td><form action="/" method="post"><button type="submit">del</button></form>
                             </tr>
                         {% endfor %}
                     </tbody>
