@@ -27,11 +27,11 @@ def index():
         name = request.form.get("name")
         day = request.form.get("day")
         month = request.form.get("month")
-        delreq = request.form.get("id")
+        x = request.form.get("id")
         #remember submitted birthday
         db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
         #delete selected record
-        db.execute("DELETE FROM birthdays WHERE id=?", delreq)
+        db.execute("DELETE FROM birthdays WHERE id=?", x)
         return redirect("/")
 
     else:
