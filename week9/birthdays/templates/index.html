@@ -50,18 +50,18 @@
                             <th>Options</tr>
                         </tr>
                     </thead>
+                    <form>
                     <tbody>
                         {% for person in people %}
-                            <form>
                             <tr>
                                 <td>{{ person.name }}</td>
                                 <td>{{ person.day }} / {{ person.month }}</td>
                                 <td><input type="checkbox"></td>
                             </tr>
-                            <button type="submit"></button>
-                            </form>
                         {% endfor %}
                     </tbody>
+                    <button type="submit">Button</button>
+                    </form>
                 </table>
             </div>
         </div>
