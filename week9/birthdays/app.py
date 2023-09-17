@@ -29,7 +29,8 @@ def index():
         month = request.form.get("month")
         #remember submitted birthday
         db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
-
+        #delete selected record
+        db.execute(")
         return redirect("/")
 
     else:

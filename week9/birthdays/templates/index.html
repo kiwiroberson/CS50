@@ -56,7 +56,8 @@
                             <tr>
                                 <td>{{ person.name }}</td>
                                 <td>{{ person.day }} / {{ person.month }}</td>
-                                <td><input type="checkbox"></td>
+                                <td>{{person.id}}</td>
+                                <td><input type="checkbox" id=""{{person.id}}></td>
                             </tr>
                         {% endfor %}
                     </tbody>
