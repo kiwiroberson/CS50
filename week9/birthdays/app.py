@@ -23,10 +23,12 @@ def after_request(response):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-
-        name=request.form.get("name")
-        day=request.form.get("day")
-        month=request.form.get("month")
+        #load data from form
+        name = request.form.get("name")
+        day = request.form.get("day")
+        month = request.form.get("month")
+        #remember submitted birthday
+        db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
 
         return redirect("/")
 
