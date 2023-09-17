@@ -52,11 +52,15 @@
                     </thead>
                     <tbody>
                         {% for person in people %}
+                            <form>
                             <tr>
                                 <td>{{ person.name }}</td>
                                 <td>{{ person.day }} / {{ person.month }}</td>
-                                <td><form action="/" method="post"><button type="submit">del</button></form>
+                                <td>
+
                             </tr>
+                            <button type="submit">del</button>
+                            </form>
                         {% endfor %}
                     </tbody>
                 </table>
