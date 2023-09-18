@@ -24,13 +24,13 @@ def after_request(response):
 def index():
     if request.method == "POST":
         #load data from form
-        if request.form.get("name") /= NULL:
+        if request.form.get("name") != NULL:
             name = request.form.get("name")
             day = request.form.get("day")
             month = request.form.get("month")
             #remember submitted birthday
             db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
-        if request.form.get("id") /= NULL:
+        if request.form.get("id") != NULL:
             test = request.form.get("id")
             #delete selected record
             db.execute("DELETE FROM birthdays WHERE id='?'", test)
