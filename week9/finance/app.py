@@ -115,7 +115,9 @@ def register():
         if not request.form.get("username"):
             return apology("New username not entered", 401)
         # ensure new username not already taken
-        if
+        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        if len(rows) != 1:
+            
 
 
         # Redirect user to home page
