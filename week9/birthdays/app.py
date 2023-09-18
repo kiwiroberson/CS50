@@ -26,7 +26,7 @@ def index():
         #load data from form
         name = request.form.get("name")
         num = request.form.get("id")
-        print(name)
+        print("name", name)
         print(num)
         if name:
             print("1")
