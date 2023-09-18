@@ -111,7 +111,7 @@ def register():
     """Register user"""
     if request.method == "POST":
 
-        # Ensure username was submitted
+        # Ensure new username was submitted
         if not request.form.get("username"):
             return apology("New username not entered", 401)
 
