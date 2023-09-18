@@ -50,19 +50,18 @@
                             <th>Options</tr>
                         </tr>
                     </thead>
-                    <form>
+                    <form action="/" method="post">
                     <tbody>
                         {% for person in people %}
                             <tr>
                                 <td>{{ person.name }}</td>
                                 <td>{{ person.day }} / {{ person.month }}</td>
                                 <td>{{person.id}}</td>
-                                <td><input type="submit" id="{{person.id}}"></td>
+                                <td><input type="submit" value="del" id="{{ person.id}}"></input></td>
                             </tr>
                         {% endfor %}
                     </tbody>
                 </table>
-                <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
