@@ -27,7 +27,7 @@ def index():
         name = request.form.get("name")
         num = request.form.get("id")
         print("name", name)
-        print(num)
+        print("number", num)
         if name:
             print("1")
             day = request.form.get("day")
