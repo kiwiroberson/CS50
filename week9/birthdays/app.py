@@ -25,7 +25,7 @@ def index():
     if request.method == "POST":
         #load data from form
         name = request.form.get("name")
-        num = request.form.get("id")
+        num = request.form.get("number")
         print("name", name)
         print("number", num)
         if name:
