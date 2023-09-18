@@ -120,7 +120,8 @@ def register():
             return apology("Username already taken", 502)
 
         #ensure new password entered
-        
+        if not request.form.get("password"):
+            return apology("New password not entered", 503)
 
         ##nsure confirmation is entered
 
