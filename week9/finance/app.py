@@ -118,7 +118,15 @@ def register():
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
         if len(rows) != 1:
             return apology("Username already taken", 502)
-        #ensure pass
+
+        #ensure new password entered
+        
+
+        ##nsure confirmation is entered
+
+        #ensure password confimation matches initial password
+
+        #insert new username and password into db
 
         # Redirect user to home page
         return redirect("/")
