@@ -25,7 +25,7 @@ def index():
     if request.method == "POST":
         #load data from form
         name = request.form.get("name")
-        num = request.form.get("number")
+        delete = request.form.get("delete")
         print("name", name)
         print("number", num)
         if name:
@@ -37,7 +37,7 @@ def index():
             db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
         if num:
             print("2")
-            db.execute("DELETE FROM birthdays WHERE id=?", num)
+            db.execute("DELETE FROM birthdays WHERE id=?", delete)
         return redirect("/")
 
     else:
