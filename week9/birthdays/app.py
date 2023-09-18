@@ -26,20 +26,15 @@ def index():
         #load data from form
         name = request.form.get("name")
         delete = request.form.get("delete")
-        print("name", name)
-        print("number", num)
         if name:
-            print("1")
             day = request.form.get("day")
             month = request.form.get("month")
             print("name is", name)
             #remember submitted birthday
             db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
-        if num:
-            print("2")
+        if delete:
             db.execute("DELETE FROM birthdays WHERE id=?", delete)
         return redirect("/")
-
     else:
         people = db.execute("SELECT * FROM birthdays")
         return render_template("index.html", people=people)
