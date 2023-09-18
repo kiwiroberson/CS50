@@ -114,7 +114,8 @@ def register():
         # Ensure new username was submitted
         if not request.form.get("username"):
             return apology("New username not entered", 401)
-
+        # ensure new username not already taken
+        if
 
 
         # Redirect user to home page
