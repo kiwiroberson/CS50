@@ -24,6 +24,7 @@ def after_request(response):
 def index():
     if request.method == "POST":
         #load data from form
+        
         if request.form.get("name") != '':
             name = request.form.get("name")
             day = request.form.get("day")
