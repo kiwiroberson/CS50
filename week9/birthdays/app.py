@@ -31,7 +31,7 @@ def index():
         #remember submitted birthday
         db.execute("INSERT INTO birthdays (name, day, month) VALUES(?, ?, ?)", name, day, month)
         #delete selected record
-        db.execute("DELETE FROM birthdays WHERE id=?", test)
+        db.execute("DELETE FROM birthdays WHERE id='10'", test)
         return redirect("/")
 
     else:
