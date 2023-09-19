@@ -36,11 +36,16 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
+    #extract all data for user
     userid = session["user_id"]
     index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
+    stocks=[]
     for item in index:
+        #build list of stocks owned
+        if item['stock'] not in stocks:
+            stocks.append(item['stock'])
+        print(stocks)
         
-        print(item['stock'])
     return render_template("index.html")
 
 
