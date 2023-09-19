@@ -73,7 +73,7 @@ def addcash():
     """Add cash"""
     if request.method == "POST":
         if not request.form.get("addcash"):
-            return apology("no cash amount", "901")
+            return apology("no cash amount", "400")
         userid = session["user_id"]
         #check cash available
         balance = float(db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash'])
@@ -94,13 +94,13 @@ def buy():
     if request.method == "POST":
         #test stock symbol filled in
         if not request.form.get("symbol"):
-            return apology("Stock blank", "701")
+            return apology("Stock blank", "400")
         #test stock exists
         if not lookup(request.form.get("symbol")):
-            return apology("Stock not valid", "702")
+            return apology("Stock not valid", "400")
         #test shares positive
         if int(request.form.get("shares")) < 1:
-            return apology("Shares not positive", "703")
+            return apology("Shares not positive", "400")
 
         #collect potential transaction details
         userid = session["user_id"]
@@ -116,7 +116,7 @@ def buy():
         totalcost = float(shares) * float(price)
         remainingfunds = float(balance[0]['cash']) - totalcost
         if remainingfunds < 0:
-            return apology("Not enough funds", "704")
+            return apology("Not enough funds", "400")
 
         #deduct funds and buy stock
         db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
@@ -155,18 +155,18 @@ def login():
 
         # Ensure username was submitted
         if not request.form.get("username"):
-            return apology("must provide username", 403)
+            return apology("must provide username", 400)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
-            return apology("must provide password", 403)
+            return apology("must provide password", 400)
 
         # Query database for username
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
-            return apology("invalid username and/or password", 403)
+            return apology("invalid username and/or password", 400)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
@@ -214,25 +214,25 @@ def register():
 
         # Ensure new username was submitted
         if not request.form.get("username"):
-            return apology("New username not entered", 501)
+            return apology("New username not entered", 400)
         # ensure new username not already taken
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
         if len(rows) == 1:
-            return apology("Username already taken", 502)
+            return apology("Username already taken", 400)
 
         #ensure new password entered
         if not request.form.get("password"):
-            return apology("New password not entered", 503)
+            return apology("New password not entered", 400)
 
         ##nsure confirmation is entered
 
         if not request.form.get("confirmation"):
-            return apology("Confirmation not entered", 504)
+            return apology("Confirmation not entered", 400)
 
         #ensure password confimation matches initial password
 
         if request.form.get("password") != request.form.get("confirmation"):
-            return apology("Passwords do not match", 505)
+            return apology("Passwords do not match", 400)
 
         #insert new username and password into db
 
@@ -256,19 +256,19 @@ def sell():
     #test valid stock selected
     if request.method == "POST":
         if not request.form.get("symbol"):
-            return apology("No shares selected", "701")
+            return apology("No shares selected", "400")
         stock = request.form.get("symbol")
         #test valid number of shares selected
         if not request.form.get("shares"):
-            return apology("Zero shares sold", "702")
+            return apology("Zero shares sold", "400")
         shares = int(request.form.get("shares"))
         if shares < 1:
-            return apology("Zero shares sold", "703")
+            return apology("Zero shares sold", "400")
         #test if enough shares to sell
         userid = session["user_id"]
         numbersharesheld = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
         if  int(numbersharesheld) < shares:
-            return apology("Not enough shares held", "704")
+            return apology("Not enough shares held", "400")
         #stock price at sale
         price = lookup(stock)['price']
         fullsaleprice = price * shares
