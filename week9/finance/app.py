@@ -228,7 +228,12 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
+        if not request.form.get("symbol"):
+            return apology("No shares selected", "701")
+        if int(request.form.get("shares")) < 1:
+            return apology("Zero shares sold", "702")
         
+
 
         #add funds and sell stock
         #db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
