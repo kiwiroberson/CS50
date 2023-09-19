@@ -241,17 +241,16 @@ def sell():
         #test if enough shares to sell
         userid = session["user_id"]
         numbersharesheld = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, sellingstock)[0]['SUM(shares)']
-        print(numbersharesheld)
-        if numberstockstosell < numbersharesheld:
+        if  int(numbersharesheld) < numberstockstosell:
             return apology("Not enough shares held", "704")
-
-
-
+        #stock price at sale
+        sellingprice = lookup(sellingstock)['price']
+        print(lookup(sellingstock)['price'])
 
 
 
         #add funds and sell stock
-        #db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
+       # db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
         #db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         return redirect("/")
