@@ -21,10 +21,10 @@
         <tbody>
             {% for transaction in index %}
                 <tr>
-                    <td>{{ index['stock'] }}</td>
-                    <td>{{ index['shares'] }}</td>
-                    <td>{{ index['price'] }}</td>
-                    <td>{{ index['date'] }}</td>
+                    <td>{{ transaction.stock }}</td>
+                    <td>{{ transaction.shares }}</td>
+                    <td>{{ transaction.price }}</td>
+                    <td>{{ transaction.date }}</td>
                 </tr>
             {% endfor %}
         </tbody>
