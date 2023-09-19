@@ -106,10 +106,11 @@ def quote():
     if request.method == "POST":
         #get stock price label from form
         symbol = request.form.get("symbol")
-        print(lookup(symbol))
+        stockdetails = lookup(symbol)
+        print(stockdetails["price"])
 
         #forward symbol and price to 'quoted'
-        return render_template("quoted.html", symbol=symbol)
+        return render_template("quoted.html", symbol=stockdetails["symbol"], price=usd(stockdetails["price"]))
     else:
 
         return render_template("quote.html")
