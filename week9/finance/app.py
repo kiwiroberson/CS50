@@ -53,15 +53,19 @@ def buy():
         #test shares positive
         if int(request.form.get("shares")) < 1:
             return apology("Shares not positive", "703")
-        print(session)
-        userid = session
+        userid = session["user_id"]
         stockdetails = lookup(request.form.get("symbol"))
         stock = stockdetails["symbol"]
-        print(stock)
+
         shares = int(request.form.get("shares"))
         price = stockdetails["price"]
-        date = datetime.today()
-        
+        date = datetime.date.now()
+
+        print(userid)
+        print(stock)
+        print(shares)
+        print(date)
+
         return redirect("/")
 
 
