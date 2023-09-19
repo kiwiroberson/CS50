@@ -58,9 +58,11 @@ def index():
         prices[stock] = lookup(stock)['price']
         valuecalc = float(prices[stock]) * int(sum)
         totalsharevalue += valuecalc
-        value[stock] = valuecalc
+        value[stock] = usd(valuecalc)
 
-    return render_template("index.html", shares=shares, prices=usd(prices), value=usd(value), totalsharevalue=usd(totalsharevalue))
+    cash = 
+
+    return render_template("index.html", shares=shares, prices=prices, value=value, totalsharevalue=usd(totalsharevalue))
 
 
 @app.route("/buy", methods=["GET", "POST"])
