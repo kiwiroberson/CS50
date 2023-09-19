@@ -46,6 +46,10 @@ def index():
             stocks.append(item['stock'])
     print(stocks)
 
+    for stock in stocks:
+        sum = db.execute("SUM(shares) FROM portfolio WHERE userid=? AND stock=?",userid, stock)
+        print(stock, sum)
+        
     return render_template("index.html", stocks=stocks)
 
 
