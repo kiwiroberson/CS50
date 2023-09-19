@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Cash
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h1>
+            Add Cash
+        </h1>
+        <form action="/addcash" method="post">
+            <input autocomplete=""off" id="addcash" name="addcash" placeholder="Amount" type="number">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </div>
+
+{% endblock %}
+.schema

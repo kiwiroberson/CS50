@@ -67,6 +67,15 @@ def index():
 
     return render_template("index.html", shares=shares, prices=prices, value=value, totalsharevalue=usd(totalsharevalue), balance=usd(balance), networth=usd(networth))
 
+@app.route("/addcash", methods=["GET", "POST"])
+@login_required
+def addcash():
+    """Add cash"""
+    if request.method == "POST":
+        if not request.form.get("addcash")
+            return apology("no cash amount", "901")
+        
+    else: return render_template("addcash.html")
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
@@ -104,7 +113,7 @@ def buy():
         db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         #add cash to account
-        
+
 
         return redirect("/")
 
