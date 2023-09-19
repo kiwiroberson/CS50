@@ -14,17 +14,19 @@
             <tr>
                 <th>Stock</th>
                 <th>Shares</th>
-                <th>Price</tr>
+                <th>Price</th>
                 <th>Total Value</th>
+
             </tr>
         </thead>
         <tbody>
             {% for stock in shares %}
                 <tr>
                     <td>{{ stock }}</td>
-                    <td>{{ shares["stock"] }}</td>
+                    <td>{{ shares[stock] }}</td>
                     <td>third</td>
                     <td>forth</td>
+
                 </tr>
             {% endfor %}
         </tbody>
