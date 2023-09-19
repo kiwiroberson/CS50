@@ -72,9 +72,19 @@ def index():
 def addcash():
     """Add cash"""
     if request.method == "POST":
-        if not request.form.get("addcash")
+        if not request.form.get("addcash"):
             return apology("no cash amount", "901")
-        
+        userid = session["user_id"]
+        #check cash available
+        balance = float(db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash'])
+        additionalcash = float(request.form.get("addcash"))
+        balance = balance + additonalcash
+
+        #save cash amount
+        db.execute("UPDATE users SET cash=? WHERE id=?", balance, userid)
+
+
+
     else: return render_template("addcash.html")
 
 @app.route("/buy", methods=["GET", "POST"])
