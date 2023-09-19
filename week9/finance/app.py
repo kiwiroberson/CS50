@@ -41,6 +41,9 @@ def index():
     index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
     stocks=[]
     shares={}
+    prices={}
+    value={}
+
     for item in index:
         #build list of stocks owned
         if item['stock'] not in stocks:
@@ -51,9 +54,10 @@ def index():
     for stock in stocks:
         sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
         shares[stock] = sum
-    print(shares)
+        prices[stock]= lookup(stock)['price']
+        value
 
-    return render_template("index.html", shares=shares)
+    return render_template("index.html", shares=shares, prices=prices)
 
 
 @app.route("/buy", methods=["GET", "POST"])
