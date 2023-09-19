@@ -44,9 +44,9 @@ def index():
         #build list of stocks owned
         if item['stock'] not in stocks:
             stocks.append(item['stock'])
-        print(stocks)
-        
-    return render_template("index.html")
+    print(stocks)
+
+    return render_template("index.html", stocks=stocks)
 
 
 @app.route("/buy", methods=["GET", "POST"])
