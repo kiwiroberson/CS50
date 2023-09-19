@@ -19,12 +19,12 @@
             </tr>
         </thead>
         <tbody>
-            {% for stock in shares %}
+            {% for transaction in index %}
                 <tr>
-                    <td>{{ stock }}</td>
-                    <td>{{ shares[stock] }}</td>
-                    <td>{{ prices[stock] }}</td>
-                    <td>{{ value[stock] }}</td>
+                    <td>{{ index['stock'] }}</td>
+                    <td>{{ index['shares'] }}</td>
+                    <td>{{ index['price'] }}</td>
+                    <td>{{ index['date'] }}</td>
                 </tr>
             {% endfor %}
         </tbody>
