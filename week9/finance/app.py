@@ -51,7 +51,7 @@ def index():
             stocks.append(item['stock'])
     print(stocks)
 
-    #extarct number of shares for all in list
+    #extarct number and value of shares for all in list
     for stock in stocks:
         sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
         shares[stock] = sum
@@ -60,9 +60,12 @@ def index():
         totalsharevalue += valuecalc
         value[stock] = usd(valuecalc)
 
-    cash = 
+    #extract cash balance
+    balance = db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash']
+    #calculate net worth
+    networth = totalsharevalue + balance
 
-    return render_template("index.html", shares=shares, prices=prices, value=value, totalsharevalue=usd(totalsharevalue))
+    return render_template("index.html", shares=shares, prices=prices, value=value, totalsharevalue=usd(totalsharevalue), balance=usd(balance), networth=usd(networth))
 
 
 @app.route("/buy", methods=["GET", "POST"])

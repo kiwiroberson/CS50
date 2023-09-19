@@ -16,7 +16,6 @@
                 <th>Shares</th>
                 <th>Price</th>
                 <th>Total Value</th>
-
             </tr>
         </thead>
         <tbody>
@@ -26,15 +25,25 @@
                     <td>{{ shares[stock] }}</td>
                     <td>{{ prices[stock] }}</td>
                     <td>{{ value[stock] }}</td>
-
                 </tr>
             {% endfor %}
         </tbody>
     </table>
 
     <a>
-        {{ totalsharevalue }}
+        Shares Value: {{ totalsharevalue }}
     </a>
+    <br>
+    <a>
+        Cash: {{ balance }}
+    </a>
+    <br>
+    <a>
+        Net worth: {{ networth }}
+    </a>
+
+
+
 
 
 {% endblock %}
