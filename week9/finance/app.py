@@ -58,7 +58,7 @@ def buy():
         shares=1
         price=1
         date=1
-        return
+        return redirect("/")
 
 
 
