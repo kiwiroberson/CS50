@@ -78,11 +78,11 @@ def addcash():
         #check cash available
         balance = float(db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash'])
         additionalcash = float(request.form.get("addcash"))
-        balance = balance + additonalcash
+        balance = balance + additionalcash
 
         #save cash amount
         db.execute("UPDATE users SET cash=? WHERE id=?", balance, userid)
-
+        return redirect("/")
 
 
     else: return render_template("addcash.html")
