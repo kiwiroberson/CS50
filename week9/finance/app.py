@@ -99,8 +99,10 @@ def buy():
         if not lookup(request.form.get("symbol")):
             return apology("Stock not valid", "400")
         #test shares positive
-        if not float(request.form.get("shares")):
+        try: float(request.form.get("shares"))
+        except:
             return apology("Not a number", "400")
+
         if float(request.form.get("shares")) <= 0:
             return apology("Shares not positive", "400")
 
