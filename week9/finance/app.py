@@ -132,7 +132,6 @@ def quote():
         #get stock price label from form
         symbol = request.form.get("symbol")
         stockdetails = lookup(symbol)
-        print(stockdetails["price"])
 
         #forward symbol and price to 'quoted'
         return render_template("quoted.html", symbol=stockdetails["symbol"], price=usd(stockdetails["price"]))
