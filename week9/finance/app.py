@@ -50,10 +50,10 @@ def index():
     #extarct number of shares for all in list
     for stock in stocks:
         sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
-        shares[].append(stock, sum)
-        print(f"{stock}: {sum}")
+        shares[stock] = sum
+    print(shares)
 
-    return render_template("index.html", stocks=stocks)
+    return render_template("index.html", shares=shares)
 
 
 @app.route("/buy", methods=["GET", "POST"])
