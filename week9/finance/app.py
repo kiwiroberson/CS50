@@ -66,18 +66,13 @@ def buy():
         balance = db.execute("SELECT cash FROM users WHERE id=?",userid)
         print(balance[0]['cash'])
         totalcost = int(shares) * int(price)
-        if int(balance[0]['cash']) - totalcost < 0:
+        remainingfunds = balance[0]['cash']) - totalcost
+        if remainingfunds < 0:
             return apology("Not enough funds", "704")
 
-
-
-        print(userid)
-        print(stock)
-        print(shares)
-        print(price)
-        print(date)
-
-        #db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
+        #deduct funds and buy stock
+        db.execute("", remainingfunds)
+        db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         return redirect("/")
 
