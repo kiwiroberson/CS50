@@ -116,7 +116,7 @@ def register():
             return apology("New username not entered", 501)
         # ensure new username not already taken
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
-        if len(rows) != 1:
+        if len(rows) == 1:
             return apology("Username already taken", 502)
 
         #ensure new password entered
