@@ -63,9 +63,11 @@ def buy():
         date = datetime.now()
 
         #check enough cash available
+        balance = db.execute("SELECT cash FROM users WHERE id='?'", userid)
+        print(balance)
+        totalcost = stock * shares
 
-        balance = execute.db("SELECT )
-        totalcost =
+
 
         print(userid)
         print(stock)
@@ -73,7 +75,7 @@ def buy():
         print(price)
         print(date)
 
-        db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
+        #db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         return redirect("/")
 
