@@ -67,7 +67,7 @@ def buy():
         print(price)
         print(date)
 
-        db.execute("INSERT INTO portfolio (user-id, stock, shares, price, date) VALUES()
+        db.execute("INSERT INTO portfolio (user-id, stock, shares, price, date) VALUES(?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         return redirect("/")
 
