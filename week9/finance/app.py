@@ -105,11 +105,6 @@ def buy():
 
         return redirect("/")
 
-
-
-
-
-
     else:
         return render_template("buy.html")
 
@@ -232,4 +227,13 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    return apology("TODO")
+ if request.method == "POST":
+
+        #add funds and sell stock
+        #db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
+        #db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
+
+        return redirect("/")
+
+    else:
+        return render_template("buy.html")
