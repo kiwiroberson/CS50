@@ -47,8 +47,8 @@ def index():
     print(stocks)
 
     for stock in stocks:
-        sum = db.execute("SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", (userid, stock))
-        print(stock, sum)
+        sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)
+        print(f"{stock}: {sum}")
 
     return render_template("index.html", stocks=stocks)
 
