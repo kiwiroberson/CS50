@@ -114,18 +114,13 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
+    #extract transactions from portfolio
     userid = session["user_id"]
     index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
-    stocks=[]
-    shares={}
-    prices={}
-    value={}
-    totalsharevalue = 0
 
     for item in index:
         #build list of stocks owned
-        if item['stock'] not in stocks:
-            stocks.append(item['stock'])
+
     print(stocks)
 
     #extarct number and value of shares for all in list
