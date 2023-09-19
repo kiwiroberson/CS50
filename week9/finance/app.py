@@ -243,4 +243,4 @@ def sell():
         return redirect("/")
 
     else:
-        return render_template("sell.html" stocks=stocks)
+        return render_template("sell.html", stocks=stocks)
