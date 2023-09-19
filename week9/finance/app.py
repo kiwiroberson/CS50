@@ -101,7 +101,7 @@ def buy():
         #test shares positive
         if float(request.form.get("shares")) <= 0:
             return apology("Shares not positive", "400")
-        if request.form.get("shares"):
+        if not isinstance(request.form.get("shares"), int or float):
             return apology("Not a number", "400")
 
         #collect potential transaction details
