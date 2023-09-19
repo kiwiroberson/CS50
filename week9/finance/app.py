@@ -104,7 +104,9 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "POST":
-        return apology("not done", "601")
+        #get stock price label from form
+        stock = get
+        return render_template("quoted.html")
     else:
         return render_template("quote.html")
 
