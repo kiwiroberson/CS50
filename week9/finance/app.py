@@ -239,7 +239,12 @@ def sell():
         if numberstockstosell < 1:
             return apology("Zero shares sold", "703")
         #test if enough shares to sell
-        
+        userid = session["user_id"]
+        numbersharesheld = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, sellingstock)[0]['SUM(shares)']
+        print(numbersharesheld)
+        if numberstockstosell < numbersharesheld:
+            return apology("Not enough shares held", "704")
+
 
 
 
