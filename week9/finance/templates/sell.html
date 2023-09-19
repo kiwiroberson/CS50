@@ -10,7 +10,8 @@
     </h1>
     <br>
     <form action="/sell" method="post">
-        <select name="symbol">
+        <select selected="Select Stock" name="symbol">
+            <option value="default">Select Stock</option>
             {% for stock in stocks %}
             <option value="{{ stock }}">{{ stock }}</option>
             {% endfor %}
