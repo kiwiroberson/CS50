@@ -71,7 +71,7 @@ def buy():
             return apology("Not enough funds", "704")
 
         #deduct funds and buy stock
-        db.execute("UPDATE users SET cash=? WHERE userid=?", remainingfunds, userid)
+        db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
         db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
         return redirect("/")
