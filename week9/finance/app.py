@@ -245,13 +245,16 @@ def sell():
             return apology("Not enough shares held", "704")
         #stock price at sale
         sellingprice = lookup(sellingstock)['price']
-        print(lookup(sellingstock)['price'])
-
-
+        fullsaleprice = sellingprice * numberstockstosell
+        #cash amount
+        balance = db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash']
+        #new cash calculation
+        balance = balance + fullsaleprice
 
         #add funds and sell stock
-       # db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
-        #db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
+        sharessold = shares * -1
+        db.execute("UPDATE users SET cash=? WHERE id=?", balance, userid)
+        db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, sharessold, price, date)
 
         return redirect("/")
 
