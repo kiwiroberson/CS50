@@ -125,9 +125,20 @@ def register():
 
         ##nsure confirmation is entered
 
+        if not request.form.get("confirmation"):
+            return apology("Confirmation not entered", 504)
+
         #ensure password confimation matches initial password
 
+        if request.form.get("password") != request.form.get("confirmation"):
+            return apology("Passwords do not match", 505)
+
         #insert new username and password into db
+
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # Redirect user to home page
         return redirect("/")
