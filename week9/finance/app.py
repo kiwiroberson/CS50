@@ -195,6 +195,10 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "POST":
+        if not request.form.get("symbol")
+            return apology("no valid stock", "400")
+        if not lookup(request.form.get("symbol"))
+            return apology("no valid stock", "400")
         #get stock price label from form
         symbol = request.form.get("symbol")
         stockdetails = lookup(symbol)
