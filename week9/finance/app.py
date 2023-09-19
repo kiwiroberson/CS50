@@ -53,13 +53,19 @@ def buy():
         #test shares positive
         if int(request.form.get("shares")) < 1:
             return apology("Shares not positive", "703")
+
+        #collect potential transaction details
         userid = session["user_id"]
         stockdetails = lookup(request.form.get("symbol"))
         stock = stockdetails["symbol"]
-
         shares = int(request.form.get("shares"))
         price = stockdetails["price"]
         date = datetime.now()
+
+        #check enough cash available
+
+        balance = execute.db("SELECT )
+        totalcost =
 
         print(userid)
         print(stock)
