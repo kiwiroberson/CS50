@@ -231,28 +231,28 @@ def sell():
     if request.method == "POST":
         if not request.form.get("symbol"):
             return apology("No shares selected", "701")
-        sellingstock = request.form.get("symbol")
+        stock = request.form.get("symbol")
         #test valid number of shares selected
         if not request.form.get("shares"):
             return apology("Zero shares sold", "702")
-        numberstockstosell = int(request.form.get("shares"))
+        shares = int(request.form.get("shares"))
         if numberstockstosell < 1:
             return apology("Zero shares sold", "703")
         #test if enough shares to sell
         userid = session["user_id"]
         numbersharesheld = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, sellingstock)[0]['SUM(shares)']
-        if  int(numbersharesheld) < numberstockstosell:
+        if  int(numbersharesheld) < shares:
             return apology("Not enough shares held", "704")
         #stock price at sale
-        sellingprice = lookup(sellingstock)['price']
-        fullsaleprice = sellingprice * numberstockstosell
+        price = lookup(stock)['price']
+        fullsaleprice = price * numberstockstosell
         #cash amount
         balance = db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash']
         #new cash calculation
         balance = balance + fullsaleprice
 
         #add funds and sell stock
-        sharessold = shares * -1
+        sharessold = numberstockstosell * -1
         db.execute("UPDATE users SET cash=? WHERE id=?", balance, userid)
         db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, sharessold, price, date)
 
