@@ -103,6 +103,9 @@ def buy():
         db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
         db.execute("INSERT INTO portfolio (userid, stock, shares, price, date) VALUES (?, ?, ?, ?, ?)", userid, stock, shares, price, date)
 
+        #add cash to account
+        
+
         return redirect("/")
 
     else:
