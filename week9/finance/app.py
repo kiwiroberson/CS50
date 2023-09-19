@@ -114,9 +114,35 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
-    if request.method == "POST":
-    else:
-        return render_template("history.html")
+    userid = session["user_id"]
+    index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
+    stocks=[]
+    shares={}
+    prices={}
+    value={}
+    totalsharevalue = 0
+
+    for item in index:
+        #build list of stocks owned
+        if item['stock'] not in stocks:
+            stocks.append(item['stock'])
+    print(stocks)
+
+    #extarct number and value of shares for all in list
+    for stock in stocks:
+        sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
+        shares[stock] = sum
+        prices[stock] = lookup(stock)['price']
+        valuecalc = float(prices[stock]) * int(sum)
+        totalsharevalue += valuecalc
+        value[stock] = usd(valuecalc)
+
+    #extract cash balance
+    balance = db.execute("SELECT cash FROM users WHERE id=?",userid)[0]['cash']
+    #calculate net worth
+    networth = totalsharevalue + balance
+
+    return render_template("history.html", shares=shares, prices=prices, value=value)
 
 
 @app.route("/login", methods=["GET", "POST"])
