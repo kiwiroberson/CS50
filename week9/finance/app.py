@@ -43,6 +43,7 @@ def index():
     shares={}
     prices={}
     value={}
+    totalsharevalue = 0
 
     for item in index:
         #build list of stocks owned
@@ -55,9 +56,11 @@ def index():
         sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
         shares[stock] = sum
         prices[stock] = lookup(stock)['price']
-        value[stock] = usd(float(prices[stock]) * int(sum))
+        valuecalc = float(prices[stock]) * int(sum)
 
-    for 
+        value[stock] = usd(valuecalc)
+
+    for
 
     return render_template("index.html", shares=shares, prices=prices, value=value)
 
