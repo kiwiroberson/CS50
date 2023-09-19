@@ -99,10 +99,11 @@ def buy():
         if not lookup(request.form.get("symbol")):
             return apology("Stock not valid", "400")
         #test shares positive
+        if not float(request.form.get("shares")):
+            return apology("Not a number", "400")
         if float(request.form.get("shares")) <= 0:
             return apology("Shares not positive", "400")
-        if not isinstance(request.form.get("shares"), int or float):
-            return apology("Not a number", "400")
+
 
         #collect potential transaction details
         userid = session["user_id"]
