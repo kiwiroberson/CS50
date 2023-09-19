@@ -53,8 +53,8 @@ def buy():
         if int(request.form.get("shares")) < 1:
             return apology("Shares not positive", "703")
         print(session)
-        username=1
-        stock=1
+        userid = session
+        stock = lookup(request.form.get("symbol"))
         shares=1
         price=1
         date=1
