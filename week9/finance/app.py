@@ -105,9 +105,11 @@ def quote():
     """Get stock quote."""
     if request.method == "POST":
         #get stock price label from form
-        stock = request.form.get("symbol")
-        return render_template("quoted.html")
+        symbol = request.form.get("symbol")
+        #forward symbol and price to 'quoted'
+        return render_template("quoted.html", symbol=symbol)
     else:
+
         return render_template("quote.html")
 
 
