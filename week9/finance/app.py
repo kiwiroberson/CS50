@@ -104,10 +104,10 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "POST":
-
+        return apology("not done", "601")
     else:
         return render_template("quote.html")
-    
+
 
 
 @app.route("/register", methods=["GET", "POST"])
