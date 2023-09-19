@@ -56,7 +56,7 @@ def index():
         sum = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
         shares[stock] = sum
         prices[stock] = lookup(stock)['price']
-        valuecalc = float(prices[stock]) * int(sum)
+        valuecalc = float(prices[stock]) * float(sum)
         totalsharevalue += valuecalc
         value[stock] = usd(valuecalc)
 
@@ -99,14 +99,14 @@ def buy():
         if not lookup(request.form.get("symbol")):
             return apology("Stock not valid", "400")
         #test shares positive
-        if int(request.form.get("shares")) < 1:
+        if float(request.form.get("shares")) <= 0:
             return apology("Shares not positive", "400")
 
         #collect potential transaction details
         userid = session["user_id"]
         stockdetails = lookup(request.form.get("symbol"))
         stock = stockdetails["symbol"]
-        shares = int(request.form.get("shares"))
+        shares = float(request.form.get("shares"))
         price = stockdetails["price"]
         date = datetime.now()
 
@@ -265,13 +265,13 @@ def sell():
         #test valid number of shares selected
         if not request.form.get("shares"):
             return apology("Zero shares sold", "400")
-        shares = int(request.form.get("shares"))
+        shares = float(request.form.get("shares"))
         if shares < 1:
             return apology("Zero shares sold", "400")
         #test if enough shares to sell
         userid = session["user_id"]
         numbersharesheld = db.execute("SELECT SUM(shares) FROM portfolio WHERE userid=? AND stock LIKE ?", userid, stock)[0]['SUM(shares)']
-        if  int(numbersharesheld) < shares:
+        if  float(numbersharesheld) < shares:
             return apology("Not enough shares held", "400")
         #stock price at sale
         price = lookup(stock)['price']
