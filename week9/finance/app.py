@@ -228,13 +228,7 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
-        index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
-        stocks=[]
 
-        for item in index:
-            #build list of stocks owned
-            if item['stock'] not in stocks:
-                stocks.append(item['stock'])
 
         #add funds and sell stock
         #db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
@@ -243,4 +237,11 @@ def sell():
         return redirect("/")
 
     else:
+        userid = session["user_id"]
+        index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
+        stocks=[]
+        for item in index:
+            #build list of stocks owned
+            if item['stock'] not in stocks:
+                stocks.append(item['stock'])
         return render_template("sell.html", stocks=stocks)
