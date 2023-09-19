@@ -101,6 +101,8 @@ def buy():
         #test shares positive
         if float(request.form.get("shares")) <= 0:
             return apology("Shares not positive", "400")
+        if request.form.get("shares"):
+            return apology("Not a number", "400")
 
         #collect potential transaction details
         userid = session["user_id"]
