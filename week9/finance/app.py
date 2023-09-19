@@ -138,7 +138,7 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
 
-        db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        db.execute("INSERT INTO users ", request.form.get("username"))
 
         # Redirect user to home page
         return redirect("/")
