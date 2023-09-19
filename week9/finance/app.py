@@ -59,12 +59,15 @@ def buy():
 
         shares = int(request.form.get("shares"))
         price = stockdetails["price"]
-        date = datetime.date.now()
+        date = datetime.now()
 
         print(userid)
         print(stock)
         print(shares)
+        print(price)
         print(date)
+
+        db.execute("INSERT INTO portfolio ())
 
         return redirect("/")
 
