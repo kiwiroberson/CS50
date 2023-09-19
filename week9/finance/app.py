@@ -64,7 +64,7 @@ def buy():
 
         #check enough cash available
         balance = db.execute("SELECT cash FROM users WHERE id=?",userid)
-        print(balance['price'])
+        print(balance[0])
         totalcost = stock * shares
 
 
