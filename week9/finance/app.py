@@ -39,7 +39,8 @@ def index():
     userid = session["user_id"]
     index = db.execute("SELECT * FROM portfolio WHERE userid=?",userid)
     for item in index:
-        print(item['price'])
+        
+        print(item['stock'])
     return render_template("index.html")
 
 
