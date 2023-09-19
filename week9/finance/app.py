@@ -228,7 +228,7 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "POST":
-
+        
 
         #add funds and sell stock
         #db.execute("UPDATE users SET cash=? WHERE id=?", remainingfunds, userid)
