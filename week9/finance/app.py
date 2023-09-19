@@ -64,8 +64,10 @@ def buy():
 
         #check enough cash available
         balance = db.execute("SELECT cash FROM users WHERE id=?",userid)
-        print(balance)
-        totalcost = stock * shares
+        print(balance[0]['cash'])
+        totalcost = int(shares) * int(price)
+        if int(balance[0]['cash']) - totalcost < 0:
+            return apology("Not enough funds", "704")
 
 
 
