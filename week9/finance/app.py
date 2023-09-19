@@ -60,7 +60,8 @@ def buy():
         print(stock)
         shares = int(request.form.get("shares"))
         price = stockdetails["price"]
-        date = date.today()
+        date = datetime.today()
+        
         return redirect("/")
 
 
