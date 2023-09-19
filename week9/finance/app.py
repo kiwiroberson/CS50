@@ -52,12 +52,13 @@ def buy():
         #test shares positive
         if int(request.form.get("shares")) < 1:
             return apology("Shares not positive", "703")
-        print[session]
+        print(session)
         username=1
         stock=1
         shares=1
         price=1
         date=1
+        return
 
 
 
