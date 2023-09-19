@@ -227,12 +227,19 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
+    sellingstock = request.form.get("symbol")
+    numberstockstosell = int(request.form.get("shares"))
+
+
+
+
     if request.method == "POST":
         if not request.form.get("symbol"):
             return apology("No shares selected", "701")
-        if int(request.form.get("shares")) < 1:
+        if numberstockstosell < 1:
             return apology("Zero shares sold", "702")
         
+
 
 
         #add funds and sell stock
