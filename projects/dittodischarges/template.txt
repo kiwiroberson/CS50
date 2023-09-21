@@ -13,9 +13,9 @@ Root:
 
 
     database
-        index
-            domain: jaudnice//infection//weight loss
-                sub-index - mutualy exclusive
-                    Example question
-                        text to be printed.
+        index - number
+            domain: jaudnice//infection//weight loss - text
+                sub-index - mutualy exclusive - text from above and incremental number
+                    Example question - string
+                        text to be printed. - string.
 
