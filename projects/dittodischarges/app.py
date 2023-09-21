@@ -29,3 +29,17 @@ def after_request(response):
 @app.route("/")
 @login_required
 
+#Choose list of dischaare domain options from checklist
+
+#submit option
+
+#clause detailing clinical reponsibility for input and proofreading discharge summary
+
+#copyright caolan roberson
+
+
+
+
+
+
+
