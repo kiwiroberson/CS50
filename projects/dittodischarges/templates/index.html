@@ -19,9 +19,8 @@
 <div>
     {% for disease in diagnoses %}
     <div>
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">{{ disease }}</label>
-    </div>
+        <input type="checkbox" class="btn-check" name="{{ disease }}" id="{{ disease }}" autocomplete="off">
+        <label class="btn btn-outline-success" for="success-outlined">{{ disease }}</label>
     <br>
     {% endfor %}
 
