@@ -37,7 +37,7 @@ def index():
         if record['diagnosis'] not in diagnoses:
             diagnoses.append(record['diagnosis'])
     print(diagnoses)
-    return render_template("index.html")
+    return render_template("index.html", diagnoses=diagnoses)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

@@ -17,25 +17,14 @@
 </div>
 <br>
 <div>
+    {% for disease in diagnoses %}
     <div>
         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Jaundice</label>
+        <label class="btn btn-secondary" for="option1">{{ disease }}</label>
     </div>
     <br>
-    <div>
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Infection</label>
-    </div>
-    <br>
-    <div>
-        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
-        <label class="btn btn-secondary" for="option3">Weight Loss</label>
-    </div>
-    <br>
-    <div>
-        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-        <label class="btn btn-secondary" for="option4">Feeding problems</label>
-    </div>
+    {% endfor %}
+
 </div>
 
 
