@@ -31,7 +31,7 @@ def after_request(response):
 @login_required
 def index():
     if request.method == "POST":
-
+        return
     else:
         index = db.execute("SELECT * FROM neonataldc")
         diagnoses=[]
