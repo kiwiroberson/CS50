@@ -30,9 +30,13 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    index
+    index = db.execute("SELECT * FROM neonataldc")
     diagnoses=[]
 
+    for record in index:
+        if record['diagnosis'] not in diagnoses:
+            diagnoses.append(record['diagnosis'])
+    print(diagnoses)
     return render_template("index.html")
 
 @app.route("/login", methods=["GET", "POST"])
