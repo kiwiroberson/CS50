@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div>
+            <h1>
+                Quote
+            </h1>
+            <br>
+            <input autocomplete="on" autofocus id="symbol" name="symbol" placeholder="Stock" type="text">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+{% endblock %}
+.schema
