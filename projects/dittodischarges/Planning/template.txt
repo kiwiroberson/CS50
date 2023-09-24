@@ -15,6 +15,7 @@ Root:
     database
         index - number
             domain: jaudnice//infection//weight loss - text
+                domain code
                 sub-index - mutualy exclusive - text from above and incremental number
                     Example question - string
                         text to be printed. - string.
