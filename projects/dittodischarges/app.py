@@ -19,6 +19,9 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///discharge.db")
 
+#define discharge block class
+
+
 @app.after_request
 def after_request(response):
     """Ensure responses aren't cached"""
@@ -27,7 +30,7 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 @login_required
 def index():
     if request.method == "POST":
@@ -41,6 +44,20 @@ def index():
                 diagnoses.append(record['diagnosis'])
         print(diagnoses)
         return render_template("index.html", diagnoses=diagnoses)
+
+@app.route("/discharge", methods=["GET", "POST"])
+@login_required
+def discharge():
+    if request.method == "POST"
+
+        return
+    else:
+        return redirect("/")
+
+
+
+
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
