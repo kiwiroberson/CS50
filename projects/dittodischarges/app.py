@@ -22,8 +22,10 @@ db = SQL("sqlite:///discharge.db")
 #define discharge block class
 class dischargeblock:
     index
-    domain
-    domain code
+    diagnosis
+    root question
+    diagcoderoot
+    
     code1
     question1
     answer1
