@@ -25,7 +25,6 @@ class dischargeblock:
     diagnosis
     root question
     diagcoderoot
-    
     code1
     question1
     answer1
