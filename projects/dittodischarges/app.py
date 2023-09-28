@@ -20,8 +20,8 @@ Session(app)
 db = SQL("sqlite:///discharge.db")
 
 diagnosistable=[]
-for diagnosis in table:
-    
+for diagnosis in db.execute():
+
 
 
 #define discharge block class
