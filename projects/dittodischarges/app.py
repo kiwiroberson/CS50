@@ -21,25 +21,26 @@ db = SQL("sqlite:///discharge.db")
 
 #define discharge block class
 class dischargeblock:
-    index
-    diagnosis
-    root question
-    diagcoderoot
-    code1
-    question1
-    answer1
-    code2
-    question2
-    answer2
-    code3
-    question3
-    answer3
-    code4
-    question4
-    answer4
-    code5
-    question5
-    answer5
+    def __init__:
+        index = 
+        diagnosis
+        root question
+        diagcoderoot
+        code1
+        question1
+        answer1
+        code2
+        question2
+        answer2
+        code3
+        question3
+        answer3
+        code4
+        question4
+        answer4
+        code5
+        question5
+        answer5
 
 
 
