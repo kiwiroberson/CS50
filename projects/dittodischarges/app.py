@@ -20,13 +20,16 @@ Session(app)
 db = SQL("sqlite:///discharge.db")
 
 diagnosistable=[]
-for diagnosis in db.execute():
+
+for diagnosis in db.execute(SELECT "diagnosis" FROM "diagnosis"):
+    diagnosistable.append(diagnosis)
+
 
 
 
 #define discharge block class
-class dischargeblock:
-    def __init__:
+##class dischargeblock:
+    #def __init__:
         index =
         diagnosis
         root question
