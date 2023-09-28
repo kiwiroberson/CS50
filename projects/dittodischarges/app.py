@@ -19,10 +19,15 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///discharge.db")
 
+diagnosistable=[]
+for diagnosis in table:
+    
+
+
 #define discharge block class
 class dischargeblock:
     def __init__:
-        index = 
+        index =
         diagnosis
         root question
         diagcoderoot
