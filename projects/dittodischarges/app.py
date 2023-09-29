@@ -28,27 +28,27 @@ for diagnosis in db.execute(SELECT "diagnosis" FROM "diagnosis"):
 
 
 #define discharge block class
-##class dischargeblock:
-    #def __init__:
-        index =
-        diagnosis
-        root question
-        diagcoderoot
-        code1
-        question1
-        answer1
-        code2
-        question2
-        answer2
-        code3
-        question3
-        answer3
-        code4
-        question4
-        answer4
-        code5
-        question5
-        answer5
+class dischargeblock:
+    def __init__(self)
+        self.index =
+        self.diagnosis
+        self.rootquestion
+        self.diagcoderoot
+        self.code1
+        self.question1
+        self.answer1
+        self.code2
+        self.question2
+        self.answer2
+        self.code3
+        self.question3
+        self.answer3
+        self.code4
+        self.question4
+        self.answer4
+        self.code5
+        self.question5
+        self.answer5
 
 
 
