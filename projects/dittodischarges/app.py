@@ -30,7 +30,14 @@ print(diagnosistable[0])
 
 
 #sql query by cursor
+dischargedb = db = SQL("sqlite:///discharge.db")
 
+cursor = dischargedb.cursor()
+query = "SELECT diagnosis FROM diagnosis;"
+cursor.execute(query)
+result = cursor.fetchall()
+
+for row in result
 
 
 
