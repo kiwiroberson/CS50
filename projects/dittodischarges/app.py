@@ -35,27 +35,28 @@ for row in diagnosistable:
     print(row)
 
 #define discharge block class
-class dischargeblock:
-    def __init__(self):
-        self.index
-        self.diagnosis
-        self.rootquestion
-        self.diagcoderoot
-        self.code1
-        self.question1
-        self.answer1
-        self.code2
-        self.question2
-        self.answer2
-        self.code3
-        self.question3
-        self.answer3
-        self.code4
-        self.question4
-        self.answer4
-        self.code5
-        self.question5
-        self.answer5
+for row in diagnosistable:
+    class dischargeblock:
+        def __init__(self):
+            self.index = row[0]
+            self.diagnosis = row[1]
+            self.rootquestion = row[8]
+            self.diagcoderoot
+            self.code1
+            self.question1
+            self.answer1
+            self.code2
+            self.question2
+            self.answer2
+            self.code3
+            self.question3
+            self.answer3
+            self.code4
+            self.question4
+            self.answer4
+            self.code5
+            self.question5
+            self.answer5
 
 
 
