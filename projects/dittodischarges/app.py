@@ -29,6 +29,10 @@ for diagnosis in db.execute("SELECT diagnosis FROM diagnosis;"):
 print(diagnosistable[0])
 
 
+#sql query by cursor
+
+
+
 
 #define discharge block class
 class dischargeblock:
