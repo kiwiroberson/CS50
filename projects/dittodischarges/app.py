@@ -19,19 +19,20 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///discharge.db")
 
-diagnosistable=[]
+diagnosistable={}
 db.execute("SELECT * FROM diagnosis;")
 
 
-for diagnosis in db.execute(SELECT diagnosis FROM diagnosis;):
+for diagnosis in db.execute("SELECT diagnosis FROM diagnosis;"):
     diagnosistable.append(diagnosis)
 
+print(diagnosistable[0])
 
 
 
 #define discharge block class
 class dischargeblock:
-    def __init__(self)
+    def __init__(self):
         self.index
         self.diagnosis
         self.rootquestion
@@ -81,7 +82,7 @@ def index():
 @app.route("/discharge", methods=["GET", "POST"])
 @login_required
 def discharge():
-    if request.method == "POST"
+    if request.method == "POST":
 
         return
     else:
