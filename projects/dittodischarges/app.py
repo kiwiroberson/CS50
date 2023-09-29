@@ -19,7 +19,7 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///discharge.db")
 
-diagnosistable={}
+diagnosistable=[]
 db.execute("SELECT * FROM diagnosis;")
 
 
