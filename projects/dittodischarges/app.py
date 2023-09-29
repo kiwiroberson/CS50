@@ -27,7 +27,7 @@ db.execute("SELECT * FROM diagnosis;")
 dischargedb = sqlite3.connect("discharge.db")
 
 cursor = dischargedb.cursor()
-query = "SELECT diagnosis FROM diagnosis;"
+query = "SELECT * FROM diagnosis;"
 cursor.execute(query)
 diagnosistable = cursor.fetchall()
 
