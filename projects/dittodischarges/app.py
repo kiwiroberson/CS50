@@ -20,7 +20,7 @@ Session(app)
 db = SQL("sqlite:///discharge.db")
 
 diagnosistable=[]
-db.execute(SELECT * FROM diagnosis;)
+db.execute("SELECT * FROM diagnosis;")
 
 
 for diagnosis in db.execute(SELECT diagnosis FROM diagnosis;):
