@@ -30,7 +30,7 @@ for diagnosis in db.execute(SELECT "diagnosis" FROM "diagnosis"):
 #define discharge block class
 class dischargeblock:
     def __init__(self)
-        self.index =
+        self.index
         self.diagnosis
         self.rootquestion
         self.diagcoderoot
