@@ -1,4 +1,5 @@
 import os
+import sqlite3
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -22,24 +23,16 @@ db = SQL("sqlite:///discharge.db")
 diagnosistable=[]
 db.execute("SELECT * FROM diagnosis;")
 
-
-for diagnosis in db.execute("SELECT diagnosis FROM diagnosis;"):
-    diagnosistable.append(diagnosis)
-
-print(diagnosistable[0])
-
-
 #sql query by cursor
-dischargedb = db = SQL("sqlite:///discharge.db")
+dischargedb = sqlite3.connect("discharge.db")
 
 cursor = dischargedb.cursor()
 query = "SELECT diagnosis FROM diagnosis;"
 cursor.execute(query)
-result = cursor.fetchall()
+diagnosistable = cursor.fetchall()
 
-for row in result
-
-
+for row in diagnosistable:
+    print(row)
 
 #define discharge block class
 class dischargeblock:
