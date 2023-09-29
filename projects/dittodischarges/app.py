@@ -21,7 +21,7 @@ db = SQL("sqlite:///discharge.db")
 
 diagnosistable=[]
 
-for diagnosis in db.execute(SELECT "diagnosis" FROM "diagnosis"):
+for diagnosis in db.execute(SELECT diagnosis FROM diagnosis;):
     diagnosistable.append(diagnosis)
 
 
